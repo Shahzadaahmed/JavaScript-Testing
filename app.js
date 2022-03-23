@@ -619,3 +619,13 @@ console.log(solution);
 // Note: How to remove falsy values from an array...!
 // let arr = ["ahmed", true, "", null, "zeeshan", "", undefined, 1996];
 // console.log(arr.filter(Boolean));
+
+// let names = ["ahmed", "yousuf", "akbar", "asghar", "zeeshan", "yousuf", "akbar", "asghar", "zeeshan", "yousuf", "akbar", "asghar", "zeeshan", "ali"];
+// console.log(names[names.length - 1]);
+// console.log(names.at(5));
+
+// let userInput = prompt("Enter your number");
+// let validMobileFormat = /^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$/gm;
+// let result = (userInput.match(validMobileFormat)) ? (true) : (false);
+
+// console.log(result);
