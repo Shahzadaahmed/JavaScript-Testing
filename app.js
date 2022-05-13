@@ -629,3 +629,70 @@ console.log(solution);
 // let result = (userInput.match(validMobileFormat)) ? (true) : (false);
 
 // console.log(result);
+
+// Note: api call request practice...!
+/*
+let api = "https://jsonplaceholder.typicode.com/posts";
+console.log("API: ", api);
+
+fetch(api)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+*/
+
+// Note: Code to check the internet status (MOST IMPORTANT)
+// if (navigator.onLine) console.log('online!');
+// else console.log('offline!');
+
+// Note: Code to check the internet status while it will change automatically (MOST IMPORTANT)
+// window.addEventListener("online", (e) => console.log('You are online', e));
+// window.addEventListener("offline", (e) => console.log('You are offline', e));
+
+// const oddNumbers = (arr) => {
+//     // console.log(arr);
+
+//     let filterOddnum = arr.filter(data => data % 2 == 0);
+//     console.log(filterOddnum);
+// };
+
+// let numArr = [1, 2, 3, 4, 5];
+// oddNumbers(numArr);
+
+// let myName = prompt("Enter your name!");
+
+// if (myName.includes(" ")) {
+//     let space = myName.indexOf(" ");
+//     let requiredName = myName.slice(0, space);
+//     console.log(requiredName);
+// }
+
+// else console.log(myName);
+
+// Note: API issue fixed...!
+/*
+let userId = "914030";
+let api = `https://crm.shaker.com.sa/api/customers/gethistory/${userId}`;
+
+const apiCall = async () => {
+    try {
+        let res = await fetch(api);
+        let dataInJson = await res.json();
+        console.log(dataInJson);
+    }
+
+    catch (error) {
+        console.log("Error: ", error);
+    };
+};
+
+const handleTimer = () => {
+    setInterval(() => {
+        apiCall();
+    }, 5000);
+};
+
+// handleTimer();
+
+// window.onload = handleTimer();
+*/
