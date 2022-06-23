@@ -696,3 +696,140 @@ const handleTimer = () => {
 
 // window.onload = handleTimer();
 */
+
+// Note: How to user .filter() method...!
+
+// const filterArr = (data) => {
+//     // console.log(data);
+
+//     let modifiedData = data.filter((item) => { return item.charAt(0) == "a" });
+//     return modifiedData;
+// };
+
+// let arr = ["ahmed", "kashan", "shahzaib", "arsalan qadri", "mehran", "khurram", "anees", "arsalan popa"];
+// let result = filterArr(arr);
+// console.log(result);
+
+// Note: Remove duplicates from an array...!
+// const removeDuplicates = (data) => {
+//     // console.log(data);
+
+//     let modifiedData = data.filter((item, index) => { return data.indexOf(item) == index });
+//     return modifiedData;
+// };
+
+// let arr = ["ahmed", "kashan", "shahzaib", "arsalan", "mehran", "ahmed", "khurram", "anees", "arsalan", "ahmed"];
+// let result = removeDuplicates(arr);
+// console.log(result);
+
+// Note: Function to shuffle an array...!
+// const shuffleArray = (data) => {
+//     // console.log(data);
+
+//     let modifiedData = data.slice(0).sort(() => Math.random() - 0.5); // Note: Formula to shuffle an array...!
+//     console.log(modifiedData);
+// };
+
+// let name = ["a", "h", "m", "e", "d"];
+// shuffleArray(name);
+
+// Note: API Testing!
+
+
+// Note: Function to hide or un hide name...!
+
+// let h1Tag = document.getElementById("username");
+// const hideName = () => {
+//     if (h1Tag.style.display == "none") {
+//         h1Tag.style.display = "block"
+//     }
+
+//     else {
+//         h1Tag.style.display = "none";
+//     };
+// };
+
+// Note: Generating random id...!
+
+// const id = Math.random().toString(36).slice(2);
+// console.log(id);
+
+// Note: Function to genrate random id...!
+// const generateRandomId = () => {
+//     let randomId = Math.random().toString(36).slice(2);
+//     console.log(randomId);
+// };
+// setInterval(() => {
+//     generateRandomId()
+// }, 1000);
+// let result = generateRandomId();
+// console.log(result);
+
+// Note: Testing purpose...!
+/*
+let lastOrder = [
+    {
+        id: 1,
+        quantity: 4
+    },
+
+    {
+        id: 3,
+        quantity: 7
+    },
+
+    {
+        id: 5,
+        quantity: 1
+    },
+];
+
+let currentOrder = [
+    {
+        id: 1,
+        quantity: 2
+    },
+
+    {
+        id: 2,
+        quantity: 3
+    },
+
+    {
+        id: 3,
+        quantity: 2
+    }
+];
+
+console.log('Last Order: ', lastOrder);
+console.log('Current Order: ', [...currentOrder]);
+
+const testing = () => {
+
+    // Note: looping on last order array...!
+    for (let i = 0; i < lastOrder.length; i++) {
+        // console.log("i", lastOrder[i]);
+
+        let isMatch = false;
+
+        // Note: looping on current order array...!
+        for (let j = 0; j < currentOrder.length; j++) {
+            // console.log("j", currentOrder[j]);
+
+            // Note: If last order item's id match with current order id then this condition will work...!
+            if (lastOrder[i].id == currentOrder[j].id) {
+                currentOrder[j].quantity = currentOrder[j].quantity + lastOrder[i].quantity;
+                isMatch = true;
+                break;
+            };
+        };
+
+        // Note: If last order item's id  did not match with current order id then this condition will work...!
+        if (!isMatch) {
+            currentOrder.push(lastOrder[i]);
+        };
+    };
+
+    console.log('Update Order: ', currentOrder);
+};
+*/
