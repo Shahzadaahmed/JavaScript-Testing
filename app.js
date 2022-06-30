@@ -833,3 +833,84 @@ const testing = () => {
     console.log('Update Order: ', currentOrder);
 };
 */
+
+// Note: Program...!
+
+/*
+const testing = (arr, val) => {
+    // console.log(arr);
+    // console.log(val);
+
+    let itemFound = false;
+
+    for (let i = 0; i < arr.length; i++) {
+        // console.log(arr[i]);
+
+        if (arr[i] == val) {
+            itemFound = true;
+            break;
+        };
+    };
+
+    let result = (itemFound) ? ("Item sound successfully!") : ("Item did not found!!");
+    return result;
+};
+
+let arr = [2, 4, 6, 8, 10];
+let val = 6;
+let result = testing(arr, val);
+console.log(result);
+*/
+
+// const data = {
+//     name: "ahmed"
+// };
+// data.name = "shahzada ahmed";
+
+// console.log(data.name);
+
+// let name = "ahmed";
+// name = "shahzada ahmed";
+// console.log(name);
+
+// for (let i = 1; i <= 5; i++) {
+//     // console.log(i);
+
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000);
+// };
+
+// const testing = () => {
+//     const customFunc = () => {
+//         console.log(name);
+//     };
+
+//     let name = "Shahzada Ahmed";
+//     customFunc();
+// };
+
+// testing();
+
+// x = 5;
+// console.log(x);
+
+// var x;
+
+// const user = {
+//     name: "ahmed"
+// };
+// user.name = "bilal";
+
+// console.log(user.name);
+
+// const name = "ahmed";
+// name = "bilal";
+// console.log(name);
+
+// for (let i = 1; i < 6; i++) {
+//     // console.log(i);
+
+//     setTimeout(() => {
+//     }, 1000);
+// };
