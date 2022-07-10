@@ -831,6 +831,7 @@ let data = {
         }
     ]
 };
+console.log(data);
 
 let { blocks } = data;
 let nicFound = false;

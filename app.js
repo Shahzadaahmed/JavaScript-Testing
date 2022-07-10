@@ -914,3 +914,52 @@ console.log(result);
 //     setTimeout(() => {
 //     }, 1000);
 // };
+
+// Example # 01:
+// let userInput = prompt("Enter any number!");
+// // console.log(userInput);
+
+// if ((userInput > 8) && (userInput < 20)) {
+//     console.log(true);
+// }
+
+// else console.log(false);
+
+// Example # 02:
+// let userInput = Number(prompt("Enter any number!"));
+// console.log(typeof userInput);
+
+// if ((userInput > 10) && (typeof userInput == "number")) {
+//     console.log(true);
+// }
+
+// else console.log(false);
+
+// Example # 03:
+// Write a Program in JavaScript to Find the Factorial of a Number.
+
+// Solution:
+const findFactorial = (num) => {
+    console.log("Number: ", num);
+
+    // Note: Condition to check if number is less than 0...!
+    if (num < 0) console.log("Number should not be less than 0");
+
+    // Note: Condition to check if number is equal to 0...!
+    else if (num == 0) console.log(`Factorial of a ${num} is 0`);
+
+    // Note: Condition to find factorial of a number...!
+    else {
+        let factorialNum = 1;
+
+        for (let i = 1; i <= num; i++) {
+            // console.log(i);
+            factorialNum = factorialNum * i;
+        };
+
+        console.log(`Factorial of a ${num} is ${factorialNum}`);
+    };
+};
+
+let userInput = Number(prompt("Enter any number!"));
+findFactorial(userInput);
