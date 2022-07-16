@@ -934,7 +934,7 @@ console.log(result);
 // }
 
 // else console.log(false);
-
+/*
 // Example # 03:
 // Write a Program in JavaScript to Find the Factorial of a Number.
 
@@ -963,3 +963,28 @@ const findFactorial = (num) => {
 
 let userInput = Number(prompt("Enter any number!"));
 findFactorial(userInput);
+*/
+
+// Note: Program:
+
+/*
+var userInput = prompt("Enter any character or number!");
+// console.log(userInput);
+
+if (userInput >= "A" && userInput <= "Z") console.log(`${userInput} is an uppercase character!`);
+else if (userInput >= "a" && userInput <= "z") console.log(`${userInput} is an lowercase character!`);
+else if (userInput > 0 || userInput < -1) console.log(`${userInput} is a number!`);
+*/
+
+/*
+// Note: Quiz logic program...!
+let arr = ["Ahmed", "Kashan", "Mehran", "Shahzaib", "Khurram"];
+let nextValue = 0;
+
+const testing = () => {
+    console.log(arr[nextValue++]);
+
+    if (nextValue == arr.length) {
+        nextValue = 0;
+    };
+};*/
