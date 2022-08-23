@@ -988,3 +988,86 @@ const testing = () => {
         nextValue = 0;
     };
 };*/
+
+// let names = ["ahmed", "kashan", "mehran", "khurram", "shahzaib"];
+// let nextValue = 0;
+
+// const testing = () => {
+//     console.log(names[nextValue++]);
+
+//     if (nextValue == names.length) {
+//         nextValue = 0;
+//     };
+// };
+
+// Note: Array testing...!
+
+// let namesArr = ["ahmed", "mehran", "kashan", "shahzaib", "khurram", "ahmed"];
+// console.log(namesArr);
+
+// .indexOf()
+// let itemIndex = namesArr.indexOf("ahmed");
+// console.log(itemIndex);
+
+// .lastIndexOf()
+// let findLastIndex = namesArr.lastIndexOf("ahmed");
+// console.log(findLastIndex);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let myName = "ahmed";
+
+// for (let i = myName.length - 1; i >= 0; i--) {
+//     console.log(myName[i]);
+// }
+
+// var randomNum = Math.floor(Math.random() * 10) + 1;
+// console.log(randomNum);
+
+// let uploadedAudio = "a/hmed/123";
+// let task = uploadedAudio.slice(uploadedAudio.lastIndexOf('/') + 1);
+// console.log(task);
+
+// Note: Print list using JS...!
+/*
+let containerEl = document.getElementById("container");
+let data = ["ahmed", "mohsin", "bilal", "shahzil", "harris"];
+// console.log(data);
+
+containerEl.innerHTML = data
+    .map((item, index) => {
+        return (
+            `<h3 key=${index}>
+                ${item}
+            </h3>`
+        );
+    })
+    .join("");
+*/
+// Note: Search bar functionality testing...!
+
+// Note: Program: 11
+
+let userInput = prompt("Enter eny number!");
+// console.log(userInput);
+let total = 0;
+
+for (let i = 0; i < userInput.length; i++) {
+    // console.log(userInput[i]);
+    total = total + Number(userInput[i]);
+}
+
+console.log(total);
