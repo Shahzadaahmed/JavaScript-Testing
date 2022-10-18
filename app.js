@@ -160,38 +160,38 @@ for (let i = 0; i < strToArr.length; i++) {
 // console.log(count);
 
 // Note: Learning class...!
-/*
-class Company {
-    constructor(title, department) {
-        this.myTitle = title;
-        this.myDep = department;
-    };
 
-    gender = "Male";
-    intro() {
-        console.log(`My gender is ${this.gender}, My title is ${this.myTitle}, my department is ${this.myDep}`);
-    }
-};
+// class Company {
+//     constructor(title, department) {
+//         this.myTitle = title;
+//         this.myDep = department;
+//     };
 
-class NewCompany extends Company {
-    constructor(title, department) {
-        super(title, department);
-    }
-}
+//     gender = "Male";
+//     intro() {
+//         console.log(`My gender is ${this.gender}, My title is ${this.myTitle}, my department is ${this.myDep}`);
+//     }
+// };
 
-const myCompany = new Company('Software Engineer', 'IT');
-console.log(myCompany);
+// class NewCompany extends Company {
+//     constructor(title, department) {
+//         super(title, department);
+//     }
+// }
+
+// const myCompany = new Company('Software Engineer', 'IT');
+// console.log(myCompany);
 // myCompany.intro();
 // console.log(typeof (myCompany));
 
-const hasnainCompany = new Company('Accountant', 'Finance');
-console.log(hasnainCompany);
+// const hasnainCompany = new Company('Accountant', 'Finance');
+// console.log(hasnainCompany);
 // hasnainCompany.intro();
 
-let ahmedNewCompany = new NewCompany('Kitchen', 'Chef');
-console.log(ahmedNewCompany);
-ahmedNewCompany.intro();
-*/
+// let ahmedNewCompany = new NewCompany('Kitchen', 'Chef');
+// let ahmedNewCompany = new NewCompany();
+// console.log(ahmedNewCompany);
+// ahmedNewCompany.intro();
 
 // slice() method in array...
 // let friends = ["ahmed", "bilal", "shahzil", "asghar", "ali", "hasnain"];
@@ -1061,13 +1061,363 @@ containerEl.innerHTML = data
 
 // Note: Program: 11
 
-let userInput = prompt("Enter eny number!");
-// console.log(userInput);
-let total = 0;
+// let userInput = prompt("Enter eny number!");
+// // console.log(userInput);
+// let total = 0;
 
-for (let i = 0; i < userInput.length; i++) {
-    // console.log(userInput[i]);
-    total = total + Number(userInput[i]);
-}
+// for (let i = 0; i < userInput.length; i++) {
+//     // console.log(userInput[i]);
+//     total = total + Number(userInput[i]);
+// }
 
-console.log(total);
+// console.log(total);
+
+// Note: Date testing...!
+// Q: Calculate how many days have beens passed since you were born...!
+
+// let rightNow = new Date();
+// // console.log(rightNow);
+
+// let myBirthDay = "08 July 1995";
+// myBirthDay = new Date(myBirthDay);
+// // console.log(myBirthDay);
+
+// // Note: Converting both dates in mili seconds...!
+
+// let currentDateInMs = rightNow.getTime();
+// let birthDateInMs = myBirthDay.getTime();
+
+// let calculateDaysInMs = currentDateInMs - birthDateInMs;
+// // console.log(comparison);
+
+// let formulaForDays = calculateDaysInMs / (1000 * 60 * 60 * 24);
+// // console.log(formulaForDays);
+
+// formulaForDays = Math.floor(formulaForDays);
+// console.log(formulaForDays);
+
+// New Program...!
+// Q: Calculate how many years have beens passed since you were born...!
+/*
+let currentYear = new Date().getFullYear();
+// console.log(currentYear);
+
+let birthYear = new Date("08 July 1995").getFullYear();
+// console.log(birthYear);
+
+var yearPassed = currentYear - birthYear;
+console.log(yearPassed);
+*/
+
+// Q: How many days left in a year...!
+
+/*
+let currentMonth = new Date().getMonth() + 1;
+// console.log(currentMonth);
+
+let lastMonth = new Date("31 December 2022").getMonth() + 1;
+// console.log(lastMonth);
+
+var monthsLeft = lastMonth - currentMonth;
+console.log(monthsLeft);
+*/
+
+// Q: How manu hours left in next class...!
+/*
+let rightNow = new Date();
+// console.log(rightNow);
+
+let classTime = new Date("29 August 2022 19:00:00");
+// console.log(classTime);
+
+// Note: COnverting both dates in mili seconds...!
+
+let rightNowInMs = rightNow.getTime();
+let classTimeInMs = classTime.getTime();
+
+let calculateHours = classTimeInMs - rightNowInMs;
+// console.log(calculateHours);
+
+let hoursLeft = calculateHours / (1000 * 60 * 60);
+hoursLeft = Math.floor(hoursLeft);
+console.log(hoursLeft);
+*/
+
+
+// let heading = document.getElementById("heading");
+// let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
+// let startingPoint = 0;
+
+// setInterval(() => {
+//     heading.innerHTML = namesList[startingPoint++];
+
+//     if (startingPoint == namesList.length) {
+//         startingPoint = 0;
+//     };
+// }, 1000);
+
+// NOTE: Disable refresh from F5 or Ctrl + r
+
+// document.onkeydown = function () {
+//     switch (event.keyCode) {
+//         case 116: //F5 button
+//             console.log(event);
+//             event.returnValue = false;
+//             event.keyCode = 0;
+//             return false;
+
+//         case 82: //R button
+//             if (event.ctrlKey) {
+//                 console.log(event);
+//                 event.returnValue = false;
+//                 event.keyCode = 0;
+//                 return false;
+//             }
+//     }
+// }
+
+// let numArr = new Array(1, 2, 3, 4, 5);
+// let userInput = Number(prompt('Enter any number!'));
+
+// if (numArr.includes(userInput)) console.log(true);
+// else console.log(false);
+
+// let numArr = new Array(1, 2, 3, 4, 5);
+// let userInput = Number(prompt('Enter any number!'));
+// let numberFound = false;
+
+// for (let i = 0; i < numArr.length; i++) {
+//     // console.log(numArr[i]);
+
+//     if (userInput == numArr[i]) {
+//         numberFound = true;
+//         break;
+//     };
+// };
+
+// let result = (numberFound) ? ("Number found!") : ("Number not found!");
+// console.log(result);
+
+// Q: 14
+
+// let scores = ["12", "45", "3", "22", "34", "50"];
+// let userInput = "34";
+
+// if (scores.includes(userInput)) {
+//     for (let i = 0; i < scores.length; i++) {
+//         console.log(scores[i]);
+
+//         if (userInput == scores[i]) break;
+//     }
+// }
+
+// else {
+//     for (let i = 0; i < scores.length; i++) {
+//         console.log(scores[i]);
+//     };
+// };
+
+// Q:20 (c)
+
+// var strData = "12345"
+// var length = strData.length;
+
+// for (let i = 0; i < length; i++) {
+//     console.log(strData);
+//     strData = strData.slice(0, strData.length - 1);
+// }
+
+// Q:20 (b)
+// var strData = "1";
+
+// for (let i = 1; i <= 5; i++) {
+//     console.log(strData);
+//     strData = strData + i;
+// }
+
+// Q:6
+/*
+var numberOfItems = prompt("Enter no of items");
+// console.log(numberOfItems);
+let data = [];
+
+for (let i = 1; i <= numberOfItems; i++) {
+    // console.log(i);
+
+    let item = prompt(`Enter item no ${i}`);
+    data.push(item);
+};
+
+console.log(data);
+*/
+
+// Program:
+/*
+let paragraph = "Developer who has passion for web and mobile technologies. Expert at MERN Mongo DB, Express JS, React JS, and Node JS Stack. Have good command on building Mobile applications with React Native.";
+
+const convertToCapitalize = (para) => {
+    // console.log(para);
+
+    let splitData = para.split(" ");
+    // console.log(splitData);
+
+    for (let i = 0; i < splitData.length; i++) {
+        // console.log(splitData[i]);
+
+        splitData[i] = splitData[i].charAt(0).toUpperCase() + splitData[i].slice(1).toLowerCase();
+        // console.log(splitData[i]);
+    };
+
+    return splitData.join(" ");
+};
+
+let result = convertToCapitalize(paragraph);
+console.log(result);
+*/
+
+// let data = {
+//     myName: "mohsin",
+//     title: "software engr"
+// };
+
+// let encryptData = btoa(JSON.stringify(data));
+// console.log(encryptData);
+
+// let imgEl = document.getElementById("img-tag");
+
+// const abc = (el) => {
+//     // console.log(el);
+//     el.src = "./images/asghar.jpg";
+//     el.alt = "asghar";
+// }
+
+// const xyz = (el) => {
+//     // console.log(el);
+//     el.src = "./images/ahmed.jpeg";
+//     el.alt = "ahmed";
+// }
+
+// let myInfo = {
+//     name: "Ahmed",
+//     title: "Software Engineer",
+//     company: "QBS Co",
+//     myLocation: "Nazimabad # 01",
+//     hasLaptop: false
+// };
+// // console.log(myInfo);
+
+// let infoBucket = [];
+
+// for (var prop in myInfo) {
+//     console.log(prop);
+// };
+
+// let headingEl = document.getElementById("heading");
+// // console.log(headingEl);
+
+// setInterval(() => {
+//     let date = new Date();
+//     headingEl.innerHTML = date;
+// }, 1000);
+
+// Synchronus Example...!
+
+// testing();
+
+// console.log("1");
+
+// function testing() {
+//     console.log("Function called!");
+// }
+
+// console.log("2");
+
+// testing();
+
+// Note: Variables example...!
+
+// const testing = () => {
+//     var a = 'hello';
+
+//     if (a == "hello") {
+//         console.log("A success!");
+
+//         let b = "Yo";
+//         console.log(a, b);
+//     };
+
+//     console.log(b);
+// };
+
+// testing();
+
+// let apiUrl = "https://qbookqbs.herokuapp.com/api/login";
+// console.log(apiUrl);
+
+// fetch({
+//     method: "POST",
+//     url: apiUrl,
+//     body: userData
+// })
+//     .then((success) => {
+//         return success.json();
+//     })
+//     .then((getData) => {
+//         console.log(getData);
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
+
+
+// let apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+// const apiCall = () => {
+//     fetch(apiUrl)
+//         .then((success) => {
+//             return success.json();
+//         })
+//         .then((successData) => {
+//             console.log(successData);
+//         })
+//         .catch((err) => {
+//             console.log(err);
+//         })
+// };
+
+// apiCall();
+
+
+// let userInput = prompt('Enter user name ?');
+
+// try {
+//     if (userInput == "ahmed") {
+//         console.log(userInput);
+//     }
+
+//     else {
+//         throw "Invalid name!";
+//     };
+// }
+
+// catch (error) {
+//     console.log(error);
+// };
+
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000);
+// };
+
+// for (let i = 1; i <= 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000);
+// };
+
+let uniqueId = Math.random().toString(36).slice(2);
+console.log(uniqueId);
