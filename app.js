@@ -1419,5 +1419,320 @@ console.log(result);
 //     }, i * 1000);
 // };
 
-let uniqueId = Math.random().toString(36).slice(2);
-console.log(uniqueId);
+// let uniqueId = Math.random().toString(36).slice(2);
+// console.log(uniqueId);
+
+// let apiUrl = "https://crud-web-app-mern.herokuapp.com/user/save";
+// let formData = {
+//     name: "John",
+//     email: "john@gmail.com"
+// };
+
+// const apiCall = async () => {
+//     try {
+//         let response = await fetch({
+//             method: "POST",
+//             url: apiUrl,
+//             body: formData
+//         });
+//         let actualData = await response.json();
+//         console.log(actualData);
+//     }
+
+//     catch (error) {
+//         console.log('Error Found: ', error);
+//     };
+// };
+
+// apiCall();
+
+// let user = {
+//     name: "AHmed"
+// };
+
+// let userData = JSON.stringify(user);
+// localStorage.setItem("User", userData);
+
+// const removed = () => {
+//     let nullData = JSON.stringify(null);
+//     localStorage.setItem("User", nullData);
+// };
+
+// let arr = ['a', 'b', 'c', 'b', 'd', 'e', 'b', 'z'];
+// console.log(arr.indexOf('b'));
+// console.log(arr.lastIndexOf('b'));
+
+
+// const reloadScreen = () => location.reload();
+
+
+// var data = {
+//     prop1: "",
+//     prop2: {
+//         name: "ahmed"
+//     }
+// }
+
+// let test = data?.prop2.name;
+// console.log(test);
+
+// let dummyData = [
+//     {
+//         id: 1,
+//         name: 'ABC',
+//         area: 'Johar'
+//     },
+//     {
+//         id: 2,
+//         name: 'XYZ',
+//         area: 'Gulshan'
+//     },
+//     {
+//         id: 3,
+//         name: 'AAA',
+//         area: 'Nazimabad'
+//     },
+//     {
+//         id: 4,
+//         name: 'MNO',
+//         area: 'Nazimabad'
+//     },
+//     {
+//         id: 5,
+//         name: 'QRS',
+//         area: 'Nazimabad'
+//     },
+// ];
+// console.log(dummyData);
+
+// let findByArea = dummyData.filter((item, index) => { return item.area == "Johar" });
+// console.log(findByArea);
+
+
+// Note: How to get the last value from an array...!
+// let arr = ['ahmed', 'mehran', 'kashan', 'shahzaib', 'khurram'];
+// console.log(arr.at(-1));
+
+// var fourDigitCode = Math.floor(1000 + Math.random() * 9000);
+// console.log(fourDigitCode);
+
+
+
+
+
+
+
+
+// Note: Practice:
+
+// Example # 01:
+// name = "practice";
+// console.log(name);
+
+// var name = "test";
+// console.log(name);
+
+
+
+// Example # 02:
+// function test1(a, b) {
+//     // console.log(d);
+
+//     function test2(c, d) {
+//         console.log(a, d);
+//     };
+// };
+
+// test1('ahmed', 'mehran');
+
+// // test2('Engineer', "Sales Men");
+
+
+
+// Example # 03:
+// const arr = [1, 2, 3];
+// let result = arr.map((data) => data > 1);
+// console.log(result);
+
+
+
+// Example # 04:
+// var test = let;
+// console.log(test);
+
+
+
+// Example # 05:
+// var arr = [1, 2, 3, 6, 10];
+// arr.forEach((data) => {
+//     console.log(data);
+// });
+
+
+
+// Example # 06:
+// let logicText = 3 > 2 > 1 == false;
+// console.log(logicText);
+
+
+
+// Example # 07:
+// var obj = {
+//     name: "Shahzada Ahmed",
+//     title: "Software Engineer",
+//     qualification: {
+//         bachlor: true,
+//         skills: ['Html', 'Css3', 'JavaScript', 'BootStrap'],
+//         hobby : function () {
+//             console.log(this.name);
+//         }
+//     }
+// };
+// obj.qualification.hobby();
+
+
+
+// var str = "1,2,3,4,5";
+// console.log(str);
+
+// str = str.split(',');
+// console.log(str);
+
+
+
+
+// Note: Practice:
+
+
+// var sum = 0;
+// console.log(sum);
+
+// for (var i = 0; i < 5; i++) {
+//     console.log(i);
+//     sum = sum + i;
+// };
+
+// console.log(sum);
+
+
+// var arr = ['lion', 'tiger', 'leopard', 'elephant', 'zebra'];
+
+// for ( var i = 0; i < arr.length; i++ ) {
+//     console.log(arr[i]);
+// };
+
+
+// for (var i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// };
+
+
+// for (var i = 1; i <= 3; i++) {
+//     // console.log(`I: ${i}`);
+
+//     for (var j = 1; j <= 3; j++) {
+//         // console.log(`J: ${j}`);
+
+//         var k = i * j;
+//         console.log(`K: ${k}`);
+//     };
+// };
+
+
+
+// var message = "Hello\nworld";
+// alert(message);
+
+function changeClass() {
+    if (document.getElementById("mt-btn").className == "btn") {
+        document.getElementById("mt-btn").className = "test";
+    }
+
+    else {
+        document.getElementById("mt-btn").className = "btn";
+    };
+};
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let test = arr.splice(0, arr.length);
+// console.log(test);
+
+
+
+
+// Note: Rest operators in JS...!
+
+// const sumOfValues = (a, b, ...params) => {
+//     console.log(a, b, params);
+// };
+
+// sumOfValues(1, 2, 3, 4, 5, 6);
+
+
+
+// const sumOfValues = (...params) => {
+//     console.log(params);
+// };
+
+// sumOfValues(1, 2, 3, 4, 5, 6);
+
+
+
+// Note: Spraed operators in JS...!
+
+// In JavaScript...!
+// const sum = (a, b, c) => {
+//     console.log(a + b + c);
+// }
+
+// const arr = [1, 2, 3];
+// sum.apply(null, arr);
+
+
+
+// In EcmaScript 6 or +...!
+// const sum = (a, b, c) => {
+//     console.log(a + b + c);
+// }
+
+// const arr = [1, 2, 3];
+// sum(...arr);
+
+
+// In JavaScript...!
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+
+// const arr3 = arr1.concat(arr2);
+// console.log(arr3);
+
+
+
+// In EcmaScript 6 or +...!
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+
+// const arr3 = [...arr1, ...arr2];
+// console.log(arr3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// In EcmaScript 6 or +...!
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+arr2.push(4, 5);
+
+console.log(arr1);
