@@ -1643,15 +1643,15 @@ console.log(result);
 // var message = "Hello\nworld";
 // alert(message);
 
-function changeClass() {
-    if (document.getElementById("mt-btn").className == "btn") {
-        document.getElementById("mt-btn").className = "test";
-    }
+// function changeClass() {
+//     if (document.getElementById("mt-btn").className == "btn") {
+//         document.getElementById("mt-btn").className = "test";
+//     }
 
-    else {
-        document.getElementById("mt-btn").className = "btn";
-    };
-};
+//     else {
+//         document.getElementById("mt-btn").className = "btn";
+//     };
+// };
 
 
 // let arr = [1, 2, 3, 4, 5];
@@ -1731,8 +1731,64 @@ function changeClass() {
 
 
 // In EcmaScript 6 or +...!
-const arr1 = [1, 2, 3];
-const arr2 = [...arr1];
-arr2.push(4, 5);
+// const arr1 = [1, 2, 3];
+// const arr2 = [...arr1];
+// arr2.push(4, 5);
 
-console.log(arr1);
+// console.log(arr1);
+
+
+
+// console.log('Testing!');
+
+
+
+// const friends = (a, b, ...params) => {
+//     console.log(a, b, params);
+// };
+
+
+// friends(1, 20, "ahmed", "bilal", "faraz", "hammad", "kamran");
+
+
+// var userInfo = {
+//     myName: "ahmed",
+//     company: "10 Pearls"
+// };
+// // console.log(userInfo);
+
+
+// var employees = {
+//     userInfo,
+//     title: "Software Eng",
+//     loc: "Karachi"
+// };
+
+// console.log(employees);
+
+
+
+const testingProgram = (number) => {
+
+    // Note: Checking the number is even or odd...!
+    if (number % 2 == 0) {
+        console.log(`${number} is even!`);
+
+        let evenNumCondition = number / 2;
+        console.log(evenNumCondition);
+        number = evenNumCondition;
+    }
+
+    else {
+        console.log(`${number} is odd!`);
+
+        let oddNumCondition = number * 3 + 1;
+        console.log(oddNumCondition);
+        number = oddNumCondition;
+    };
+};
+
+// let num = 7;
+// setInterval(() => {
+//     testingProgram(7);
+// }, 1000);
