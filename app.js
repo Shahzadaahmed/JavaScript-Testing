@@ -1768,27 +1768,52 @@ console.log(result);
 
 
 
-const testingProgram = (number) => {
+// const testingProgram = (number) => {
 
-    // Note: Checking the number is even or odd...!
-    if (number % 2 == 0) {
-        console.log(`${number} is even!`);
+//     // Note: Checking the number is even or odd...!
+//     if (number % 2 == 0) {
+//         console.log(`${number} is even!`);
 
-        let evenNumCondition = number / 2;
-        console.log(evenNumCondition);
-        number = evenNumCondition;
-    }
+//         let evenNumCondition = number / 2;
+//         console.log(evenNumCondition);
+//         number = evenNumCondition;
+//     }
 
-    else {
-        console.log(`${number} is odd!`);
+//     else {
+//         console.log(`${number} is odd!`);
 
-        let oddNumCondition = number * 3 + 1;
-        console.log(oddNumCondition);
-        number = oddNumCondition;
-    };
-};
+//         let oddNumCondition = number * 3 + 1;
+//         console.log(oddNumCondition);
+//         number = oddNumCondition;
+//     };
+// };
 
 // let num = 7;
 // setInterval(() => {
 //     testingProgram(7);
 // }, 1000);
+
+
+
+
+// let yesterday = new Date("23 November 2022");
+// // console.log(yesterday.getTime());
+
+// let res = yesterday.getTime();
+// let outPut = new Date(res).toLocaleTimeString();
+// console.log(outPut);
+
+
+
+// let resTime = new Date('2022-11-24T08:10:26.407+00:00');
+// console.log(resTime.toLocaleTimeString());
+
+
+for (let i = 1; i <= 5; i++) {
+    // console.log(i);
+
+    setTimeout(() => {
+        console.log(i);
+        // document.write(i);
+    }, i * 1000);
+};
