@@ -1809,11 +1809,330 @@ console.log(result);
 // console.log(resTime.toLocaleTimeString());
 
 
-for (let i = 1; i <= 5; i++) {
-    // console.log(i);
+// for (let i = 1; i <= 5; i++) {
+//     // console.log(i);
 
-    setTimeout(() => {
-        console.log(i);
-        // document.write(i);
-    }, i * 1000);
-};
+//     setTimeout(() => {
+//         console.log(i);
+//         // document.write(i);
+//     }, i * 1000);
+// };
+
+
+
+
+// let str = "ahmed";
+// let reverseStr = ""
+
+// for (let i = str.length - 1; i >= 0; i--) {
+//     // console.log(str[i]);
+//     reverseStr = reverseStr + str[i];
+// };
+
+// if (reverseStr) console.log(reverseStr);
+
+
+
+
+// let str = ["a", "h", "m", "e", "d"]
+
+// for (let i = 0; i < str.length; i++) {
+//     // console.log(str[i]);
+
+//     let deleteLastEl = str.pop();
+//     str.unshift(deleteLastEl);
+//     console.log(str);
+// };
+
+
+
+
+// Program: How many days left in christmas 2022...!
+
+// let christmas = "25 December 2022";
+// let christmasDate = new Date(christmas);
+// let rightNow = new Date();
+
+// // console.log(rightNow);
+// // console.log(christmasDate);
+
+// // Note: Converting both dates in miliseconds...!
+// let rightNowInMS = rightNow.getTime();
+// let christmasDateInMS = christmasDate.getTime();
+
+// // console.log(rightNowInMS);
+// // console.log(christmasDateInMS);
+
+// // Note: Calculating time...!
+// let calculateMS = christmasDateInMS - rightNowInMS;
+// // console.log(calculateMS);
+
+// // Note: Applying day formula...!
+// let daysFormula = calculateMS / (1000 * 60 * 60 * 24);
+// daysFormula = Math.ceil(daysFormula);
+// console.log(`${daysFormula} days left in christmas 2022!`);
+
+
+
+
+// Program: How many months left in march 2023...!
+
+// let march_2023 = "01 March 2023";
+// let futureDate = new Date(march_2023);
+// let rightNow = new Date();
+
+// // Note: Converting both dates in miliseconds...!
+// let rightNowInMS = rightNow.getTime();
+// let futureDateInMS = futureDate.getTime();
+
+// // console.log(rightNowInMS);
+// // console.log(futureDateInMS);
+
+// // Note: Calculating time...!
+// let calculateMS = futureDateInMS - rightNowInMS;
+// // console.log(calculateMS);
+
+// // Note: Applying month formula...!
+// let monthFormula = calculateMS / (1000 * 60 * 60 * 24 * 30);
+// monthFormula = Math.floor(monthFormula);
+// console.log(`${monthFormula} months left in march 2023!`);
+
+
+
+// let id = "639071d3547c0f46543ccb3f"
+// console.log(id.slice(id.length - 5));
+
+
+
+// var date = new Date();
+// date.setHours(11, 30, 10)
+// console.log(date);
+
+
+// const subtractHours = (date, hours) => {
+//     // console.log("Date: ", date);
+//     // console.log("Hours: ", hours);
+
+//     date.setHours(date.getHours() - hours);
+//     return date;
+// };
+
+// // subtractHours(new Date(), 1)
+
+// let result = subtractHours(new Date(), 1);
+// console.log(result);
+
+
+
+
+// Note: Testing Program...!
+
+// (function () {
+//     console.log('Function is running!');
+// })
+
+// ();
+
+
+
+// Note: Testing Program...!
+
+// const testingProgram = () => {
+//     setTimeout(() => console.log("1"), 2000);
+//     console.log("2");
+//     setTimeout(() => console.log("3"), 0);
+//     console.log("4");
+// };
+
+// testingProgram();
+
+
+// Note: Testing program...!
+
+// const testingLogic = [2, , 4].includes(undefined);
+// console.log(testingLogic);
+
+
+
+
+// Note: JavaScript hack of the day...!
+
+// let isFound = true;
+
+// // Note: Instead of this...!
+// if (isFound) {
+//     console.log('Condition true!');
+// };
+
+// // Use this:
+// isFound && console.log('Condition true!');
+
+
+// var employees = [
+//     {
+//         id: 0,
+//         name: "Shahzada Ahmed",
+//         title: "Software Engineer"
+//     },
+
+//     {
+//         id: 1,
+//         name: "Bilal Khan",
+//         title: "Front-End Developer"
+//     },
+
+//     {
+//         id: 2,
+//         name: "Aizaz Hussain",
+//         title: "Ui Ux Designer"
+//     },
+// ];
+
+// console.log(employees);
+// console.table(employees);
+
+// let userInput = prompt('Enter 100 or 101');
+// let solveProblem = userInput - 201;
+// solveProblem = Math.abs(solveProblem);
+// console.log(solveProblem);
+
+
+
+
+// Note: How to find intersection in A and B array...!
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [3, 4, 5, 6, 7];
+
+// console.table(arr1);
+// console.table(arr2);
+
+// let intersectionArr = arr1.filter((item) => {
+//     return arr2.includes(item);
+// });
+
+// console.log(intersectionArr);
+
+
+
+
+// Note: How to find union in A and B array...!
+
+// let mixedArr = [...arr1, ...arr2];
+// // mixedArr = new Set([...mixedArr]);
+// // console.log([...new Set([...mixedArr])]);
+
+// let unionArr = mixedArr.filter((item, index) => {
+//     // console.log(item, index);
+
+//     return mixedArr.indexOf(item) == index;
+// });
+
+// console.log(unionArr);
+
+
+
+
+
+
+// let password = "<Shahzada_Muhammad_Ahmed />";
+// let securePassword = btoa(password);
+// console.log(securePassword);
+
+// let encodePassword = atob(securePassword);
+// console.log(encodePassword);
+
+
+
+// Note: How to find the power of a number in javascript:
+// Example: 2, 3 = 8, means 2 * 2 * 2 = 8
+
+
+
+// Note: JavaScript method...!
+// let powerValueInJS = Math.pow(2, 3);
+// console.log(powerValueInJS); // Ans: 8
+
+
+
+// // Note: Latest EcmaScript method...!
+// let powerValueInEs = 2 ** 3;
+// console.log(powerValueInEs); // Ans: 8
+
+
+// NOTE: JavaScript Hacks...!
+
+// Note: Hack # 01
+// Note: How to convert array into an object...!
+
+// const technicalBrands = ["Microsoft", "Google", "Facebook", "Apple", "Youtube"];
+// console.log(technicalBrands);
+// console.log(typeof technicalBrands);
+
+// const dataInObj = { ...technicalBrands };
+// console.log(dataInObj);
+// console.log(typeof dataInObj);
+
+
+
+// Note: Hack # 02: Fill array with data:
+// let newArr = new Array(5).fill("Hello JS");
+// console.log(newArr);
+
+
+
+// Note: Hack # 03:
+// var consoleHandler = console.log.bind(document);
+// consoleHandler("ahmed");
+// consoleHandler("Multiply 2 numbers: ", 2 * 5);
+
+
+
+// Note: .bind function in js...!
+// let person = {
+//     firstName: "Shahzada",
+//     lastName: "Ahmed",
+//     fullName: function () {
+//         return this;
+//     }
+// };
+
+// let person = {
+//     firstName: "Shahzada",
+//     lastName: "Ahmed",
+//     fullName: function () {
+//         return this.firstName + " " + this.lastName;
+//     }
+// };
+
+// let anotherPerson = {
+//     firstName: "John",
+//     lastName: "Smith"
+// };
+
+// let result = person.fullName.bind(anotherPerson);
+// console.log(result());
+
+
+
+
+
+// let divEl = document.getElementById("container");
+// const technicalBrands = ["Microsoft", "Google", "Facebook", "Apple", "Youtube"];
+// // console.log(technicalBrands);
+
+// divEl.innerHTML = technicalBrands.map((item, index) => {
+//     // console.log(item);
+//     return item;
+// });
+
+
+// JavaScript Tip of the day...!
+// const arr = [2 + 2, 4 * 2, 15 - 17, 10 > 9];
+// console.log(arr);
+
+
+
+let rightNow = new Date();
+let time = rightNow.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+console.log(time);
