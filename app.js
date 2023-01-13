@@ -2133,6 +2133,40 @@ console.log(result);
 
 
 
-let rightNow = new Date();
-let time = rightNow.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
-console.log(time);
+// let rightNow = new Date();
+// let time = rightNow.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+// console.log(time);
+
+const techBrands = ["Microsoft", "Google", "Apple", "Facebook", "Youtube"];
+// console.log(techBrands);
+
+let dummyData = [
+    {
+        id: 1,
+        studentName: "Ahmed",
+        marksObtained: 778,
+        totalMarks: 850
+    },
+
+    {
+        id: 2,
+        studentName: "Bilal",
+        marksObtained: 890,
+        totalMarks: 850
+    },
+
+    {
+        id: 3,
+        studentName: "Aizaz",
+        marksObtained: 550,
+        totalMarks: 850
+    },
+];
+
+// for (let brands of dummyData) {
+//     console.log("Percentage: ", (Number(brands.marksObtained) * 100) / Number(brands.totalMarks));
+// }
+
+
+
+for (let keys in techBrands) console.log(keys);
