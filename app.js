@@ -2137,31 +2137,31 @@ console.log(result);
 // let time = rightNow.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
 // console.log(time);
 
-const techBrands = ["Microsoft", "Google", "Apple", "Facebook", "Youtube"];
+// const techBrands = ["Microsoft", "Google", "Apple", "Facebook", "Youtube"];
 // console.log(techBrands);
 
-let dummyData = [
-    {
-        id: 1,
-        studentName: "Ahmed",
-        marksObtained: 778,
-        totalMarks: 850
-    },
+// let dummyData = [
+//     {
+//         id: 1,
+//         studentName: "Ahmed",
+//         marksObtained: 778,
+//         totalMarks: 850
+//     },
 
-    {
-        id: 2,
-        studentName: "Bilal",
-        marksObtained: 890,
-        totalMarks: 850
-    },
+//     {
+//         id: 2,
+//         studentName: "Bilal",
+//         marksObtained: 890,
+//         totalMarks: 850
+//     },
 
-    {
-        id: 3,
-        studentName: "Aizaz",
-        marksObtained: 550,
-        totalMarks: 850
-    },
-];
+//     {
+//         id: 3,
+//         studentName: "Aizaz",
+//         marksObtained: 550,
+//         totalMarks: 850
+//     },
+// ];
 
 // for (let brands of dummyData) {
 //     console.log("Percentage: ", (Number(brands.marksObtained) * 100) / Number(brands.totalMarks));
@@ -2169,4 +2169,699 @@ let dummyData = [
 
 
 
-for (let keys in techBrands) console.log(keys);
+// for (let keys in techBrands) console.log(keys);
+
+// Note: Way to declare variables in JavaScript...!
+// var name = "Ahmed";
+// var title = "Software Engineer";
+// var company = "QBS Tech"
+// console.log(title); Result: Software Engineer
+
+
+
+// Note: Advance ways to declare variables in EcmaScript...!
+// const [name, title, company] = ["Ahmed", "Software Engineer", "QBS Tech"];
+// // console.log(title); Result: Software Engineer
+
+// var val = 0;
+// let btn = document.getElementById("test-btn");
+// let h1El = document.getElementById("heading");
+// h1El.innerHTML = val;
+
+// btn.addEventListener("click", () => {
+//     val++;
+//     console.log(val);
+
+//     if (val == 5) {
+//         btn.removeEventListener("click", () => { console.log('Function stopped!') });
+//     };
+// });
+
+// const increamentVal = () => {
+//     setTimeout( () => );
+//     console.log(val);
+// };
+
+
+// if (val <= 5) btn.addEventListener("load", increamentVal);
+// else btn.removeEventListener("click", increamentVal);
+
+
+// h1El.addEventListener("load", () => val++);
+
+// let stopClock;
+
+// const handleClock = () => {
+//     stopClock = setInterval(() => {
+//         let date = new Date().toLocaleTimeString();
+//         h1El.innerHTML = date;
+//     }, 1000);
+// };
+
+// window.addEventListener("load", handleClock);
+
+// btn.addEventListener("click", () => {
+//     console.log('Wroking!');
+// });
+
+// function removeListener() {
+//     btn.removeEventListener("click", () => {
+//         clearInterval(stopClock);
+//     });
+// };
+
+
+// Note: Practicing class in JS...!
+
+// class Employee {
+//     constructor(name, title) {
+//         this.name = name;
+//         this.title = title;
+//     };
+
+//     department = "IT";
+//     employeeIntro = () => {
+//         console.log(`Hi, My name is ${this.name}, I work in ${this.department} department as a ${this.title}`)
+//     };
+// };
+
+// // Note: Another class...!
+// class AnotherEmployee extends Employee {
+//     company = "QBS Tech"
+// }
+
+// let newEmployee = new Employee("Ahmed", "Software Engineer");
+// console.log(newEmployee);
+// newEmployee.employeeIntro();
+
+
+
+// let newAnotherEmployee = new AnotherEmployee("Bilal", "Front-End Developer");
+// console.log(newAnotherEmployee);
+// newAnotherEmployee.employeeIntro();
+
+
+// const userData = {
+//     name: "Ahmed",
+//     email: "",
+//     password: "ahmed123"
+// };
+
+// let formValues = Object.values(userData);
+// // console.log(formValues);
+
+// let validator = formValues.includes("ahmed");
+// console.log(validator);
+
+
+
+
+
+// const userData = {
+//     name: "Ahmed",
+//     email: "",
+//     password: "ahmed123",
+//     contactNum: "03142117550",
+//     address: "Naziamabad # 01"
+// };
+
+
+
+// const emailTester = (el) => console.log(el);
+
+
+
+// var commentsList = document.getElementById('comments');
+// var tmpl = document.getElementById('comment-template').innerHTML;
+
+// function addit() {
+//     commentsList.innerHTML = commentsList.innerHTML + tmpl;
+// }
+
+// function deleteItem(e) {
+//     let targetEl = e.parentNode.parentNode;
+//     // console.log(targetEl);
+
+//     commentsList.removeChild(targetEl);
+// };
+
+
+
+// // Note: Way to remove decimal value in JavaScript...!
+// const numVal = 12.1234;
+// const removeDecPointsVal = Math.floor(numVal);
+// console.log(removeDecPointsVal); // Ans: 12
+
+
+
+// // Note: Way to remove decimal value in Advance EcmaScript...!
+// const _numVal = 12.1234;
+// const _removeDecPointsVal = ~~numVal;
+// console.log(_removeDecPointsVal); // Ans: 12
+
+// var firstName = "Muhammad";
+
+// function testing() {
+//     let lastName = "Ahmed";
+//     var fullName = firstName + " " + lastName;
+//     console.log(fullName);
+// }
+
+// console.log(fullName);
+// testing();
+
+// function diff() {
+//     var firstName = "Muhammad";
+//     let lastName = "Ahmed";
+
+//     // console.log(firstName, lastName);
+
+//     {
+//         var anotherFirstName = "Shaheen";
+//         let anotherLastName = "Ali";
+
+//         // console.log(anotherFirstName, anotherLastName);
+//     }
+
+//     console.log(anotherFirstName);
+//     console.log(anotherLastName);
+// };
+
+// diff();
+
+// console.log('1 is running');
+
+// var test = "Hello JS";
+
+// setTimeout(() => {
+//     console.log(test);
+//     num++;
+// }, 4000);
+
+// setTimeout(() => console.log('2 is running'), 3000);
+
+// setTimeout(() => {
+//     console.log(num);
+// }, 5000);
+
+// var num = 2;
+
+// let currentFilePath = window.location.pathname;
+// console.log(currentFilePath);
+
+// let targetArea = currentFilePath.slice(currentFilePath.lastIndexOf('/') + 1);
+// console.log(targetArea);
+
+
+
+
+// let userInput = prompt('Enter your gender!');
+
+// switch (userInput) {
+
+//     case "male":
+//         console.log(`Your gender is: ${userInput}`);
+//         break;
+
+//     case "female":
+//         console.log(`Your gender is: ${userInput}`);
+//         break;
+
+//     default:
+//         console.log('No match found!');
+// };
+/*
+let today = new Date().getDay().toString();
+// console.log(`Today: ${today}`);
+
+switch (today) {
+    case "0":
+        console.log("It's a Sunday");
+        break;
+
+    case "1":
+        console.log("It's a Monday");
+        break;
+
+    case "2":
+        console.log("It's a Tuesday");
+        break;
+
+    case "3":
+        console.log("It's a Wednesday");
+        break;
+
+    case "4":
+        console.log("It's a Thursday");
+        break;
+
+    case "5":
+        console.log("It's a Friday");
+        break;
+
+    case "6":
+        console.log("It's a Saturday");
+        break;
+
+    default:
+        console.log("Invalid Date!");
+};
+*/
+/*
+let apiUrl = "https://jsonplaceholder.typicode.com/users";
+// console.log(apiUrl);
+
+const apiCall = () => {
+    fetch(apiUrl)
+        .then((res) => {
+            // console.log(success);
+            return res.json();
+        })
+        .then((actualData) => {
+            console.log("Data: ", actualData);
+        })
+        .catch((err) => {
+            console.log("Error occured while api integration: ", err);
+        });
+};
+
+apiCall();
+*/
+
+/*
+let learningPromise = new Promise((resolve, reject) => {
+    let data = ["Tom and Jerry", "Pokemon", "Dragon Ball Z", "Beyblade", "Spieder Man"];
+    let age = prompt("Enter your age!");
+
+    if (age >= 18) {
+        resolve(data);
+    }
+
+    else {
+        reject("Sorry! You are not eligibale!");
+    };
+});
+
+learningPromise
+    .then((res) => {
+        console.log("Data: ", res);
+    })
+    .catch((err) => {
+        console.log("Promise rejected: ", err);
+    });
+*/
+
+
+// const data = ["a", "b", "c"];
+// const objData = { ...data };
+// console.log(objData);
+
+
+// let user = "john";
+
+// try {
+//     if (user == "John") console.log('Name is correct');
+//     else throw "Invalid Name!";
+// }
+
+// catch (error) {
+//     console.log(error);
+// };
+
+// // NOTE: Use promise with async await instead of promise chain...!
+
+// const runAfterTwoSeconds = () => {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve("Resolved Successfully!");
+//         }, 2000);
+//     });
+// };
+
+// // Note: Asynchronus handler...!
+// const asyncCall = async () => {
+//     console.log('Async calling!');
+
+//     const result = await runAfterTwoSeconds();
+//     console.log(result); // Output: Resolved Successfully!
+// };
+
+// asyncCall();
+
+// console.log(navigator.geolocation);
+
+// let inputEl = document.getElementById("input");
+
+// inputEl.addEventListener("keypress", (e) => {
+//     // console.log(e);
+
+//     if (e.key == "Enter") alert('Hello World!');
+// });
+
+
+// const handlePromise = () => {
+//     let users = [
+//         {
+//             id: 1,
+//             name: "John"
+//         },
+
+//         {
+//             id: 2,
+//             name: "Smith"
+//         },
+
+//         {
+//             id: 3,
+//             name: "Andrew"
+//         },
+//     ];
+
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve(JSON.stringify(users));
+//         }, 2000);
+//     });
+// };
+
+// const promiseCall = async () => {
+//     console.log('Promise calling!');
+
+//     let res = await handlePromise();
+//     let actualData = JSON.parse(res);
+//     console.log(actualData);
+// };
+
+// promiseCall();
+
+
+// let numArr = [2, 2, 3, 4, 6, 1, 5, 5, 5, 2];
+// // console.log(numArr);
+// let counts = {};
+
+// for (let num of numArr) {
+//     // console.log(num);
+
+//     counts[num] = counts[num] ? counts[num] + 1 : 1;
+// };
+
+// console.log(counts);
+
+
+// let namesArr = ["ahmed", "mehran", "kashan", "ahmed", "arsalan", "mehran", "ahmed", "amees"];
+// let counts = {};
+
+// for (let el of namesArr) {
+//     // console.log(el);
+
+//     counts[el] = counts[el] ? counts[el] + 1 : 1;
+// };
+
+// console.log(counts);
+
+// let str = "";
+// let i = 0;
+
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+
+//     if (i == 5) break;
+// };
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+
+// while (cars[i]) {
+//     console.log(cars[i]);
+//     i++;
+// };
+
+
+
+// let i = 1;
+// let table = 2;
+
+// while (i <= 10) {
+//     console.log(`${table} x ${i} = ${table * i}`);
+//     i++
+// };
+
+
+
+// let user = {
+//     firstName: "ahmed",
+//     firstName: "rana",
+//     firstName: "ali"
+// };
+
+// console.log(user);
+
+// const arr = [2, 2, 5, 1, 6, 5, 7, 3, 5, 1, 9];
+// console.log(arr);
+
+// const counts = {};
+// console.log(counts);
+
+// let aArr = ["a", "b", "c", "d"];
+// let bArr = ["c", "d", "e", "f"];
+
+// for (let i = 0; i < aArr.length; i++) {
+//     console.log('i: ', aArr[i]);
+
+//     for (let j = 0; j < bArr.length; j++) {
+//         console.log("j: ", bArr[j]);
+//     };
+// };
+
+// for (let i = 0; i < aArr.length; i++) {
+//     // console.log(aArr[i]);
+//     bArr.push(aArr[i]);
+// };
+
+// console.log(bArr);
+
+// let aArr = ["a", "b", "c", "d"];
+// let bArr = ["c", "d", "e", "f"];
+
+// console.log(aArr, bArr);
+
+// for (let i = 0; i < bArr.length; i++) {
+//     // console.log(bArr[i]);
+//     aArr.push(bArr[i]);
+// };
+
+// console.log(aArr);
+
+// let arr = ["a", "b", "c", "d"];
+// let initialVal = 0;
+
+// const nextVal = () => {
+//     console.log(arr[initialVal++]);
+
+//     if (initialVal == arr.length) {
+//         initialVal = 0;
+//     }
+// };
+
+
+// const arr = ["lion", "cat", "lion", "tiger", "zebra", "lion", "mouse", "cat"];
+// let counts = {};
+
+// console.log(counts);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// };
+
+// for (let key in arr) {
+//     console.log(key);
+// };
+
+// for (let elements of arr) {
+//     console.log(elements);
+// };
+
+
+
+// const arr = ["lion", "cat", "lion", "tiger", "zebra", "lion", "mouse", "cat"];
+// let counts = {};
+
+// for (let el of arr) {
+//     counts[el] = counts[el] ? counts[el] + 1 : 1;
+// };
+
+// console.log(counts);
+
+
+
+// const test = (val1, val2, ...restParameters) => {
+//     console.log(val1, val2);
+//     console.log(restParameters);
+// };
+
+// const test = (...restParameters) => {
+//     console.log(restParameters);
+// };
+
+// test("ahmed", "computer", "systems", "karachi", "ali", "lion");
+
+// let slots = [
+//     {
+//         "time": "11:00 AM",
+//         "isBooked": false,
+//         "userId": null,
+//         "dayId": "63e4a926ad68c7b8b8068fd4"
+//     },
+
+//     {
+//         "time": "11:30 AM",
+//         "isBooked": false,
+//         "userId": null,
+//         "dayId": "63e4a926ad68c7b8b8068fd4"
+//     },
+
+//     {
+//         "time": "12:00 PM",
+//         "isBooked": false,
+//         "userId": null,
+//         "dayId": "63e4a926ad68c7b8b8068fd4"
+//     },
+
+//     {
+//         "time": "12:30 PM",
+//         "isBooked": false,
+//         "userId": null,
+//         "dayId": "63e4a926ad68c7b8b8068fd4"
+//     },
+
+//     {
+//         "time": "01:00 PM",
+//         "isBooked": false,
+//         "userId": null,
+//         "dayId": "63e4a926ad68c7b8b8068fd4"
+//     }
+// ];
+
+// let appointments = [
+//     {
+//         _id: "63e9fa8b448afaa6ca7caec1",
+//         userId: "63e608c69b1c98908047286c",
+//         serviceLeaderId: "63e4a926ad68c7b8b8068fd1",
+//         businessPartnerId: "63e4a926ad68c7b8b8068fd1",
+//         dayId: "63e4a926ad68c7b8b8068fd4",
+//         charges: '500',
+//         appointmentDate: '1676574000000',
+//         appointmentTime: '11:30 AM',
+//         bookedBy: "63e608c69b1c98908047286c",
+//         paymentType: 'cash',
+//         isPaid: false,
+//         bankDetails: null,
+//         ticket: null,
+//         swapTicket: null
+//     },
+
+//     {
+//         _id: "63ea149d8b75881a8a911fb1",
+//         userId: "63cfc69e2b2ee0460e486442",
+//         serviceLeaderId: "63e4a926ad68c7b8b8068fd1",
+//         businessPartnerId: "63e4a926ad68c7b8b8068fd1",
+//         dayId: "63e4a926ad68c7b8b8068fd4",
+//         charges: '500',
+//         appointmentDate: '1676574000000',
+//         appointmentTime: '12:00 PM',
+//         bookedBy: "63cfc69e2b2ee0460e486442",
+//         paymentType: 'cash',
+//         isPaid: false,
+//         bankDetails: null,
+//         ticket: null,
+//         swapTicket: null
+//     }
+// ];
+
+// console.log(slots);
+// console.log(appointments);
+
+// for (let appointmentsData of appointments) {
+//     // console.log(appointmentsData);
+
+//     for (let slotsData of slots) {
+//         // console.log(slotsData);
+
+//         if ((slotsData.dayId == appointmentsData.dayId) && (slotsData.time == appointmentsData.appointmentTime)) {
+//             slotsData.isBooked = true;
+//         };
+//     };
+// };
+
+// console.log("Required slots: ", slots);
+
+
+// let rightNow = new Date();
+// rightNow.setDate(rightNow.getDate() - 1);
+// console.log(rightNow);
+
+
+// let spanEl = document.getElementById("span-tag");
+// let defaultFontSize = spanEl.style.fontSize;
+// let extractNumber = Number(defaultFontSize.match(/\d/g).join(""));
+
+// const increaseFontSize = () => {
+//     extractNumber++;
+//     console.log(extractNumber);
+
+//     spanEl.style.fontSize = extractNumber + "px";
+// };
+
+// setInterval(increaseFontSize, 1000);
+
+
+// let h1 = document.getElementById("clock");
+
+// setInterval(() => {
+//     let date = new Date().toLocaleTimeString();
+//     h1.innerHTML = date;
+// }, 1000);
+
+
+// let rightNow = new Date("08 July 1996");
+// console.log(rightNow);
+// console.log(typeof rightNow);
+
+// let date = rightNow.getDate();
+// let month = rightNow.getMonth();
+// let year = rightNow.getFullYear();
+
+// let fullDate = date + ":" + month + ":" + year;
+// console.log(fullDate.getTime());
+// console.log(typeof fullDate);
+
+// let dateInMS = rightNow.getTime();
+// console.log(dateInMS);
+// console.log(typeof dateInMS);
+
+// let customDate = new Date("6/3/2023");
+// console.log(customDate);
+// console.log(typeof customDate);
+
+// let dateInMS = customDate.getTime();
+// console.log(dateInMS);
+// console.log(typeof dateInMS);
+
+const apiCall = async () => {
+    // let apiUrl = "https://web-production-5060.up.railway.app/api/appointments/fetch/all";
+    let apiUrl = "http://localhost:3010/api/appointments/fetch/all";
+    // let apiUrl = "http://192.168.0.102:3010/api/appointments/fetch/all";
+
+    try {
+        let response = await fetch(apiUrl);
+        let jsonData = await response.json();
+        console.log(jsonData);
+    }
+
+    catch (error) {
+        console.log("Something went wrong while api integrating: ", error);
+    };
+};
+
+apiCall();
