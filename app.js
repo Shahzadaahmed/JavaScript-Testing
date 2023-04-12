@@ -3031,27 +3031,87 @@
 // console.log(sortData);
 
 
-// NOTE: JavsScript callback function example...!
+// // NOTE: JavsScript callback function example...!
 
-const h1El = document.getElementById("heading");
+// const h1El = document.getElementById("heading");
 
-// Note: Handler to display data...!
-const displayData = (data) => {
-    if (data) h1El.innerHTML = data;
+// // Note: Handler to display data...!
+// const displayData = (data) => {
+//     if (data) h1El.innerHTML = data;
+// };
+
+
+
+// // Note: handler to do some mathmatical operation...!
+// const calculateValues = (num1, num2, showOutput) => {
+//     let calculation = num1 * num2;
+//     showOutput(calculation);
+// };
+
+// calculateValues(12, 6, displayData);
+
+// /*
+// Note:
+// 1: In line no 18 displayData function as an argument.
+// 2: In line no 13 showOutput is a third parameter whick will be consider as a callback function because it is a pure function.
+// */
+
+
+// let myName = "ahmed";
+
+// const displayName = (name = myName) => console.log(name);
+// displayName();
+
+
+
+// let user = "ahmed"
+
+// const displayData = (name = user) => console.log(name);
+// displayData();
+
+
+
+
+
+
+// let caluculation = eval(10 + 5);
+// console.log(caluculation);
+
+
+// let arr = ["ahmed", "faraz", "hammad", "fasih"];
+// let searchUser = arr.includes("zafar");
+
+// console.log(searchUser);
+
+// console.log(navigator);
+
+
+// let x = 1;
+// console.log(x++ + ++x);
+
+// x++ = post increament
+// ++x = pre increament
+
+
+// console.log(Number(false));
+
+
+
+// let num = 1996;
+// let x = num.toString().split("").reverse().join("")
+// console.log(x);
+
+
+
+
+// let sentense = "The quick brown fox jumps over the lazy dog";
+// let newWay = sentense.toLowerCase().replaceAll("the", "a");
+// console.log(newWay);
+
+
+const test = (num) => {
+    console.log(num);
 };
 
-
-
-// Note: handler to do some mathmatical operation...!
-const calculateValues = (num1, num2, showOutput) => {
-    let calculation = num1 * num2;
-    showOutput(calculation);
-};
-
-calculateValues(12, 6, displayData);
-
-/*
-Note:
-1: In line no 18 displayData function as an argument.
-2: In line no 13 showOutput is a third parameter whick will be consider as a callback function because it is a pure function.
-*/
+let x = 3;
+test(x++);
