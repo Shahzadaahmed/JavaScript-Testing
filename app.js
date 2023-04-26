@@ -3109,9 +3109,114 @@
 // console.log(newWay);
 
 
-const test = (num) => {
-    console.log(num);
-};
+// const test = (num) => {
+//     console.log(num);
+// };
 
-let x = 3;
-test(x++);
+// let x = 3;
+// test(x++);
+
+
+// const testing = (param) => {
+//     let x = param;
+//     console.log("Parameter: ", x);
+
+//     const innerHandler = () => {
+//         setTimeout(() => console.log('I will come after  secs: ', x), 2000);
+
+//         let x = 6;
+//         console.log("Inner: ", x);
+//     };
+
+//     innerHandler();
+// };
+
+// testing(4);
+
+// let btnEl = document.getElementById("btn");
+// // console.log(btnEl);
+
+
+// window.addEventListener("load", () => {
+//     btnEl.setAttribute("class", "style-btn");
+
+//     setTimeout(() => {
+//         if ( btnEl.cla ) {
+//         };
+//     }, 5000);
+// });
+
+// var x = 21;
+// var girl = function () {
+//     console.log(x);
+//     var x = 20;
+// };
+// girl();
+
+
+
+// const arr = ["a", "b", "c", "d", "e"];
+// arr.splice(2, 1, "z");
+// console.log(arr);
+
+
+
+// let str = "ahmed";
+// let test = str.endsWith('d');
+// console.log(test);
+
+
+
+// let num = 1 + +"20";
+// console.log(num);
+// console.log(typeof num);
+
+
+
+
+
+
+
+
+
+
+// let accNum = "1037078010732019";
+// let last4Digits = accNum.slice(-4);
+// let masked = last4Digits.padStart(accNum.length, "*");
+// console.log(masked);
+
+
+
+
+
+
+
+
+
+
+
+// let pwd = "ahmed123";
+// let test = pwd.startsWith("ax");
+// console.log(test);
+
+
+
+
+// let num = "20";
+// // num = Number(num);
+
+// let test = 5 + +num;
+
+// console.log(test);
+
+
+
+let accNum = "10380078010732123";
+let last4Digits = accNum.slice(-4);
+// console.log(accNum.length);
+
+let masked = last4Digits.padStart(accNum.length, "+");
+console.log(masked.length)
+
+
+document.write(`<h1> ${masked} </h1>`);
