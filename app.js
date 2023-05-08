@@ -3211,12 +3211,101 @@
 
 
 
-let accNum = "10380078010732123";
-let last4Digits = accNum.slice(-4);
-// console.log(accNum.length);
+// let accNum = "10380078010732123";
+// let last4Digits = accNum.slice(-4);
+// // console.log(accNum.length);
 
-let masked = last4Digits.padStart(accNum.length, "+");
-console.log(masked.length)
+// let masked = last4Digits.padStart(accNum.length, "+");
+// console.log(masked.length)
 
 
-document.write(`<h1> ${masked} </h1>`);
+// document.write(`<h1> ${masked} </h1>`);
+
+// console.log(navigator.userAgent);
+
+// function fnBrowserDetect() {
+
+//     let userAgent = navigator.userAgent;
+//     let browserName;
+
+//     if (userAgent.match(/chrome|chromium|crios/i)) {
+//         browserName = "chrome";
+//     } else if (userAgent.match(/firefox|fxios/i)) {
+//         browserName = "firefox";
+//     } else if (userAgent.match(/safari/i)) {
+//         browserName = "safari";
+//     } else if (userAgent.match(/opr\//i)) {
+//         browserName = "opera";
+//     } else if (userAgent.match(/edg/i)) {
+//         browserName = "edge";
+//     } else {
+//         browserName = "No browser detection";
+//     };
+
+//     console.log("You are using " + browserName + " browser");
+// };
+
+// fnBrowserDetect();
+
+
+// const handleCheckOutTime = (inTime, perPatient) => {
+//     let checkOut = inTime;
+//     checkOut.setMinutes(checkOut.getMinutes() + perPatient);
+//     console.log(checkOut);
+// };
+
+// let perPatientTime = 30;
+// let checkIn = new Date(1682485200000);
+// let checkOut = checkIn.setMinutes(checkIn.getMinutes() + perPatientTime);
+// checkOut = new Date(checkOut);
+
+// handleCheckOutTime(checkIn, perPatientTime);
+
+
+// console.log("Pateint Time: ", perPatientTime);
+// console.log("Check In Time: ", checkIn);
+// console.log("Check Out Time: ", checkOut);
+
+
+// let perPatientTime = 30;
+// let checkIn = "10:00 AM";
+// checkIn = checkIn.replace("AM", "");
+// checkIn = checkIn.replace(" ", "");
+// checkIn = checkIn.replace(":", ".");
+// checkIn = +checkIn;
+// checkIn = checkIn + perPatientTime;
+
+// console.log(checkIn);
+
+
+
+// let customDate = moment();
+// let perPatientTime = 30;
+// let checkIn = "10:00 AM";
+
+// let checkOut = moment(checkIn, "hh:mm A").add(perPatientTime, "minutes");
+// console.log(checkOut.toString());
+
+
+
+// let num = 7;
+
+// const handler = (firstVal, secondsVal = num) => {
+//     console.log(firstVal, secondsVal);
+// };
+
+// handler(3);
+
+
+
+let startingTime = new Date("2023-05-08T08:52:39.648Z");
+let finishingTime = new Date("2023-05-08T09:00:08.456Z");
+console.log(startingTime);
+console.log(finishingTime);
+
+let calculateTime = finishingTime.getTime() - startingTime.getTime();
+// console.log(calculateTime);
+
+let minutesFormula = calculateTime / (1000 * 60);
+minutesFormula = Math.floor(minutesFormula);
+console.log(minutesFormula);
