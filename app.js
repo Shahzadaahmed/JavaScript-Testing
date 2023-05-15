@@ -3298,14 +3298,43 @@
 
 
 
-let startingTime = new Date("2023-05-08T08:52:39.648Z");
-let finishingTime = new Date("2023-05-08T09:00:08.456Z");
-console.log(startingTime);
-console.log(finishingTime);
+// let startingTime = new Date("2023-05-08T08:52:39.648Z");
+// let finishingTime = new Date("2023-05-08T09:00:08.456Z");
+// console.log(startingTime);
+// console.log(finishingTime);
 
-let calculateTime = finishingTime.getTime() - startingTime.getTime();
-// console.log(calculateTime);
+// let calculateTime = finishingTime.getTime() - startingTime.getTime();
+// // console.log(calculateTime);
 
-let minutesFormula = calculateTime / (1000 * 60);
-minutesFormula = Math.floor(minutesFormula);
-console.log(minutesFormula);
+// let minutesFormula = calculateTime / (1000 * 60);
+// minutesFormula = Math.floor(minutesFormula);
+// console.log(minutesFormula);
+
+
+// let day = new Date().getDay().toString();
+// // console.log(day);
+
+// switch (day) {
+
+//     case "0":
+//         console.log('Sunday');
+//         break;
+
+//     case "1":
+//         console.log('Monday');
+//         break
+
+//     default:
+//         console.log(undefined);
+//         break;
+// }
+
+
+
+
+const names = (...params) => {
+    console.log(params);
+};
+
+
+names("ahmed", "mehran", "kashan", "khurram", "anees");
