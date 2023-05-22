@@ -3332,9 +3332,85 @@
 
 
 
-const names = (...params) => {
-    console.log(params);
-};
+// const names = (...params) => {
+//     console.log(params);
+// };
 
 
-names("ahmed", "mehran", "kashan", "khurram", "anees");
+// names("ahmed", "mehran", "kashan", "khurram", "anees");
+
+
+
+// let usersData = [
+//     {
+//         id: 1,
+//         userName: "ahmed",
+//         title: "software engineer",
+//         city: "karachi"
+//     },
+
+//     {
+//         id: 2,
+//         userName: "faraz",
+//         title: "software engineer",
+//         city: "karachi"
+//     },
+
+//     {
+//         id: 3,
+//         userName: "bilal",
+//         title: "software engineer",
+//         city: "karachi"
+//     },
+
+//     {
+//         id: 4,
+//         userName: "hammad",
+//         title: "software engineer",
+//         city: "karachi"
+//     },
+
+//     {
+//         id: 5,
+//         userName: "alexa",
+//         title: "software engineer",
+//         city: "karachi"
+//     },
+// ];
+
+// console.log(usersData);
+
+// Solution:
+
+// let users = usersData.map((item) => { return item.userName });
+// console.log(users);
+
+
+
+
+
+
+// let numsArr = [2, 30, 7, 9, 15, 4, 9];
+// let numsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let numsData = numsArr.map((item) => { return item % 2 == 0 });
+// console.log(numsData);
+
+
+
+// let chars = ["lion", "cat", "fox", "mouse", "elephant"];
+
+// let numsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arr = numsArr.forEach((item) => {
+//     // let condition = item % 2 == 0;
+//     // console.log(condition);
+//     return item > 5;
+// });
+// console.log(arr);
+
+
+
+// let numsArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let newArr = numsArr.map((item) => {
+//     return item + 2;
+// });
+// console.log(newArr);
