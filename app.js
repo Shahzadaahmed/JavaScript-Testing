@@ -3414,3 +3414,6 @@
 //     return item + 2;
 // });
 // console.log(newArr);
+
+
+console.log(navigator);
