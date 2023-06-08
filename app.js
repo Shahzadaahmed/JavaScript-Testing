@@ -3416,4 +3416,273 @@
 // console.log(newArr);
 
 
-console.log(navigator);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Interview Question:
+/*
+
+@author Copyright RIKSOF(Private) Limited - All Rights Reserved.
+Unauthorized copying of this file, via any medium is strictly prohibited Proprietary and confidential.
+
+*/
+
+
+/** This class model information on a single student. **/
+
+// class StudentInformation {
+
+//     //  Constructor sets the values for this model. Please note all member variables in this class are public and can be accessed directly.
+
+//     constructor(n, a) {
+//         this.name = n;
+//         this.age = a;
+//     }
+// }
+
+// The student group class contains a list of students that study together in a lesson.
+
+// class StudentGroup {
+//     constructor(students) {
+//         console.log("Students: ", students);
+//         this._students = students;
+//     }
+
+//     getAverageAge() {
+//         let mean = 0;
+//         for (let i = 0; i < this._students.length; i++) {
+//             // console.log(this._students[i]);
+
+//             mean = mean + this._students[i].age
+//         };
+
+//         let result = mean / this._students.length;
+//         // console.log('Mean: ', formula);
+
+//         return result;
+//     }
+
+//     // You are to complete this method to return the maximum age for this student group.
+//     getMaxAge() {
+//         let newAge = 0;
+//         for (let i = 0; i < this._students.length; i++) {
+//             // console.log(this._students[i].age);
+
+//             if (newAge < this._students[i].age) {
+//                 // console.log(newAge);
+//                 newAge = this._students[i].age;
+//             }
+//         };
+
+//         // console.log("Max age: ", newAge);
+//         return newAge
+//     }
+// }
+
+
+
+/**
+* The test cases that need to pass for above code. This will typically
+* be part of another file but has been placed here for simplicity.
+*/
+
+/**
+* In this first test case, we compute the average age for a class.
+*/
+
+// Initialize a student group with existing students
+// let maths = new StudentGroup([
+//     { name: 'Adams', age: 16 },
+//     { name: 'Baker', age: 15 },
+//     { name: 'Clark', age: 15 },
+//     { name: 'Davis', age: 16 },
+//     { name: 'Evans', age: 14 }
+// ]);
+// maths.getAverageAge();
+
+// Confirm user details have been updated
+// document.write(`The average age for the Maths class is calculated correctly: ${maths.getAverageAge() === 15.2}<br />`);
+
+// In this second test case, we compute the maximum age for this class.
+
+// Initialize a student group with existing students
+
+// let english = new StudentGroup([
+//     { name: 'Frank', age: 16 },
+//     { name: 'Ghosh', age: 15 },
+//     { name: 'Hills', age: 17 },
+//     { name: 'Irwin', age: 17 },
+//     { name: 'Jones', age: 14 }
+// ]);
+// english.getMaxAge();
+
+// Confirm user details have been updated
+// document.write(`The maximum age for the English class is calculated correctly: ${english.getMaxAge() === 17}<br />`);
+
+// Statements:
+// The average age for the Maths class is calculated correctly: false
+// The maximum age for the English class is calculated correctly: false
+
+// Task:You have to apply the logic and make these 2 statements true
+// PS:Donot use any buit in method of javascript
+
+
+
+
+
+
+
+
+
+
+// class StudentInformation {
+//     constructor(n, a) {
+//         this.name = n
+//         this.age = a
+//     };
+// };
+
+// let studesntsInfo = new StudentInformation("ahmed", "26");
+// // console.log(studesntsInfo);
+
+// document.write(`My name is ${studesntsInfo.name}, And my age is ${studesntsInfo.age}`);
+
+
+
+
+
+
+
+
+
+
+
+// class StudentGroup {
+//     constructor(students) {
+//         this._students = students;
+//         // console.log("Students: " , this._students);
+//     };
+
+//     getAverageAge() {
+//         let totalVal = 0;
+
+//         for (let i = 0; i < this._students.length; i++) {
+//             // console.log(this._students[i]);
+
+//             totalVal = totalVal + this._students[i].age
+//         };
+
+//         // console.log("Total: ", totalVal);
+//         let avgFormula = totalVal / this._students.length;
+//         return avgFormula
+//     }
+
+//     getMaxAge() {
+//         return 0;
+//     }
+// };
+
+// let mathStudents = new StudentGroup([
+//     { name: 'Adams', age: 16 },
+//     { name: 'Baker', age: 15 },
+//     { name: 'Clark', age: 15 },
+//     { name: 'Davis', age: 16 },
+//     { name: 'Evans', age: 14 }
+// ]);
+
+// mathStudents.getAverageAge();
+
+// let englishStudents = new StudentGroup([
+//     { name: 'Frank', age: 16 },
+//     { name: 'Ghosh', age: 15 },
+//     { name: 'Hills', age: 17 },
+//     { name: 'Irwin', age: 17 },
+//     { name: 'Jones', age: 14 }
+// ]);
+
+// document.write(`The average age for the Maths class is calculated correctly: ${mathStudents.getAverageAge() === 15.2}<br />`);
+// document.write(`The maximum age for the English class is calculated correctly: ${englishStudents.getMaxAge() === 17}<br />`);
+
+
+
+// (function () {
+//     var x, y;
+
+//     try {
+//         throw new Error();
+//     }
+
+//     catch (x) {
+//         x = 1
+//         y = 2
+//         console.log('a', x);
+//     }
+//     console.log("b", x);
+//     console.log("c", y);
+// })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (function () {
+//     var x, y;
+
+//     try {
+//         throw new Error();
+//     }
+
+//     catch (x) {
+//         x = 1;
+//         y = 2;
+
+//         console.log('First console: ', x);
+//     };
+
+//     console.log('Second console: ', x);
+//     console.log('Third console: ', y);
+// })();
+
+// 1 1 un bilal zaid
+// 1 un un aman
+// 1 undefined undefined marium kau
+
+
+
+// console.log(x);
+// x = 1;
+// let x;
+
+// console.log(x);
+// x = 1;
+// var x;
+
+let obj = {
+    name: "ahmed",
+    title: "software engineer"
+}
+
+let arr = ["ahmed", "bilal", "shahzil", "shoaib", "subhan"];
+console.log(Array.isArray(obj));
