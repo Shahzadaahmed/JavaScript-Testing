@@ -3679,10 +3679,98 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 // x = 1;
 // var x;
 
-let obj = {
-    name: "ahmed",
-    title: "software engineer"
-}
+// let obj = {
+//     name: "ahmed",
+//     title: "software engineer"
+// }
 
-let arr = ["ahmed", "bilal", "shahzil", "shoaib", "subhan"];
-console.log(Array.isArray(obj));
+// let arr = ["ahmed", "bilal", "shahzil", "shoaib", "subhan"];
+// console.log(Array.isArray(obj));
+
+// let startTime = new Date(1686326400928);
+// let endTime = new Date(1686315889929);
+
+// console.log(startTime);
+// console.log(endTime);
+
+// const calculateDifference = () => {
+//     console.log(startTime.getHours());
+//     console.log(endTime.getHours());
+
+//     let calculateHours = startTime.getHours() - endTime.getHours();
+//     let calculateMins = startTime.getMinutes - endTime.getMinutes();
+//     console.log("Hours: ", calculateHours);
+//     console.log("Minutes: ", calculateMins);
+// }
+
+// calculateDifference();
+
+
+
+// let names = [
+//     {
+//         id: 1,
+//         name: "john",
+//         company: "google"
+//     },
+
+//     {
+//         id: 2,
+//         name: "smith",
+//         company: "google"
+//     },
+
+//     {
+//         id: 3,
+//         name: "george",
+//         company: "google"
+//     },
+
+//     {
+//         id: 4,
+//         name: "alex",
+//         company: "google"
+//     },
+
+//     {
+//         id: 5,
+//         name: "trish",
+//         company: "google"
+//     },
+// ];
+// console.log(names.reverse());
+
+
+// let names = ["ahmed", "yousuf", "akbar", "asghar", "zeeshan"];
+// console.log(names);
+// console.log(names.with(1, "ali"));
+
+// console.log(names.indexOf('akbar'));
+
+
+// let id = "642be4ba28986e561bb30346"
+// let arr = ["642be4ba28986e561bb30346"];
+// let index = arr.indexOf(id);
+// arr.splice(index, 1);
+
+// console.log(arr);
+
+
+
+
+// var timevalue = "16 June 2023, 07:00 PM";
+// var time = moment(timevalue);
+// // console.log(time);
+// var newTime = moment(time).add('m', 10);
+// let result = newTime.format("dddd, MMMM Do YYYY, h:mm a")
+// console.log(result);
+
+// // console.log(moment(result).format("h:mm a"));
+
+// let target = result.slice(-7);
+// console.log(target);
+
+
+// let uniqueId = Math.floor(Math.random()*90000) + 10000;
+// console.log(uniqueId);
+// console.log(uniqueId.toString().length);
