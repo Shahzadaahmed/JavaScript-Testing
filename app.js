@@ -1145,16 +1145,16 @@
 
 
 // // let heading = document.getElementById("heading");
-// // let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
-// // let startingPoint = 0;
+let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
+let startingPoint = 0;
 
-// // setInterval(() => {
-// //     heading.innerHTML = namesList[startingPoint++];
+setInterval(() => {
+    console.log(namesList[startingPoint++]);
 
-// //     if (startingPoint == namesList.length) {
-// //         startingPoint = 0;
-// //     };
-// // }, 1000);
+    if (startingPoint == namesList.length) {
+        startingPoint = 0;
+    };
+}, 1000);
 
 // // NOTE: Disable refresh from F5 or Ctrl + r
 
