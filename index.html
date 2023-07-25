@@ -6,6 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Functionality Testing </title>
+
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: yellow;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .innerSection {
+            flex-grow: 1;
+            flex-basis: 300px;
+            color: white;
+            background-color: blue;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            padding: 10px;
+        }
+    </style> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: yellow;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .innerSection {
+            width: 10%;
+            /* flex-grow: 1; */
+            /* flex-basis: 300px; */
+            color: white;
+            background-color: blue;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .div1 {
+            height: 10vh;
+        }
+
+        .div2 {
+            height: 30vh;
+        }
+
+        .div3 {
+            height: 20vh;
+        }
+
+        .div4 {
+            height: 15vh;
+        }
+
+        .div1:hover {
+            height: 40vh;
+            transition: 3s height;
+        }
+
+        .div2:hover {
+            height: 15vh;
+            transition: 3s height;
+        }
+
+        .div3:hover {
+            height: 35vh;
+            transition: 3s height;
+        }
+
+        .div4:hover {
+            height: 25vh;
+            transition: 3s height;
+        }
+    </style>
 </head>
 
 <body id="view">
@@ -93,12 +189,33 @@
     </div> -->
 
     <!-- <div class="container">
-        <div class="innerSection1">1</div>
-        <div class="innerSection2">2</div>
-        <div class="innerSection3">3</div>
+        <div class="innerSection">1</div>
+        <div class="innerSection">2</div>
+        <div class="innerSection">3</div>
+        <div class="innerSection">4</div>
     </div> -->
 
+    <!-- <div class="container">
+        <div class="innerSection div1">1</div>
+        <div class="innerSection div2">2</div>
+        <div class="innerSection div3">3</div>
+        <div class="innerSection div4">4</div>
+    </div> -->
+
+    <!-- <h1 style="color: red;"> Hello </h1> -->
+
+
+
+
+    <button onclick="generateTandomValue()"> Random Value </button>
+
+
+
+
     <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
+        integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./app.js"></script>
 
 </body>

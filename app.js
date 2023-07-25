@@ -1148,13 +1148,13 @@
 let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
 let startingPoint = 0;
 
-setInterval(() => {
-    console.log(namesList[startingPoint++]);
+// setInterval(() => {
+//     console.log(namesList[startingPoint++]);
 
-    if (startingPoint == namesList.length) {
-        startingPoint = 0;
-    };
-}, 1000);
+//     if (startingPoint == namesList.length) {
+//         startingPoint = 0;
+//     };
+// }, 1000);
 
 // // NOTE: Disable refresh from F5 or Ctrl + r
 
@@ -3774,3 +3774,339 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 // let uniqueId = Math.floor(Math.random()*90000) + 10000;
 // console.log(uniqueId);
 // console.log(uniqueId.toString().length);
+
+
+
+
+// let nums = [4, 1, 3, 5, 2]
+// console.log(nums.sort());
+
+
+// let mystery = ['🥚', '🐔']
+// console.log(mystery.sort());
+
+
+
+// const apiCall = async () => {
+
+//     let apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+//     try {
+//         let response = await axios({
+//             method: "POST",
+//             url: apiUrl,
+//             data : {}
+//         });
+//         console.log(response);
+//     }
+
+//     catch (error) {
+//         console.log("SOmething went wrong while integrating api: ", error);
+//     };
+// };
+
+// apiCall();
+
+// Note: Function to shuffle an array...!
+// const generateTandomValue = () => {
+//     let name = ["a", "h", "m", "e", "d"];
+//     let modifiedData = [...name].slice(0).sort(() => Math.random() - 0.5); // Note: Formula to shuffle an array...!
+//     // console.log(modifiedData);
+
+//     console.log(modifiedData[Math.floor(Math.random()) * modifiedData.length])
+// };
+
+
+
+
+
+
+// const businessLeadersArr = [
+//     {
+//         leaderId: 1,
+//         leaderName: "Agha Khan University",
+//         associateId: ['Bilal', 'Ahmed', 'Mishra']
+//     },
+//     {
+//         leaderId: 2,
+//         leaderName: "Liaquat National",
+//         associateId: ['Bilal', 'Asghar', 'Mishra']
+//     },
+//     {
+//         leaderId: 3,
+//         leaderName: "DOW Hospital",
+//         associateId: ['Bilal', 'Ahmed', 'Shahzil']
+//     },
+//     {
+//         leaderId: 4,
+//         leaderName: "Patel Hospital",
+//         associateId: ['Shahzil', 'Asghar', 'Sheroz']
+//     }
+// ];
+
+// // console.log(businessLeadersArr);
+
+// let targetData = [...businessLeadersArr].filter(items => {
+//     // console.log(items);
+
+//     for (let data of items?.associateId) {
+//         // console.log(data)
+
+//         if (data == "Ahmed") {
+//             return true;
+//         };
+//     };
+
+//     return false;
+// });
+// console.log(targetData);
+
+
+
+// const apiCall = async () => {
+//     try {
+//         let response = await axios({
+//             method: "GET",
+//             url: "http://localhost:3020/data"
+//         });
+//         console.log(response);
+//     }
+
+//     catch (error) {
+//         console.log('Something went wrong while integrating api: ', error);
+//     };
+// };
+
+// apiCall();
+
+
+
+
+// let date = new Date("2023-07-16T19:00:00.000+00:00");
+// let time = "10:30 AM";
+// let amOrPm = time.slice(-2);
+// let handleHours = amOrPm == "AM" ? time.slice(0, 2) : Number(time.slice(0, 2)) + 12;
+
+// // console.log(handleHours);
+
+// date.setHours(handleHours);
+// date.setMinutes(time.slice(3, 5));
+
+// console.log(date);
+
+
+
+
+
+
+
+
+
+
+// let userCreatedOn = new Date("2023-07-13T08:30:22.645+00:00");
+// // console.log(userCreatedOn);
+// let rightNow = Date.now() - userCreatedOn.getTime();
+// // console.log(rightNow);
+
+// let formula = rightNow / (1000 * 60);
+// formula = Math.floor(formula);
+// console.log(formula);
+
+
+
+// let arr1 = [
+//     {
+//         businessPartnerId: "63ff48502e6c575c18c87ce5",
+//         day: "monday",
+//         endTime: "08:00 PM",
+//         startTime: "05:00 PM"
+//     },
+
+//     {
+//         businessPartnerId: "63ff48502e6c575c18c87ce5",
+//         day: "wednesday",
+//         endTime: "07:00 PM",
+//         startTime: "10:00 PM"
+//     },
+
+//     {
+//         businessPartnerId: "63ff48502e6c575c18c87ce5",
+//         day: "friday",
+//         endTime: "08:00 PM",
+//         startTime: "11:00 PM"
+//     }
+// ];
+
+// let arr2 = [
+//     {
+//         businessPartnerId: "63ff48502e6c575c18c87ce5",
+//         day: "monday",
+//         endTime: "06:00 PM",
+//         startTime: "10:00 PM"
+//     },
+
+//     {
+//         businessPartnerId: "63ff57f02e6c575c18c87d05",
+//         day: "monday",
+//         endTime: "05:00 PM",
+//         startTime: "04:00 PM"
+//     },
+
+//     {
+//         businessPartnerId: "63ff48502e6c575c18c87ce5",
+//         day: "wednesday",
+//         endTime: "04:00 PM",
+//         startTime: "11:00 PM"
+//     }
+// ];
+
+// console.log("Arr 1: ", JSON.parse(JSON.stringify(arr1)));
+// console.log("Arr 2: ", JSON.parse(JSON.stringify(arr2)));
+
+
+
+// const champion = () => {
+//     let arr1Clone = [...arr1];
+//     let arr2Clone = [...arr2];
+
+//     let unknownValuesArr = []
+
+//     // console.log("Arr 1: ", arr1Clone);
+//     // console.log("Arr 2: ", arr2Clone);
+
+//     for (items of arr1Clone) {
+//         // console.log("Arr 1 item: ", items);
+
+//         for (elements of arr2Clone) {
+//             // console.log("Arr 2 elements: ", elements);
+
+//             if (
+//                 (elements.businessPartnerId == items.businessPartnerId) &&
+//                 (elements.day == items.day)
+//             ) {
+//                 elements.startTime = items.startTime;
+//                 elements.endTime = items.endTime;
+//             }
+//         };
+//     };
+
+//     console.log("Modified Arr: ", arr2Clone);
+//     console.log("Unknown values arr: ", unknownValuesArr);
+// };
+
+// champion();
+
+
+// let employees = [
+//     {
+//         id: "1",
+//         name: "Ahmed",
+//         title: "Software Engineer (MERN Stack)"
+//     },
+
+//     {
+//         id: "2",
+//         name: "Mohsin",
+//         title: "Software Engineer (React with Php)"
+//     },
+
+//     {
+//         id: "3",
+//         name: "Rafay",
+//         title: "Software Engineer (React with Asp.Net)"
+//     },
+
+//     {
+//         id: "2",
+//         name: "Mohsin",
+//         title: "Software Engineer (React with Php)"
+//     },
+
+//     {
+//         id: "1",
+//         name: "Ahmed",
+//         title: "Software Engineer (MERN Stack)"
+//     },
+// ];
+
+// // console.log('Employees: ', employees);
+
+// // Note: Function to check duplicate...!
+// const duplicateChecker = (employeeId) => {
+//     // console.log('Employee Id: ', employeeId);
+//     let isDuplicateFound = false;
+
+//     for (let items of employees) {
+//         console.log("Data: ", items);
+//         // if (items.id.toString() == employeeId.toString()) {
+//         //     // If found, set flag and break out the loop...!
+//         //     isDuplicateFound = true;
+//         //     break;
+//         // };
+//     };
+
+//     // return isDuplicateFound;
+// };
+
+// // Note: Function to get unique array...!
+// const uniqueArrHandler = () => {
+//     let uniqueItems = [];
+
+//     for (let items of employees) {
+//         // console.log("Employee Data: ", items);
+
+//         let isDuplicate = duplicateChecker(items.id);
+//         // console.log(isDuplicate);
+
+//         // if (!isDuplicate) {
+//         //     uniqueItems.push(items);
+//         // };
+//     };
+
+//     // console.log("Unique Items: ", uniqueItems);
+// };
+
+// uniqueArrHandler();
+
+
+// let password = "ahmed123";
+// // console.log(password);
+
+// let encodePassword = btoa(password);
+// // console.log(encodePassword);
+
+// let decodePassword = atob(encodePassword);
+// console.log(decodePassword);
+
+
+
+// const apiCall = () => {
+//     let apiUrl = "http://localhost:5050/api/users/fetch-all";
+
+//     fetch(apiUrl)
+//         .then(res => { return res.json() })
+//         .then(data => console.log(data))
+//         .catch(err => console.log("Error: ", err));
+// };
+
+// apiCall();
+
+
+
+
+// const getMonthData = (rightNow, remainingDays) => {
+//     console.log(rightNow);
+
+//     let last30Days = new Date();
+//     last30Days.setDate(last30Days.getDate() - remainingDays);
+//     console.log(last30Days);
+// };
+
+// let today = new Date();
+// getMonthData(today, 30);
+
+
+
+let password = 'ahmed123';
+password = btoa(password);
+console.log(password);
