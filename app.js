@@ -597,9 +597,9 @@
 // // console.log(name.indexOf("m"));
 // // console.log(name.charAt(2));
 
-// // let name = "shahzada ahmed";
-// // let updateName = name.replace("shahzada", "muhammad");
-// // console.log(updateName);
+// let myName = "shahzada ahmed";
+// myName.replace("shahzada", "muhammad");
+// console.log(myName);
 
 // // Note: Spread or rest operators...!
 // // let names = ["ahmed", "yousuf", "akbar", "asghar", "zeeshan"];
@@ -873,13 +873,13 @@
 // // name = "shahzada ahmed";
 // // console.log(name);
 
-// // for (let i = 1; i <= 5; i++) {
-// //     // console.log(i);
+for (let i = 1; i <= 5; i++) {
+    // console.log(i);
 
-// //     setTimeout(() => {
-// //         console.log(i);
-// //     }, i * 1000);
-// // };
+    setTimeout(() => {
+        console.log(i);
+    }, i * 1000);
+};
 
 // // const testing = () => {
 // //     const customFunc = () => {
@@ -2001,34 +2001,34 @@ let startingPoint = 0;
 
 // // Note: How to find intersection in A and B array...!
 
-// // let arr1 = [1, 2, 3, 4, 5];
-// // let arr2 = [3, 4, 5, 6, 7];
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [3, 4, 5, 6, 7];
 
-// // console.table(arr1);
-// // console.table(arr2);
+// // // console.table(arr1);
+// // // console.table(arr2);
 
-// // let intersectionArr = arr1.filter((item) => {
-// //     return arr2.includes(item);
-// // });
+// let intersectionArr = arr1.filter((item) => {
+//     return arr2.includes(item);
+// });
 
-// // console.log(intersectionArr);
+// console.log(intersectionArr);
 
 
 
 
 // // Note: How to find union in A and B array...!
 
-// // let mixedArr = [...arr1, ...arr2];
-// // // mixedArr = new Set([...mixedArr]);
-// // // console.log([...new Set([...mixedArr])]);
+// let mixedArr = [...arr1, ...arr2];
+// // mixedArr = new Set([...mixedArr]);
+// // console.log([...new Set([...mixedArr])]);
 
-// // let unionArr = mixedArr.filter((item, index) => {
-// //     // console.log(item, index);
+// let unionArr = mixedArr.filter((item, index) => {
+//     // console.log(item, index);
 
-// //     return mixedArr.indexOf(item) == index;
-// // });
+//     return mixedArr.indexOf(item) == index;
+// });
 
-// // console.log(unionArr);
+// console.log(unionArr);
 
 
 
@@ -4107,6 +4107,534 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 
 
 
-let password = 'ahmed123';
-password = btoa(password);
-console.log(password);
+// let password = 'ahmed123';
+// password = btoa(password);
+// console.log(password);
+
+
+// var animals = ["cat", "dog", "elephant", "donkey", "kangaroo"];
+// animals.splice(2, 1, "lion", "tiger");
+// console.log(animals);
+
+
+
+
+
+
+
+
+
+
+// var animals = ["cat", "dog", "elephant", "donkey", "kangaroo"];
+// var userInput = prompt("Enter the name of your favourite animal!");
+
+// if (animals.indexOf(userInput) != -1) console.log(userInput, "exist in the animals array!");
+// else console.log(userInput, "does not exist in the animals array! :cry:");
+
+
+
+
+// var arr = ['lion', 'tiger', 'leopard', 'zebra'];
+// arr.fill('dinosaur', 1, 3);
+// console.log(arr);
+
+
+
+
+
+// var url = "https://jsonplaceholder.typicode.com/users";
+// var extract = url.slice(url.lastIndexOf('/') + 1);
+// console.log(extract);
+
+
+// console.log(document);
+
+
+
+
+// let num = 5;
+// num++;
+// console.log(num);
+
+
+// let num = 5;
+// ++num
+// console.log(num);
+
+
+// let num = 5;
+// num++;
+// console.log(num + 2);
+
+// var myName = "Shahzada Ali"
+// myName = myName.replace("Ali", 'Ahmed');
+// console.log(myName);
+
+
+
+
+
+
+
+// const initialCharUperCaseHandler = (data) => {
+//     // console.log("Paragraph: ", data);
+
+//     // Note: Converting string data to array...!
+//     let strToArr = paragraph.split(" ");
+//     // console.log(strToArr);
+
+//     for (let i = 0; i < strToArr.length; i++) {
+//         // console.log(strToArr[i]);
+
+//         let initialChar = strToArr[i].charAt(0).toUpperCase();
+//         // console.log(initialChar);
+
+//         let remainingChars = strToArr[i].slice(1).toLowerCase();
+//         // console.log(remainingChars);
+
+//         strToArr[i] = initialChar + remainingChars;
+//     };
+
+//     // console.log(strToArr);
+
+//     // Note: Converting array data to string...!
+//     let arrToStr = strToArr.join(" ");
+//     return arrToStr;
+// };
+
+// let paragraph = "hi my name is shahzada muhammad ahmed i am a software engineer mern stack at qbs tech";
+// let result = initialCharUperCaseHandler(paragraph);
+// console.log(result);
+
+
+// for (let i = 1; i <= 3; i++) {
+//     console.log(i, " time recite bismillah!");
+
+//     for (let j = 1; j <= 2; j++) {
+//         console.log("Drink " + j + " glass of water!");
+
+//         for (let k = 1; k <= 5; k++) {
+//             console.log("Do " + k + " times push ups!");
+//         };
+//     };
+// };
+
+
+
+// var alphabets = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"];
+// var vowels = [];
+
+// for (var i = 0; i < alphabets.length; i++) {
+//     // console.log(alphabets[i]);
+
+//     if (alphabets[i] == "a" || alphabets[i] == "e" || alphabets[i] == "i" || alphabets[i] == "o" || alphabets[i] == "u") {
+//         vowels.push(alphabets[i]);
+//     };
+// };
+
+// console.log(vowels);
+
+
+// let star = "";
+
+// for (let i = 1; i <= 5; i++) {
+//     // console.log('i', i);
+
+//     for (let j = 1; j <= i; j++) {
+//         // console.log('j', j);
+
+//         star = star + "*";
+//     };
+
+//     star = star + "\n";
+// };
+
+// console.log(star);
+
+
+
+// let star = "*****";
+
+// for (let i = star.length; i >= 1; i--) {
+//     console.log(star);
+
+//     star = star.slice(0, star.length - 1);
+// };
+
+
+// let wordsArr = ['ahmed', 'mehran', 'muhammad', 'rehmatullah', 'shahrukh'];
+// let longestWord = "a";
+
+// for (let i = 0; i < wordsArr.length; i++) {
+//     // console.log(wordsArr[i]);
+
+//     if (wordsArr[i].length > longestWord.length) {
+//         longestWord = wordsArr[i];
+//     };
+// };
+
+// console.log('Longest word: ', longestWord);
+
+
+
+// for (let i = 5; i >= 0; i = i - 0.5) {
+//     console.log(i);
+// };
+
+
+
+
+// var userInput = +prompt("How many items do you want to add ?");
+// var items = [];
+
+// for (let i = 1; i <= userInput; i++) {
+//     let item = prompt('Enter item: ' + i);
+//     items.push(item);
+// };
+
+// console.log(items);
+
+
+// let stars = "";
+
+// for (let i = 1; i <= 5; i++) {
+
+//     for (let j = 1; j <= 5; j++) {
+//         stars = stars + "🌙";
+//     };
+
+//     stars = stars + "\n";
+// };
+
+// console.log(stars);
+
+// var squareRootOf = 4;
+// var squareRootvalue;
+
+// for (let i = 1; i <= squareRootOf; i++) {
+//     // console.log(i);
+
+//     squareRootvalue = squareRootOf * i;
+//     // console.log(squareRootvalue);
+// };
+
+// console.log("Square root value: ", squareRootvalue);
+
+
+// var arr = ["a", "h", "m", "e", "d"];
+// // console.log(arr);
+
+// for (var i = 0; i < arr.length; i++) {
+//     console.log(arr);
+
+//     var lastItem = arr.pop();
+//     arr.unshift(lastItem);
+// };
+
+
+
+// let appointmentTime = 10;
+// console.log("Appointment time: ", appointmentTime);
+
+// let currentTime = new Date().getMinutes();
+// console.log("Current time: ", currentTime);
+
+// let calculateTime = currentTime - appointmentTime;
+// console.log('Calculated time: ', calculateTime);
+
+
+// let rightNow = new Date();
+// let targetDate = new Date("01 December 2023");
+
+// let rightNowinMS = rightNow.getTime();
+// let targetDateInMS = targetDate.getTime();
+
+// let calculateMS = targetDateInMS - rightNowinMS
+// let applyMonthFormula = calculateMS / (1000 * 60 * 60 * 24 * 30);
+// applyMonthFormula = Math.ceil(applyMonthFormula);
+// console.log(applyMonthFormula + " months left till december!");
+
+
+
+
+
+
+
+
+// let rightNow = new Date();
+// let targetDate = new Date();
+// targetDate.setHours(targetDate.getHours() - 1);
+// console.log('Current date: ' , rightNow);
+// console.log('1 hour ago, it was: ' , targetDate);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// this.myName = "ahmed";
+// console.log(window.myName);
+
+// var rightNow = new Date();
+// rightNow.setDate('28');
+// console.log(rightNow);
+
+// console.log(Math.max('5', '2', '10'));
+
+
+// var userInput = prompt("Write anything");
+// var result = userInput || "Data not available!";
+// console.log(result);
+
+
+// var h1 = document.getElementById("header");
+// console.log(h1); 
+
+// const changeClassHandler = () => {
+//     h1.setAttribute("class", "aaammm");
+//     console.log(h1);
+// };
+
+
+// var inputTag = document.getElementById("inputField");
+
+// inputTag.addEventListener("keypress", (e) => {
+//     // console.log(e);
+
+//     if (e.key == "Backspace") {
+//         return false;
+//     };
+// });
+
+// var input = document.getElementById('inputField');
+
+// input.onkeydown = function() {
+//     var key = event.keyCode || event.charCode;
+
+//     if( key == 8 || key == 46 )
+//         return false;
+// };
+
+
+
+
+
+
+
+
+
+// var arr1 = [1, 2, 3, 4, 5];
+// var arr2 = [3, 4, 5, 6, 7];
+
+// var intersection =
+//     arr1.filter((eachItem) => {
+//         // console.log(eachItem);
+
+//         return arr2.includes(eachItem);
+//     });
+
+// console.log(intersection);
+
+
+
+
+
+
+
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [3, 4, 5, 6, 7];
+
+// var mixedArr = [...arr1, ...arr2];
+// // console.log(mixedArr);
+
+// var unionArr =
+//     mixedArr.filter((item, index) => {
+//         // console.log(item);
+//         return mixedArr.indexOf(item) == index;
+//     });
+// console.log(unionArr);
+
+
+
+
+// const computerTurn = () => {
+
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             let diceValue = Math.floor((Math.random() * 6)) + 1;
+//             resolve(diceValue);
+//         }, 3000);
+//     });
+// };
+
+// const playDice = async () => {
+//     let diceValue = Math.floor((Math.random() * 6)) + 1;
+//     console.log("user turn: ", diceValue);
+
+//     if (diceValue) {
+//         let systemTurn = await computerTurn();
+//         console.log('System turn: ', systemTurn);
+//     };
+// };
+
+// let h1 = document.getElementById("header");
+
+// const apiCall = () => {
+//     let apiUrl = "http://color-names.herokuapp.com/v1/";
+
+//     fetch(apiUrl)
+//         .then(res => { return res.json() })
+//         .then(colorsData => {
+//             console.log(colorsData?.colors);
+//             h1.style.color = colorsData?.colors[2000]?.hex;
+//         })
+//         .catch(err => { console.log("Something went wrong while integrating colors api: ", err) });
+// };
+
+// apiCall();
+
+// let videoEl = document.getElementById("video-tag");
+
+// const playVideo = () => {
+//     // console.log(videoEl);
+//     videoEl.play();
+// };
+
+
+// function greetUser() {
+//     console.log("Hello Ahmed!");
+// };
+
+// console.log(typeof greetUser);
+
+// setTimeout(greetUser, 2000);
+
+// let tagsData = '<h2>Navigating the Intricacies of Employment-Based Visas</h2><p>Employment-based visas, or work visas as they are commonly known, are one of the most popular visa categories. With the rise in employment opportunities for skilled individuals across the globe, more and more talented and qualified individuals are seeking employment opportunities globally.</p><p>However, the formalities and steps involved in obtaining a work visa vary with the country in question.  It’s important to be aware of the intricacies of the process to ensure chances of success.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917236/pkve4dxl9slc6abajcj1.jpg"><p></p><p>The US Work Visa: A Step-by-step Guide</p><p>The different work visa types in the USA, such as EB-2, EB-3, etc., have their unique processes. However, some broad steps which are common to all US Employment-Based Immigration visas are discussed below.</p><p>⦁	Step 1: The first step is getting a job with a US-based employer, who will then sponsor the application.</p><p>⦁	Step 2: Then, the employer will file a certificate application with the Department of Labor (DOL). The certificate generally shows that there are no qualified U.S. workers available for the position.</p><p>⦁	Step 3: Next, the employer will file and submit a petition for Form I-140 on the applicant’s behalf to the U.S. Citizenship and Immigration Services (USCIS), along with supporting documents. This ascertains that the applicant is qualified for the position in question.</p><p>⦁	Step 4: Afterward, the USCIS may call the applicant for interviews. They shall inform the applicant via interview notices, and the applicant must bring along all relevant documents mentioned in the notice.</p><p>⦁	Step 5: Once the USCIS reviews and approves the petition, the applicant is issued Form I-140, and they may begin applying for a Green Card.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917291/y05sdgahq6wc3ra5tffz.jpg"><p></p><p>The UK Work Visa: A Step-by-step Guide</p><p>The general steps involved in obtaining a UK work visa are explored below.</p><p>⦁	Step 1: Determining the right work visa is the first step the applicant should consider, depending on their specific profile. There are many options to choose from, such as the popular Skilled Worker Visa, or the Global Talent Visa for exceptional professionals.</p><p>⦁	Step 2: Getting a job offer from a UK-based employer. Please note that in the case of the Global Talent Visa, a job offer is not required.</p><p>⦁	Step 3: The next step is obtaining a certificate of sponsorship from the employer. This is vital for the applicant to begin their application.</p><p>⦁	Step 4: Once the above documents are in order, the applicant is to submit an online application for their work visa, along with the necessary documents.</p><p>⦁	Step 5: Then, the applicant shall attend a visa interview at the UK embassy or consulate in their home country.</p><p>⦁	Step 6: Successful applicants will receive a visa vignette and must then travel to the UK.</p><p>⦁	Step 7: Upon reaching the UK, the persons must collect their Biometric Residence Permit (BRP) based on the instructions from their decision letter.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917344/zcvlevdp9u6ocwfqukbl.jpg"><p></p>';
+// // console.log(tagsData);
+
+// let update1 = {
+//     previousUrl: "http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917236/pkve4dxl9slc6abajcj1.jpg",
+//     updatedValue: "http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693919061/ex8kj9nemjxbsoghrmsv.jpg"
+// };
+// console.log('Updated One: ', update1);
+
+// let update3 = {
+//     previousUrl: "http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917344/zcvlevdp9u6ocwfqukbl.jpg",
+//     updatedValue: "http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693919090/qfr9pkpkobv2i2crqebu.jpg"
+// };
+
+// let updatedData = tagsData.replace(update1.previousUrl, update1.updatedValue);
+// console.log(updatedData);
+
+// let paragraph = "Employment-based visas, or work visas as they are commonly known, are one of the most popular visa categories. With the rise in employment opportunities for skilled individuals across the globe, more and more talented and qualified individuals are seeking employment opportunities globally.";
+// console.log(paragraph);
+
+// let dataInArr = paragraph.split(" ");
+// console.log(dataInArr);
+
+
+// let seeMoreBtn = document.getElementById("see-more-btn");
+// let seeLessBtn = document.getElementById("see-less-btn");
+// let pEl = document.getElementById("para");
+// let text = pEl.innerText;
+// let fullText = JSON.stringify(text);
+// let dataInArr = text.split(" ");
+// // console.log(dataInArr);
+
+// if (dataInArr.length >= 25) {
+//     let arrClone = dataInArr.slice(0, 25);
+//     arrClone.push("see more...");
+//     // console.log(arrClone);
+
+//     let dataInStr = arrClone.join(" ");
+//     // console.log(dataInStr);
+
+//     pEl.innerText = dataInStr;
+//     seeLessBtn.disabled = true;
+// };
+
+// const seeMore = () => {
+//     pEl.innerText = fullText;
+//     seeMoreBtn.disabled = true;
+//     seeLessBtn.disabled = false;
+// };
+
+// const seeLess = () => {
+//     let arrClone = dataInArr.slice(0, 25);
+//     arrClone.push("see more...");
+//     // console.log(arrClone);
+
+//     let dataInStr = arrClone.join(" ");
+//     // console.log(dataInStr);
+
+//     pEl.innerText = dataInStr;
+//     seeLessBtn.disabled = true;
+//     seeMoreBtn.disabled = false;
+// };
+
+// var inputField = document.getElementById("input");
+
+// const timeIn = () => {
+//     let userValue = inputField.value;
+//     let requiredFormat = new Date(userValue);
+//     console.log(requiredFormat);
+//     // if (requiredFormat.getDate() == new Date().getDate()) {
+//     //     console.log('Pichla allow nahi hy');
+//     // }
+
+//     // else console.log('Go ahead!');
+// };
+
+
+// var userCreatedAt = new Date("2023-09-08T12:06:37.507+00:00")
+// console.log(userCreatedAt);
+
+// var rightNow = new Date();
+// console.log(rightNow);
+
+// var calculatedMs = rightNow.getTime() - userCreatedAt.getTime();
+// var applyFormula = calculatedMs / (1000 * 60);
+// applyFormula = Math.floor(applyFormula);
+// console.log(applyFormula);
+
+// let arr = [2, 4, 6, 8, 10];
+// // console.log(arr);
+
+// let updatedArr = arr.map((item) => {
+//     // console.log(item);
+//     return item + 3;
+// });
+
+// console.log(updatedArr);
+
+
+// var days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+// console.log(days);
+
+// var rightNow = new Date().getDay();
+// console.log(rightNow);
+
+// if (days.indexOf(days[rightNow]) != -1) console.log('Today is your day: ' , days[rightNow]);
+// else console.log('Today is not your day!');
+
+// if (days.includes(days[rightNow])) console.log('Today is your day: ', days[rightNow]);
+// else console.log('Today is not your day!');
+
+
+// function testing() {
+//     var x = 'abc';
+//     console.log(x);
+// };
+
+// setTimeout(testing, 1000);
