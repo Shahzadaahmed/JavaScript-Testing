@@ -873,13 +873,13 @@
 // // name = "shahzada ahmed";
 // // console.log(name);
 
-for (let i = 1; i <= 5; i++) {
-    // console.log(i);
+// for (let i = 1; i <= 5; i++) {
+//     // console.log(i);
 
-    setTimeout(() => {
-        console.log(i);
-    }, i * 1000);
-};
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000);
+// };
 
 // // const testing = () => {
 // //     const customFunc = () => {
@@ -1145,8 +1145,8 @@ for (let i = 1; i <= 5; i++) {
 
 
 // // let heading = document.getElementById("heading");
-let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
-let startingPoint = 0;
+// let namesList = ["ahmed", "kashan", "mehran", "shahzaib", "khurram"];
+// let startingPoint = 0;
 
 // setInterval(() => {
 //     console.log(namesList[startingPoint++]);
@@ -4519,8 +4519,6 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 // console.log(typeof greetUser);
 
 // setTimeout(greetUser, 2000);
-
-// let tagsData = '<h2>Navigating the Intricacies of Employment-Based Visas</h2><p>Employment-based visas, or work visas as they are commonly known, are one of the most popular visa categories. With the rise in employment opportunities for skilled individuals across the globe, more and more talented and qualified individuals are seeking employment opportunities globally.</p><p>However, the formalities and steps involved in obtaining a work visa vary with the country in question.  It’s important to be aware of the intricacies of the process to ensure chances of success.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917236/pkve4dxl9slc6abajcj1.jpg"><p></p><p>The US Work Visa: A Step-by-step Guide</p><p>The different work visa types in the USA, such as EB-2, EB-3, etc., have their unique processes. However, some broad steps which are common to all US Employment-Based Immigration visas are discussed below.</p><p>⦁	Step 1: The first step is getting a job with a US-based employer, who will then sponsor the application.</p><p>⦁	Step 2: Then, the employer will file a certificate application with the Department of Labor (DOL). The certificate generally shows that there are no qualified U.S. workers available for the position.</p><p>⦁	Step 3: Next, the employer will file and submit a petition for Form I-140 on the applicant’s behalf to the U.S. Citizenship and Immigration Services (USCIS), along with supporting documents. This ascertains that the applicant is qualified for the position in question.</p><p>⦁	Step 4: Afterward, the USCIS may call the applicant for interviews. They shall inform the applicant via interview notices, and the applicant must bring along all relevant documents mentioned in the notice.</p><p>⦁	Step 5: Once the USCIS reviews and approves the petition, the applicant is issued Form I-140, and they may begin applying for a Green Card.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917291/y05sdgahq6wc3ra5tffz.jpg"><p></p><p>The UK Work Visa: A Step-by-step Guide</p><p>The general steps involved in obtaining a UK work visa are explored below.</p><p>⦁	Step 1: Determining the right work visa is the first step the applicant should consider, depending on their specific profile. There are many options to choose from, such as the popular Skilled Worker Visa, or the Global Talent Visa for exceptional professionals.</p><p>⦁	Step 2: Getting a job offer from a UK-based employer. Please note that in the case of the Global Talent Visa, a job offer is not required.</p><p>⦁	Step 3: The next step is obtaining a certificate of sponsorship from the employer. This is vital for the applicant to begin their application.</p><p>⦁	Step 4: Once the above documents are in order, the applicant is to submit an online application for their work visa, along with the necessary documents.</p><p>⦁	Step 5: Then, the applicant shall attend a visa interview at the UK embassy or consulate in their home country.</p><p>⦁	Step 6: Successful applicants will receive a visa vignette and must then travel to the UK.</p><p>⦁	Step 7: Upon reaching the UK, the persons must collect their Biometric Residence Permit (BRP) based on the instructions from their decision letter.</p><img src="http://res.cloudinary.com/dbhhjzp1n/image/upload/v1693917344/zcvlevdp9u6ocwfqukbl.jpg"><p></p>';
 // // console.log(tagsData);
 
 // let update1 = {
@@ -4638,3 +4636,65 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 // };
 
 // setTimeout(testing, 1000);
+
+
+
+
+let standardSchedule = [
+    {
+        day: "monday",
+        startTime: "6:00 PM",
+        endTime: "8:00 PM",
+        _id: "650c2fe6ebf2528d9ec7e22c"
+    },
+
+    {
+        day: "tuesday",
+        startTime: "5:00 PM",
+        endTime: "7:00 PM",
+        _id: "650c2fe6ebf2528d9ec7e22d"
+    },
+
+    {
+        day: "wednesday",
+        startTime: "4:00 PM",
+        endTime: "6:00 PM",
+        _id: "650c2fe6ebf2528d9ec7e22e"
+    }
+];
+console.log(standardSchedule);
+
+let currentSchedule = [
+    {
+        day: "monday",
+        startTime: "6:00 PM",
+        endTime: "10:00 PM",
+        standardScheduleDayId: "650c2fe6ebf2528d9ec7e22c",
+        _id: "651510521e96c472e90d7133"
+    },
+
+    {
+        day: "wednesday",
+        startTime: "5:30 PM",
+        endTime: "8:30 PM",
+        standardScheduleDayId: "650c2fe6ebf2528d9ec7e22e",
+        _id: "651510521e96c472e90d7133"
+    }
+];
+
+console.log(currentSchedule);
+
+for (let schedules of standardSchedule) {
+    // console.log('Standard: ', schedules);
+
+    for (let updatedSchedules of currentSchedule) {
+        // console.log('Current: ', updatedSchedules);
+
+        if (updatedSchedules.standardScheduleDayId == schedules._id) {
+            schedules.startTime = updatedSchedules.startTime;
+            schedules.endTime = updatedSchedules.endTime;
+        }
+    };
+};
+
+console.log('Modified standard schedule: ', standardSchedule);
