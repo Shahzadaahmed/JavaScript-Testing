@@ -2231,34 +2231,60 @@
 // // };
 
 
-// // Note: Practicing class in JS...!
+// Note: Practicing class in JS...!
 
-// // class Employee {
-// //     constructor(name, title) {
-// //         this.name = name;
-// //         this.title = title;
-// //     };
+// class Employee {
+//     constructor(name, title) {
+//         this.name = name;
+//         this.title = title;
+//     };
 
-// //     department = "IT";
-// //     employeeIntro = () => {
-// //         console.log(`Hi, My name is ${this.name}, I work in ${this.department} department as a ${this.title}`)
-// //     };
-// // };
+//     department = "IT";
+//     employeeIntro = () => {
+//         console.log(`Hi, My name is ${this.name}, I work in ${this.department} department as a ${this.title}`)
+//     };
 
-// // // Note: Another class...!
-// // class AnotherEmployee extends Employee {
-// //     company = "QBS Tech"
-// // }
+//     addAddres(address) {
+//         this.homeAddress = address;
+//     }
+// };
 
-// // let newEmployee = new Employee("Ahmed", "Software Engineer");
-// // console.log(newEmployee);
-// // newEmployee.employeeIntro();
+// // Note: Another class...!
+// class AnotherEmployee extends Employee {
+//     company = "QBS Tech"
+// }
+
+// let newEmployee = new Employee("Ahmed", "Software Engineer");
+// console.log(newEmployee);
+// newEmployee.addAddres('Nazimabad');
+// // // newEmployee.employeeIntro();
 
 
 
-// // let newAnotherEmployee = new AnotherEmployee("Bilal", "Front-End Developer");
-// // console.log(newAnotherEmployee);
-// // newAnotherEmployee.employeeIntro();
+// let newAnotherEmployee = new AnotherEmployee("Bilal", "Front-End Developer");
+// console.log(newAnotherEmployee);
+// newAnotherEmployee.employeeIntro();
+// newAnotherEmployee.addAddres('Gulshan')
+
+
+
+// function company(comName, comLocation) {
+//     let companyName = comName;
+//     let companyLocation = comLocation;
+
+//     let getDetailsNoAccess = () => {
+//         return ("Company name: ", companyName, ". We are located at: ", companyLocation);
+//     }
+
+//     this.getDetailsAccess = () => {
+//         return ("Hi, Company name: ", companyName, ". We are located at: ", companyLocation);
+//     };
+// }
+
+// let firstCompany = new company('QBS Co', 'Shahrah e faisal');
+// console.log(firstCompany.companyName);
+// console.log(firstCompany.getDetailsNoAccess);
+// console.log(firstCompany.getDetailsAccess());
 
 
 // // const userData = {
@@ -2960,7 +2986,7 @@
 
 // // let employees = ["ahmed", "bilal", "hammad", "faraz", "subhan"];
 
-// // // let copyData = [...employees]; 
+// // // let copyData = [...employees];
 // // // Or
 // // // let copyData = JSON.parse(JSON.stringify(employees));
 // // copyData[2] = "fasih";
@@ -4398,7 +4424,7 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 
 
 // var h1 = document.getElementById("header");
-// console.log(h1); 
+// console.log(h1);
 
 // const changeClassHandler = () => {
 //     h1.setAttribute("class", "aaammm");
@@ -4640,61 +4666,368 @@ Unauthorized copying of this file, via any medium is strictly prohibited Proprie
 
 
 
-let standardSchedule = [
-    {
-        day: "monday",
-        startTime: "6:00 PM",
-        endTime: "8:00 PM",
-        _id: "650c2fe6ebf2528d9ec7e22c"
-    },
+// let standardSchedule = [
+//     {
+//         day: "monday",
+//         startTime: "6:00 PM",
+//         endTime: "8:00 PM",
+//         _id: "650c2fe6ebf2528d9ec7e22c"
+//     },
 
-    {
-        day: "tuesday",
-        startTime: "5:00 PM",
-        endTime: "7:00 PM",
-        _id: "650c2fe6ebf2528d9ec7e22d"
-    },
+//     {
+//         day: "tuesday",
+//         startTime: "5:00 PM",
+//         endTime: "7:00 PM",
+//         _id: "650c2fe6ebf2528d9ec7e22d"
+//     },
 
-    {
-        day: "wednesday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        _id: "650c2fe6ebf2528d9ec7e22e"
+//     {
+//         day: "wednesday",
+//         startTime: "4:00 PM",
+//         endTime: "6:00 PM",
+//         _id: "650c2fe6ebf2528d9ec7e22e"
+//     }
+// ];
+// console.log(standardSchedule);
+
+// let currentSchedule = [
+//     {
+//         day: "monday",
+//         startTime: "6:00 PM",
+//         endTime: "10:00 PM",
+//         standardScheduleDayId: "650c2fe6ebf2528d9ec7e22c",
+//         _id: "651510521e96c472e90d7133"
+//     },
+
+//     {
+//         day: "wednesday",
+//         startTime: "5:30 PM",
+//         endTime: "8:30 PM",
+//         standardScheduleDayId: "650c2fe6ebf2528d9ec7e22e",
+//         _id: "651510521e96c472e90d7133"
+//     }
+// ];
+
+// console.log(currentSchedule);
+
+// for (let schedules of standardSchedule) {
+//     // console.log('Standard: ', schedules);
+
+//     for (let updatedSchedules of currentSchedule) {
+//         // console.log('Current: ', updatedSchedules);
+
+//         if (updatedSchedules.standardScheduleDayId == schedules._id) {
+//             schedules.startTime = updatedSchedules.startTime;
+//             schedules.endTime = updatedSchedules.endTime;
+//         }
+//     };
+// };
+
+// console.log('Modified standard schedule: ', standardSchedule);
+
+
+// var userInput = 4;
+
+// var data = {
+//     "5": 7,
+//     "7": 5
+// };
+
+// console.log(data[userInput] || "Invalid Num!");
+
+
+
+
+// Note: Difference between var and let...!
+
+
+// function varScoping() {
+//     var x = 1;
+//     console.log("x1: ", x);
+
+//     if (true) {
+//         var x = 2;
+//         console.log("x2: ", x);
+//     };
+
+//     console.log("x3: ", x);
+// };
+
+// varScoping();
+
+// function letScoping() {
+//     let x = 1;
+//     console.log("x1: ", x);
+
+//     if (true) {
+//         let x = 2;
+//         console.log("x2: ", x);
+//     };
+
+//     console.log("x3: ", x);
+// };
+
+// letScoping();
+
+
+
+
+
+// let underEmployees = "1007,1011,1016";
+// let underEmployees = "1007";
+// underEmployees = underEmployees.split(",");
+// console.log(underEmployees);
+
+
+
+
+
+// Note: What is Polymorphism in Oop (JavaScript)...!
+
+// What is Polymorphism?
+
+// Polymorphism is one of the core concepts of object-oriented programming languages where poly means many and morphism means transforming one form into
+// another. Polymorphism means the same function with different signatures is called many times. In real life, for example, a boy at the same time may be
+// a student, a class monitor, etc. So a boy can perform different operations at the same time. This is called polymorphism. 
+
+// Features of Polymorphism:
+
+// Programmers can use the same method name repeatedly.
+// Polymorphism has the effect of reducing the number of functionalities that can be paired together.
+
+/*
+class FirstClass {
+    showResult() {
+        console.log('Welcome to Oop in JavaScript!');
+    };
+}
+
+class SecondClass extends FirstClass {
+    showResult() {
+        console.log(6 * 5);
     }
-];
-console.log(standardSchedule);
+};
 
-let currentSchedule = [
-    {
-        day: "monday",
-        startTime: "6:00 PM",
-        endTime: "10:00 PM",
-        standardScheduleDayId: "650c2fe6ebf2528d9ec7e22c",
-        _id: "651510521e96c472e90d7133"
-    },
 
-    {
-        day: "wednesday",
-        startTime: "5:30 PM",
-        endTime: "8:30 PM",
-        standardScheduleDayId: "650c2fe6ebf2528d9ec7e22e",
-        _id: "651510521e96c472e90d7133"
+
+class ThirdClass extends SecondClass {
+    showResult(name) {
+        console.log(`Hi my name is ${name}`);
     }
-];
+}
 
-console.log(currentSchedule);
 
-for (let schedules of standardSchedule) {
-    // console.log('Standard: ', schedules);
 
-    for (let updatedSchedules of currentSchedule) {
-        // console.log('Current: ', updatedSchedules);
+let class1 = new FirstClass();
+console.log(class1);
+class1.showResult();
 
-        if (updatedSchedules.standardScheduleDayId == schedules._id) {
-            schedules.startTime = updatedSchedules.startTime;
-            schedules.endTime = updatedSchedules.endTime;
-        }
+
+
+let class2 = new SecondClass();
+console.log(class2);
+class2.showResult();
+
+
+
+let class3 = new ThirdClass();
+console.log(class3);
+class3.showResult('Ahmed');
+*/
+
+
+// const obj = {
+//     name: "ahmed",
+//     title: "Software Engineer",
+//     company: "QBS Corporation",
+//     location: "Shahrah e faisal",
+//     bioData: () => {
+//         return `Hi my name is ${obj.name}`;
+//     }
+// };
+
+// console.log(obj);
+// console.log(obj.bioData());
+
+
+// Note: What is Encapsulation in Oop (JavaScript)...!
+
+/*
+class Company {
+    constructor(name, industry) {
+        this.name = name;
+        this.industry = industry
+    };
+    globallyRegistered = true;
+
+    addAddress(add) {
+        this.address = add
     };
 };
 
-console.log('Modified standard schedule: ', standardSchedule);
+
+
+class AnotherCompany extends Company {
+};
+
+
+
+let company1 = new Company('QBS Corporation', 'Software Development');
+company1.addAddress('Shahrah e faisal');
+console.log(company1);
+
+
+
+let company2 = new AnotherCompany('hamdard University', 'Education');
+company2.addAddress('Hub Chowki');
+console.log(company2);
+*/
+
+
+// Note: What is Abstraction in Oop (JavaScript)...!
+
+// function employee(name, title) {
+//     let employeeName = name;
+//     let employeeTitle = title;
+
+//     let getDetailsNoAccess = function () {
+//         return `Hi, My name is ${employeeName}, I am a ${employeeTitle}, This details cannot be accessable!`;
+//     }
+
+//     this.getDetailsAccess = function () {
+//         return `Hi, My name is ${employeeName}, I am a ${employeeTitle}, This details can be accessable!`;
+//     }
+// };
+
+// let employee1 = new employee('Shahzada Ahmed', 'Software Engineer');
+// console.log(employee1);
+// console.log(employee1.employeeName);
+// console.log(employee1.getDetailsNoAccess);
+// console.log(employee1.getDetailsAccess());
+
+
+
+// Note: What is recursion in JavaScript ?
+
+// Note: Defination:
+// Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+
+// Examples:
+
+// Example # 01:
+/*
+const askName = () => {
+    let userInput = prompt('What is your name ?');
+
+    if (userInput.trim().length < 1) askName();
+    else console.log(`Hi ${userInput}`);
+};
+
+askName();
+*/
+
+
+
+// Example # 02:
+/*
+const countDown = (num) => {
+    console.log(num);
+
+    let newNum = num - 1;
+
+    if (newNum > 0) countDown(newNum);
+};
+
+countDown(5);
+*/
+// Topic completed...!
+
+
+
+
+
+
+
+
+
+// const encryptString = (input) => {
+//     if (!input) console.log('Data not found!');
+
+//     let count = 1; // Initialize count for the first character
+//     let result = '';
+
+//     for (let i = 1; i < input.length; i++) {
+//         // console.log(
+//         //     input[i], // Note: Each element...!
+//         //     input[i - 1] // Note: Each element - 1...!
+//         // );
+
+//         if (input[i] == input[i - 1]) {
+//             count++; // Note: Current iteration count is equal to the element before it the increment the count to + 1...!
+//         }
+
+//         else {
+//             result = result + count + input[i - 1];
+//             count = 1; // Reset the count for the next character
+//         };
+//     };
+
+//     // Add the count and character for the last sequence in the input string
+//     result = result + count + input[input.length - 1];
+//     console.log(result); // Expected output: 2a3b1c2d1a
+// };
+
+// let str = "aabbbcdda";
+// encryptString(str);
+
+// // tmhari kr den or meri na kren phr
+
+
+// let userInput = prompt('Enter any character?');
+
+// const obj = {
+//     a: "b",
+//     b: "a"
+// };
+
+// console.log(obj[userInput] || 'Invalid char!');
+
+// const obj = {
+//     name: "Bilal Khan",
+//     title: "CEO"
+// };
+
+// console.log('Origional: ', obj);
+
+// // const x = obj;
+// const x = { ...obj };
+// x.salary = "50000";
+
+// console.log('Copy: ', x);
+
+// console.log(this);
+
+// this.alert('OOhhh!');
+// console.log(var);
+
+
+// let sliderHeader = document.getElementById("slide-header");
+// const names = ['johnny', 'abella', 'trish', 'sunny', 'dany'];
+// // console.log(names);
+
+// let initialPoint = 0;
+
+// const slide = () => {
+//     // console.log(names[initialPoint]);
+//     sliderHeader.innerHTML = names[initialPoint];
+
+//     initialPoint++;
+//     if (initialPoint == names.length) initialPoint = 0;
+// };
+
+// setInterval(slide, 1000);
+
+
+
+// Q1: aabbbcdda => 2a3b1c2d1a
+// Q2: Why do we use async await instead of promise
