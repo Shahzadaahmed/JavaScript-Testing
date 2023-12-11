@@ -1,5 +1,7 @@
 // // Note: Function to validate email address...!
 
+// import {  } from "./export";
+
 // /*
 // let userInput = prompt('Enter email address!');
 // // console.log(userInput);
@@ -4980,8 +4982,6 @@ countDown(5);
 // let str = "aabbbcdda";
 // encryptString(str);
 
-// // tmhari kr den or meri na kren phr
-
 
 // let userInput = prompt('Enter any character?');
 
@@ -5029,5 +5029,1040 @@ countDown(5);
 
 
 
-// Q1: aabbbcdda => 2a3b1c2d1a
+// Q1: aabbbcddaeee => 2a3b1c2d1a3e
 // Q2: Why do we use async await instead of promise
+
+// Solution # 01:
+
+// const encryptString = (str) => {
+//     // console.log('Data: ', str);
+
+//     let initialCount = 1;
+//     let output = "";
+
+//     for (let i = 1; i < str.length; i++) {
+//         // console.log(
+//         //     str[i],
+//         //     str[i - 1]
+//         // );
+
+//         if (str[i] == str[i - 1]) {
+//             initialCount++;
+//         }
+
+//         else {
+//             output = output + initialCount + str[i - 1];
+//             initialCount = 1;
+//         };
+//     };
+
+//     output = output + initialCount + str[str.length - 1];
+//     console.log(`Encrypted string: ${output}`);
+// };
+
+// let str = "aabbbcddaeee";
+// encryptString(str);
+
+// Q: Remove falsy values from the given array...!
+
+// const cleanData = (array) => {
+//     console.log("Array: ", array);
+
+//     let falsyBucket = [false, 0, "", null, undefined, NaN];
+//     let filterData = array.filter(elements => !falsyBucket.includes(elements));
+//     console.log(filterData);
+// };
+
+// let arr = [0, 1, false, 2, '', 3, 'a', undefined, 'e', 23, NaN, 's', 34]
+// cleanData(arr);
+
+
+
+// Q: Find factorial using recursion....!
+// Example: Factorial of 5 is 120. =====> 5 * 4 * 3 * 2 * 1 = 120
+
+// const findFactorial = (num) => {
+
+//     if (num == 1) return 1;
+//     return num * findFactorial(num - 1);
+// };
+
+// let output = findFactorial(5);
+// console.log(output);
+
+
+
+
+// 3. Write a JavaScript program to get integers in the range (x, y) using recursion.  
+// Example : range(2, 9)
+// Expected Output : [3, 4, 5, 6, 7, 8]
+
+
+
+
+
+
+
+
+
+
+
+
+// const arr = ['web', 'applications', 'development', 'mobile', 'designing'];
+// // console.log(arr);
+
+// let longestWord = "";
+
+// for (let items of arr) {
+//     // console.log(items);
+
+//     if (items.length > longestWord.length) longestWord = items;
+// };
+
+// console.log('Longest word: ', longestWord);
+
+
+
+
+
+
+
+
+
+// function helloUser() {
+//     console.log('Hello World!');
+// };
+
+// helloUser();
+
+
+
+
+// const helloUser = () => {
+//     console.log('Hello World!');
+// };
+
+// helloUser();
+
+
+// const helloUser = () => console.log('Hello World!');
+
+// helloUser();
+
+
+
+
+
+
+
+
+
+
+
+
+// const arr = [
+//     {
+//         holiday_id: "491751",
+//         name: "QBS Pakistan",
+//         sunday: "F",
+//         monday: "T",
+//         tuesday: "T",
+//         wednesday: "T",
+//         thursday: "T",
+//         friday: "T",
+//         saturday: "F",
+//         holiday_details: {
+//             detail_id: 721167,
+//             holiday_date: "2023-11-09",
+//             remarks: "Iqbal Day"
+//         }
+//     }
+// ];
+// console.log(arr);
+
+// const formData = {
+//     type_id: "",
+//     from_date: "2023-11-21",
+//     to_date: "2023-11-30",
+//     days: 10
+// };
+// console.log('Form data: ', formData);
+
+// let days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+// let leavesCount = 0;
+// let fromDate = new Date(formData.from_date);
+// // let toDate = new Date(formData.to_date);
+
+// for (let i = 1; i <= formData.days; i++) {
+//     // console.log(fromDate);
+
+//     if (arr[0][days[fromDate.getDay()]] == "T") leavesCount++;
+//     fromDate.setDate(fromDate.getDate() + 1);
+// };
+
+// console.log('You have ', leavesCount, " total leaves!");
+
+
+
+// import { obj, arr } from "./export.js";
+// console.log(obj);
+
+
+
+// Write a function createHelloWorld. It should return a new function that always returns "Hello World" Note: Use closure.
+// const createHelloWorld = () => {
+//     return () => {
+//         return "Hello World";
+//     };
+// };
+
+// let output = createHelloWorld();
+// console.log(output());
+
+
+
+// Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more than the previous value
+// every subsequent time it is called (n, n + 1, n + 2, etc). Note: Use closure.
+
+// const createCounter = (n) => {
+//     // console.log('Num: ' , n);
+
+//     return () => {
+//         let currentvalue = n;
+//         n = n + 1;
+//         console.log('n: ', n);
+//         return currentvalue;
+//     };
+// };
+
+// let output = createCounter(10);
+// console.log(output());
+// console.log(output());
+// console.log(output());
+
+
+
+
+// Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
+// The three functions are:
+
+// increment() increases the current value by 1 and then returns it.
+// decrement() reduces the current value by 1 and then returns it.
+// reset() sets the current value to init and then returns it.
+
+// const counter = createCounter(5);
+// counter.increment(); // 6
+// counter.reset(); // 5
+// counter.decrement(); // 4
+
+
+// const complexCounter = (n) => {
+//     // console.log('Num: ', n);
+
+//     let copyObj = {};
+//     copyObj.reset = () => { return n };
+//     copyObj.increment = () => { return n + 1 };
+//     copyObj.decrement = () => { return n - 1 };
+
+//     return copyObj;
+// };
+
+// let output = complexCounter(5);
+// console.log(output.reset());
+// console.log(output.increment());
+// console.log(output.decrement());
+
+
+
+
+
+
+
+
+
+
+/*
+let bucket = [
+    {
+        date: "2023-11-19T19:00:00.000Z",
+        stats: {
+            pending: 1,
+            close_approved: 0,
+            close_not_approved: 1,
+            in_process: 0
+        }
+    },
+    {
+        date: "2023-11-20T19:00:00.000Z",
+        stats: {
+            pending: 2,
+            close_approved: 0,
+            close_not_approved: 0,
+            in_process: 1
+        }
+    },
+    {
+        date: "2023-11-22T19:00:00.000Z",
+        stats: {
+            pending: 3,
+            close_approved: 0,
+            close_not_approved: 0,
+            in_process: 1
+        }
+    },
+    {
+        date: "2023-11-23T19:00:00.000Z",
+        stats: {
+            pending: 4,
+            close_approved: 0,
+            close_not_approved: 0,
+            in_process: 0
+        }
+    }
+];
+
+
+
+const modifyData = (arr) => {
+    console.log('Data: ', arr);
+
+    let pendingData = [];
+
+    for (let obj of arr) {
+        // console.log(obj);
+
+        pendingData.push(obj?.stats?.pending);
+    };
+
+    console.log('Pending Data: ', pendingData);
+};
+
+modifyData(bucket);
+*/
+
+
+// NOTE: New fatures in JavaScript...!
+
+
+// let employee = {
+//     name: "Shahzada Ahmed",
+//     title: "Software Engineer"
+// };
+// console.log('Origional: ', employee);
+
+// Note: Copying value...!
+// let copyObj = employee;
+// copyObj.companyLocation = 'Shahrah e faisal';
+
+
+
+// Note: Copying ref...!
+// let copyObj = { ...employee };
+// copyObj.companyLocation = 'Shahrah e faisal';
+
+
+
+// Note: New way for deep copy:
+// Note: Copying ref...!
+// let copyObj = structuredClone(employee);
+// copyObj.companyLocation = 'Shahrah e faisal';
+
+// console.log('Copy: ', copyObj);
+
+
+
+
+
+
+// Reverse array...!
+
+// const arr = [2, 9, 5, 7, 1];
+// console.log(arr.toReversed()); // Output: [1, 7, 5, 9, 2]
+
+
+// let initialCount = 0;
+
+// const counter = () => {
+//     initialCount = initialCount + 1;
+//     console.log(initialCount);
+// };
+
+
+// let h1 = document.getElementById("header");
+
+// const waitPromise = (time) => {
+//     new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             h1.innerHTML = 'Welcome to advance javascript!';
+//         }, time * 1000);
+//     });
+// };
+
+// waitPromise(10);
+
+
+
+// let count = 0;
+
+// const counter = () => {
+//     count = count + 1;
+//     console.log(count);
+// };
+
+
+
+
+// const employee = {
+//     name: "John Dick",
+//     title: "Software Engineer",
+//     company: "Google",
+//     location: "USA",
+//     shift: "Morning"
+// };
+
+// console.log(employee);
+
+// Program: Write a program in javascript to fetch object keys and return that keys in an array...!
+// let keysData = Object.keys(employee);
+// console.log('Keys: ', keysData);
+
+
+
+// Program: Write a program in javascript to fetch object values and return that values in an array...!
+// let valuesData = Object.values(employee);
+// console.log('Values: ', valuesData);
+
+
+// let convertToArr = Object.entries(employee);
+// console.log(convertToArr);
+
+
+// let isKeyExist = 'title' in employee;
+// console.log(isKeyExist);
+
+
+// let isKeyExist = employee.hasOwnProperty('title');
+// console.log(isKeyExist);
+
+
+
+
+
+
+
+
+
+// Note: The Object.is() static method determines whether two values are the same value.
+
+// let checkValue = Object.is(1, '1');
+// console.log(checkValue); // false
+
+
+
+// let checkValue = Object.is('ahmed', 'ahmed');
+// console.log(checkValue); // true
+
+
+
+
+
+// NOTE: Object.freeze method...!
+
+// const employee = {
+//     name: "John Dick",
+//     title: "Software Engineer",
+//     company: "Google",
+//     location: "USA",
+//     shift: "Morning"
+// };
+
+// Object.freeze(employee);
+
+// employee.company = "Microsoft"; // Will not work because of frozen object...!
+// delete employee.shift; // Will not work because of frozen object...!
+// employee.jobType = "Onsite"; // Will not work because of frozen object...!
+
+// console.log(employee);
+
+// Note: Checking that object is frozen or not...!
+
+// let isObjFreeze = Object.isFrozen(employee);
+// console.log(isObjFreeze);
+
+
+
+// Note: Make a constructor object in vanilla javascript...!
+/*
+function Employee(first, last, title, shift) {
+    this.firstName = first;
+    this.lastName = last;
+    this.designation = title;
+    this.shift = shift;
+};
+
+// Note: Adding a property in Employee constructor object...!
+// Employee.jobType = "Onsite";
+
+// var johnData = new Employee('john', 'smith', 'graphics designer', 'evening');
+// console.log(johnData);
+
+// console.log('Job type: ', johnData.jobType);
+
+
+// Note:
+// To add a new property to a constructor, you must add it to the constructor function otherwise it will not add.
+// The JavaScript prototype property also allows you to add new methods to objects constructors.
+
+// Note: Adding a property in Employee constructor object...!
+Employee.prototype.jobType = "Onsite";
+
+var johnData = new Employee('john', 'smith', 'graphics designer', 'evening');
+console.log(johnData);
+
+console.log('Job type: ', johnData.jobType);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const arr = [
+    {
+        "document_number": 709924,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 405175,
+        "engagement_date": "2023-11-28T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "initial subtask selection that will change status from pending to inprocess",
+        "engagement_hours": 2,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": 212363,
+        "subtask_detail": "final subtask and engagement scenario final ",
+        "subtask_status": "In Process"
+    },
+    {
+        "document_number": 709924,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 919071,
+        "engagement_date": "2023-11-28T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "nosubtask no subtask status",
+        "engagement_hours": 1,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": null,
+        "subtask_detail": null,
+        "subtask_status": null
+    },
+    {
+        "document_number": 709924,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 638922,
+        "engagement_date": "2023-11-28T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "closed by employee",
+        "engagement_hours": 1,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": 212363,
+        "subtask_detail": "final subtask and engagement scenario final ",
+        "subtask_status": "Close - Not Approved"
+    },
+    {
+        "document_number": 709924,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 941071,
+        "engagement_date": "2023-11-28T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "subtask without selecting status after closed by employee",
+        "engagement_hours": 0.5,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": 212363,
+        "subtask_detail": "final subtask and engagement scenario final ",
+        "subtask_status": "In Process"
+    },
+    {
+        "document_number": 709924,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 801462,
+        "engagement_date": "2023-11-28T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "Disabling dates with 8 hours completion ",
+        "engagement_hours": 3.5,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": null,
+        "subtask_detail": null,
+        "subtask_status": null
+    },
+    {
+        "document_number": 731549,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 291760,
+        "engagement_date": "2023-11-29T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "Engagement from app ",
+        "engagement_hours": 2,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": null,
+        "subtask_detail": null,
+        "subtask_status": null
+    },
+    {
+        "document_number": 731549,
+        "document_employee_id": 1064,
+        "employee_name": "Zaman  Riaz",
+        "engagement_id": 189937,
+        "engagement_date": "2023-11-29T19:00:00.000Z",
+        "project_id": 114442,
+        "project_name": "fff",
+        "task_id": 1223,
+        "task_name": "testing task",
+        "dev_remarks": "Engagement when same date already exist ",
+        "engagement_hours": 1,
+        "engagement_extra_hours": 0,
+        "has_pm_approved": null,
+        "pm_remarks": null,
+        "has_manager_approved": null,
+        "manager_remarks": null,
+        "subtask_id": null,
+        "subtask_detail": null,
+        "subtask_status": null
+    }
+];
+*/
+
+// console.log('Arr: ', arr);
+
+// let modifiedArr = [];
+// let datesData = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(arr[i]);
+
+//     let engDate = new Date(arr[i].engagement_date);
+//     // console.log(engDate);
+
+//     modifiedArr.push({
+//         date: engDate,
+//         calculatedHours: arr[i].engagement_hours
+//     });
+
+//     datesData.push(engDate.getDate());
+// };
+
+// // console.log('Modified Data: ', modifiedArr);
+// // console.log('Dates Data: ', datesData);
+
+// let uniqueDates = datesData.filter((date, index) => {
+//     // console.log(index, date);
+//     return datesData.indexOf(date) == index;
+// });
+
+// console.log('Modified Data: ', modifiedArr);
+// console.log('Unique Date Data: ', uniqueDates);
+
+// let totalHours = 0;
+// let finalizeArr = [];
+
+// for (let i = 0; i < uniqueDates.length; i++) {
+//     console.log('i', uniqueDates[i]);
+
+//     for (let j = 0; j < modifiedArr.length; j++) {
+//         console.log('j', new Date(modifiedArr[j].date).getDate());
+
+//         if (new Date(modifiedArr[j].date).getDate() == uniqueDates[i]) {
+//             totalHours = totalHours + modifiedArr[j].calculatedHours;
+//             finalizeArr.push({
+//                 date: modifiedArr[j].date,
+//                 calculatedHours: totalHours
+//             });
+//         }
+
+//         else calculatedHours = 0;
+// };
+// };
+
+// console.log('Done: ', finalizeArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let totalHours = 0;
+// let finalizeArr = [];
+
+// for (let j = 0; j < modifiedArr.length; j++) {
+//     console.log('j', modifiedArr[j]);
+// };
+
+
+
+
+
+
+
+
+
+
+// const calculateHoursByDate = (arr) => {
+//     // console.log('Data: ' , arr);
+
+//     let modifiedArr = new Map();
+//     // console.log(modifiedArr);
+
+//     for (let items of arr) {
+//         // console.log(items);
+
+//         let date = new Date(items.engagement_date).getDate();
+//         // console.log('Date: ', new Date(date));
+
+//         if (modifiedArr.has(date)) {
+//             modifiedArr.set(
+//                 date,
+//                 modifiedArr.get(date) + items.engagement_hours
+//             );
+//         }
+
+//         else {
+//             modifiedArr.set(date, items.engagement_hours);
+//         }
+//     };
+
+//     console.log(modifiedArr);
+// };
+
+// calculateHoursByDate(arr);
+
+
+
+// let user = {
+//     1: { name: "ahmed" },
+//     2: { name: "bilal" }
+// };
+
+// console.log(user);
+
+
+
+
+// New Map in JavaScript...!
+
+// const userMap = new Map([
+//     [1, { name: "ahmed" }],
+//     [2, { name: "bilal" }]
+// ]);
+
+// Note: Updating a value of id 1:
+// userMap.set(1, { name: "Shahzada Ahmed" });
+
+// console.log(userMap.get(1)); // Output: Shahzada ahmed.
+
+// let key = { userId: "ahmed1996" };
+// userMap.set(key, { name: "faraz" })
+
+// console.log(userMap.get(key));
+// console.log(userMap);
+
+
+
+// Note: Removing duplicates from the array...!
+
+// const nums = [2, 4, 1, 8, 4, 6, 1, 12];
+// // console.log(nums);
+
+// const uniqueItems = new Set(nums);
+// // uniqueItems.delete(4);
+// uniqueItems.add(14);
+// console.log(uniqueItems);
+
+
+
+// Notes:
+/*
+1: In objects we can use only string keys.
+2: In map objects we can use all data type keys.
+*/
+
+// const mapObj = new Map([
+//     ['name', "ahmed"],
+//     [8, 'Day of birth'],
+//     [false, 'married']
+// ]);
+
+// mapObj.set('city', "karachi");
+
+// console.log(mapObj.get(false)); // Output married.
+// console.log(mapObj.keys()) // Note: fetching all keys.
+// console.log(mapObj.values()); // Note: fetching all values.
+// console.log(mapObj.size); // Returns the array size.
+// mapObj.delete(false); // Note: Delete false property and value.
+// console.log(mapObj.has('name')); // Returns true if the property exist in the object otherwise false..
+// console.log(mapObj.has('country')); // Returns true if the property exist in the object otherwise false.
+
+// console.log(mapObj);
+
+// mapObj.forEach((values, keys) => {
+//     // console.log('Keys: ', keys);
+//     console.log('Values: ', values);
+// });
+
+
+
+
+/*
+const arr = [
+    {
+        day: "monday",
+        name: "ahmed",
+        score: 25
+    },
+
+    {
+        day: "tuesday",
+        name: "ahmed",
+        score: 32
+    },
+
+    {
+        day: "wednesday",
+        name: "ahmed",
+        score: 38
+    },
+
+    {
+        day: "thursday",
+        name: "ahmed",
+        score: 34
+    },
+
+    {
+        day: "friday",
+        name: "ahmed",
+        score: 42
+    },
+
+    {
+        day: "saturday",
+        name: "awais",
+        score: 72
+    },
+
+    {
+        day: "sunday",
+        name: "awais",
+        score: 120
+    },
+];
+
+
+// console.log(arr);
+
+const calculateScores = (arrData) => {
+    // console.log('Data: ', arrData);
+
+    let modifiedData = new Map();
+
+    for (let items of arrData) {
+        // console.log(items);
+
+        let personName = items?.name;
+        // console.log(personName);
+
+        if (modifiedData.has(personName)) {
+            modifiedData.set(personName, modifiedData.get(personName) + items?.score);
+        }
+
+        else {
+            modifiedData.set(personName, items?.score);
+        };
+    };
+
+    console.log('Modified data: ', modifiedData);
+};
+
+calculateScores(arr);
+*/
+
+
+
+// function testing() { console.log('Hello World!'); };
+
+// testing();
+// document.write('<h1> Hello World! </h1>')
+
+
+
+// const apiCall = async () => {
+//     // let apiUrl = "http://192.168.0.105:5050";
+//     let apiUrl = "http://192.168.0.105:5050/users";
+
+//     try {
+//         let res = await fetch(apiUrl);
+//         let actualData = await res.json();
+//         console.log(actualData);
+//     }
+
+//     catch (error) {
+//         console.log("Something went wrong while integrating api: ", error);
+//     };
+// };
+
+// apiCall();
+
+
+
+// const renderData = (...params) => {
+//     // console.log(params);
+
+//     let fetchData = params;
+//     let newItem = "x";
+//     fetchData.push(newItem);
+
+//     console.log('Data: ', fetchData);
+// };
+
+// renderData('a', 'b', 'c', 'd', 'e');
+
+
+
+// NOTE: Advance javascript or advance javascript method  groupBy()...!
+
+// Program # 01:
+/*
+const numArr = [1, 2, 3, 4, 5, 6];
+// console.log('Array: ', numArr);
+
+let grouping =
+    Object.groupBy(numArr, (item, index) => {
+        // console.log('Index: ', index, 'Value: ', item);
+        return item % 2 == 0 ? "Even" : "Odd"
+    });
+
+console.log(grouping);
+*/
+
+
+// Program # 02:
+
+// let specialFiends = ['ahmed', 'mehran', 'shahzaib', 'kashan', 'khurram'];
+// // console.log('Special friends: ', specialFiends);
+
+// let friends = ['bilal', 'shahzil', 'shahzaib', 'faraz', 'khurram'];
+// // console.log('Friends: ', friends);
+
+// let grouping =
+//     Object.groupBy(friends, (item, index) => {
+//         return specialFiends.includes(item) ? "Special friends" : "Friends";
+//     });
+
+// console.log(grouping);
+
+
+// Note: Testing program...!
+
+// let twoMinsFormula = Date.now() + (1000 * 60 * 2);
+// let counter = 0;
+
+// let stopCounter = setInterval(() => {
+//     counter++;
+//     console.log(counter);
+
+//     if (twoMinsFormula < Date.now()) {
+//         console.log('Counter stopped after two minutes!');
+//         clearInterval(stopCounter);
+//     };
+// }, 1000);
+
+
+
+// Note: Advance objects topics...!
+
+// let userObj = {
+//     name: "Muhammad Ahmed",
+//     title: "Software Engineer",
+//     company: "QBS Corporation"
+// };
+
+// console.log(userObj);
+
+// console.log(Object.hasOwn(userObj, 'title'));
+// console.log(Object.hasOwn(userObj, 'maritalStatus'));
+// console.log(Object.hasOwn(userObj, 'salary'));
+
+
+
+
+// Object.freeze(userObj);
+// userObj.maritalStatus = false; // Note: Will not effect to object is freeze...!
+// delete userObj.company; // Note: Will not effect to object is freeze...!
+
+// console.log(userObj);
+
+// Note: Checking is object freeze...!
+
+// console.log(Object.isFrozen(userObj));

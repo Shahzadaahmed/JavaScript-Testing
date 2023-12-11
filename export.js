@@ -1,7 +1,11 @@
-let bioData = {
-    name: "Shahzada Ahmed",
-    title: "Software Engimeer",
-    company: "QBS Co",
-};
+// const obj = {
+//     company: "QBS Tech",
+//     industry: "Software Development",
+//     worldWide: true
+// };
 
-export { bioData };
+// // const arr = ["a", "b", "c"];
+
+// export default obj;
+
+// // export { obj, arr };
