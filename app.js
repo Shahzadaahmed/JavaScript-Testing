@@ -6066,3 +6066,134 @@ console.log(grouping);
 // Note: Checking is object freeze...!
 
 // console.log(Object.isFrozen(userObj));
+
+
+
+
+
+
+// EcmaScript 2023 features...!
+
+// const arr = [
+//     'apple',
+//     'mango',
+//     'banana',
+//     'apple',
+//     'orange',
+//     'grapes',
+//     'apple',
+//     'water melon'
+// ];
+
+// // console.log(arr);
+
+// let fetchLastItem = arr.findLast((items) => {
+//     return items == 'apple';
+// });
+
+// console.log(fetchLastItem);
+
+
+
+
+// const months = ['January', 'February', 'March', 'April', 'May'];
+
+// console.log(months);
+// // console.log(months.reverse());
+// console.log(months.toReversed())
+
+
+
+// const privateData = new Map();
+// const obj = {};
+
+// privateData.set(obj, 'This is a private data');
+// console.log(privateData.get(obj));
+
+// Now i will do same thing with new ES 2023 feature...!
+
+// const privateData = new WeakMap();
+// const obj = { label: "This is my personal data" };
+
+// console.log(privateData);
+
+// const key = Symbol('privateKey'); // Create a unique Symbol as the key...!
+// console.log(key);
+
+// privateData.set(key, obj);
+// console.log(privateData);
+// console.log(privateData.get(key));
+
+let ulEl = document.getElementById("list");
+
+const apiCall = async () => {
+    // let apiUrl = "https://jsonplaceholder.typicode.com/users";
+    let apiUrl = "http://192.168.0.102:5050/fetch/all/todos";
+
+    try {
+        // Way 1
+        // let response = await fetch(apiUrl);
+        // let actualData = await response.json();
+        // console.log(actualData);
+
+        // Way 2
+        // let response = await fetch({
+        //     method: "GET",
+        //     url: apiUrl
+        // });
+        // // let actualData = await response.json();
+        // console.log(response);
+
+        // Way 3 (With Axios)
+        let res = await axios({
+            method: "GET",
+            url: apiUrl
+        });
+        console.log(res);
+
+        let targetData = res.data.data;
+
+        if (targetData.length > 0) {
+            ulEl.innerHTML = targetData.map((item, index) => {
+                return (`<li> ${item} </li>`);
+            }).join("");
+        };
+    }
+
+    catch (error) {
+        console.log('Something went wrong while integrating api: ', error);
+    };
+};
+
+apiCall();
+
+
+const inputEl = document.getElementById("input-field");
+
+const addData = async () => {
+    console.log(inputEl.value);
+
+    let apiUrl = "http://192.168.0.102:5050/todo-item/add";
+    // console.log(apiUrl);
+
+
+    try {
+        let response = await axios({
+            method: "POST",
+            url: apiUrl,
+            data: {
+                todoInput: inputEl.value
+            }
+        });
+        console.log(response);
+
+        if (response) {
+            inputEl.value = "";
+            apiCall();
+        };
+    }
+
+    catch (error) {
+        console.log('Something went wrong while sending data to server: ', error);
+    };
+};
