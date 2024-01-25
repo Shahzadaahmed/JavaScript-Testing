@@ -6124,76 +6124,404 @@ console.log(grouping);
 // console.log(privateData);
 // console.log(privateData.get(key));
 
-let ulEl = document.getElementById("list");
+// let ulEl = document.getElementById("list");
 
-const apiCall = async () => {
-    // let apiUrl = "https://jsonplaceholder.typicode.com/users";
-    let apiUrl = "http://192.168.0.102:5050/fetch/all/todos";
+// const apiCall = async () => {
+//     // let apiUrl = "https://jsonplaceholder.typicode.com/users";
+//     let apiUrl = "http://192.168.0.102:5050/fetch/all/todos";
 
-    try {
-        // Way 1
-        // let response = await fetch(apiUrl);
-        // let actualData = await response.json();
-        // console.log(actualData);
+//     try {
+//         // Way 1
+//         // let response = await fetch(apiUrl);
+//         // let actualData = await response.json();
+//         // console.log(actualData);
 
-        // Way 2
-        // let response = await fetch({
-        //     method: "GET",
-        //     url: apiUrl
-        // });
-        // // let actualData = await response.json();
-        // console.log(response);
+//         // Way 2
+//         // let response = await fetch({
+//         //     method: "GET",
+//         //     url: apiUrl
+//         // });
+//         // // let actualData = await response.json();
+//         // console.log(response);
 
-        // Way 3 (With Axios)
-        let res = await axios({
-            method: "GET",
-            url: apiUrl
-        });
-        console.log(res);
+//         // Way 3 (With Axios)
+//         let res = await axios({
+//             method: "GET",
+//             url: apiUrl
+//         });
+//         console.log(res);
 
-        let targetData = res.data.data;
+//         let targetData = res.data.data;
 
-        if (targetData.length > 0) {
-            ulEl.innerHTML = targetData.map((item, index) => {
-                return (`<li> ${item} </li>`);
-            }).join("");
-        };
-    }
+//         if (targetData.length > 0) {
+//             ulEl.innerHTML = targetData.map((item, index) => {
+//                 return (`<li> ${item} </li>`);
+//             }).join("");
+//         };
+//     }
 
-    catch (error) {
-        console.log('Something went wrong while integrating api: ', error);
-    };
-};
+//     catch (error) {
+//         console.log('Something went wrong while integrating api: ', error);
+//     };
+// };
 
-apiCall();
-
-
-const inputEl = document.getElementById("input-field");
-
-const addData = async () => {
-    console.log(inputEl.value);
-
-    let apiUrl = "http://192.168.0.102:5050/todo-item/add";
-    // console.log(apiUrl);
+// apiCall();
 
 
-    try {
-        let response = await axios({
-            method: "POST",
-            url: apiUrl,
-            data: {
-                todoInput: inputEl.value
+// const inputEl = document.getElementById("input-field");
+
+// const addData = async () => {
+//     console.log(inputEl.value);
+
+//     let apiUrl = "http://192.168.0.102:5050/todo-item/add";
+//     // console.log(apiUrl);
+
+
+//     try {
+//         let response = await axios({
+//             method: "POST",
+//             url: apiUrl,
+//             data: {
+//                 todoInput: inputEl.value
+//             }
+//         });
+//         console.log(response);
+
+//         if (response) {
+//             inputEl.value = "";
+//             apiCall();
+//         };
+//     }
+
+//     catch (error) {
+//         console.log('Something went wrong while sending data to server: ', error);
+//     };
+// };
+
+
+
+
+let arr = [
+    {
+        "participant_id": 132,
+        "participant_email": "ather.hashmi@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "3.53",
+                "competencies_avg": [
+                    "3.67",
+                    "3.67",
+                    "3.60",
+                    "3.25"
+                ]
+            },
+            {
+                "cluster_avg": "3.15",
+                "competencies_avg": [
+                    "3.00",
+                    "3.00",
+                    "3.00",
+                    "3.50"
+                ]
+            },
+            {
+                "cluster_avg": "3.71",
+                "competencies_avg": [
+                    "4.00",
+                    "4.00",
+                    "3.33"
+                ]
             }
-        });
-        console.log(response);
-
-        if (response) {
-            inputEl.value = "";
-            apiCall();
-        };
+        ]
+    },
+    {
+        "participant_id": 147,
+        "participant_email": "aijaz.siddiqui@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "3.33",
+                "competencies_avg": [
+                    "3.67",
+                    "3.00",
+                    "3.20",
+                    "3.50"
+                ]
+            },
+            {
+                "cluster_avg": "3.46",
+                "competencies_avg": [
+                    "3.33",
+                    "4.00",
+                    "3.50",
+                    "3.25"
+                ]
+            },
+            {
+                "cluster_avg": "3.43",
+                "competencies_avg": [
+                    "3.50",
+                    "3.50",
+                    "3.33"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 660,
+        "participant_email": "muhammad.bilal@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.87",
+                "competencies_avg": [
+                    "2.33",
+                    "3.00",
+                    "3.20",
+                    "2.75"
+                ]
+            },
+            {
+                "cluster_avg": "3.08",
+                "competencies_avg": [
+                    "4.00",
+                    "2.50",
+                    "3.00",
+                    "2.75"
+                ]
+            },
+            {
+                "cluster_avg": "2.43",
+                "competencies_avg": [
+                    "2.50",
+                    "2.00",
+                    "2.67"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 4885,
+        "participant_email": "Sohaib.Ahmed@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.73",
+                "competencies_avg": [
+                    "3.00",
+                    "2.33",
+                    "2.80",
+                    "2.75"
+                ]
+            },
+            {
+                "cluster_avg": "3.00",
+                "competencies_avg": [
+                    "3.00",
+                    "3.00",
+                    "3.00",
+                    "3.00"
+                ]
+            },
+            {
+                "cluster_avg": "3.00",
+                "competencies_avg": [
+                    "3.00",
+                    "3.50",
+                    "2.67"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 5956,
+        "participant_email": "areeb.ahmed@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "1.73",
+                "competencies_avg": [
+                    "2.00",
+                    "2.00",
+                    "1.40",
+                    "1.75"
+                ]
+            },
+            {
+                "cluster_avg": "2.38",
+                "competencies_avg": [
+                    "2.67",
+                    "2.50",
+                    "2.25",
+                    "2.25"
+                ]
+            },
+            {
+                "cluster_avg": "1.86",
+                "competencies_avg": [
+                    "2.50",
+                    "2.00",
+                    "1.33"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 4655,
+        "participant_email": "owais.badar@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.73",
+                "competencies_avg": [
+                    "3.00",
+                    "2.33",
+                    "2.80",
+                    "2.75"
+                ]
+            },
+            {
+                "cluster_avg": "3.08",
+                "competencies_avg": [
+                    "3.67",
+                    "3.00",
+                    "3.00",
+                    "2.75"
+                ]
+            },
+            {
+                "cluster_avg": "2.71",
+                "competencies_avg": [
+                    "3.00",
+                    "2.50",
+                    "2.67"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 186,
+        "participant_email": "irfan.asim@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.73",
+                "competencies_avg": [
+                    "3.33",
+                    "3.00",
+                    "2.40",
+                    "2.50"
+                ]
+            },
+            {
+                "cluster_avg": "3.08",
+                "competencies_avg": [
+                    "3.67",
+                    "3.00",
+                    "2.50",
+                    "3.25"
+                ]
+            },
+            {
+                "cluster_avg": "1.71",
+                "competencies_avg": [
+                    "1.50",
+                    "1.50",
+                    "2.00"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 1191,
+        "participant_email": "farrukh.sami@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "4.00",
+                "competencies_avg": [
+                    "4.00",
+                    "4.00",
+                    "4.00",
+                    "4.00"
+                ]
+            },
+            {
+                "cluster_avg": "4.00",
+                "competencies_avg": [
+                    "4.00",
+                    "4.00",
+                    "4.00",
+                    "4.00"
+                ]
+            },
+            {
+                "cluster_avg": "4.00",
+                "competencies_avg": [
+                    "4.00",
+                    "4.00",
+                    "4.00"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 220,
+        "participant_email": "rashid.jamil@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.53",
+                "competencies_avg": [
+                    "3.00",
+                    "2.00",
+                    "2.60",
+                    "2.50"
+                ]
+            },
+            {
+                "cluster_avg": "2.85",
+                "competencies_avg": [
+                    "2.67",
+                    "2.50",
+                    "3.00",
+                    "3.00"
+                ]
+            },
+            {
+                "cluster_avg": "2.43",
+                "competencies_avg": [
+                    "2.50",
+                    "2.00",
+                    "2.67"
+                ]
+            }
+        ]
+    },
+    {
+        "participant_id": 2021,
+        "participant_email": "Moghees.Siddiqi@toyota-indus.com",
+        "scores": [
+            {
+                "cluster_avg": "2.60",
+                "competencies_avg": [
+                    "2.67",
+                    "2.33",
+                    "2.80",
+                    "2.50"
+                ]
+            },
+            {
+                "cluster_avg": "2.92",
+                "competencies_avg": [
+                    "3.00",
+                    "3.00",
+                    "2.75",
+                    "3.00"
+                ]
+            },
+            {
+                "cluster_avg": "2.86",
+                "competencies_avg": [
+                    "3.00",
+                    "2.50",
+                    "3.00"
+                ]
+            }
+        ]
     }
+];
 
-    catch (error) {
-        console.log('Something went wrong while sending data to server: ', error);
-    };
-};
+console.log(arr);
