@@ -6201,327 +6201,911 @@ console.log(grouping);
 
 
 
-let arr = [
-    {
-        "participant_id": 132,
-        "participant_email": "ather.hashmi@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "3.53",
-                "competencies_avg": [
-                    "3.67",
-                    "3.67",
-                    "3.60",
-                    "3.25"
-                ]
-            },
-            {
-                "cluster_avg": "3.15",
-                "competencies_avg": [
-                    "3.00",
-                    "3.00",
-                    "3.00",
-                    "3.50"
-                ]
-            },
-            {
-                "cluster_avg": "3.71",
-                "competencies_avg": [
-                    "4.00",
-                    "4.00",
-                    "3.33"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 147,
-        "participant_email": "aijaz.siddiqui@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "3.33",
-                "competencies_avg": [
-                    "3.67",
-                    "3.00",
-                    "3.20",
-                    "3.50"
-                ]
-            },
-            {
-                "cluster_avg": "3.46",
-                "competencies_avg": [
-                    "3.33",
-                    "4.00",
-                    "3.50",
-                    "3.25"
-                ]
-            },
-            {
-                "cluster_avg": "3.43",
-                "competencies_avg": [
-                    "3.50",
-                    "3.50",
-                    "3.33"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 660,
-        "participant_email": "muhammad.bilal@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.87",
-                "competencies_avg": [
-                    "2.33",
-                    "3.00",
-                    "3.20",
-                    "2.75"
-                ]
-            },
-            {
-                "cluster_avg": "3.08",
-                "competencies_avg": [
-                    "4.00",
-                    "2.50",
-                    "3.00",
-                    "2.75"
-                ]
-            },
-            {
-                "cluster_avg": "2.43",
-                "competencies_avg": [
-                    "2.50",
-                    "2.00",
-                    "2.67"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 4885,
-        "participant_email": "Sohaib.Ahmed@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.73",
-                "competencies_avg": [
-                    "3.00",
-                    "2.33",
-                    "2.80",
-                    "2.75"
-                ]
-            },
-            {
-                "cluster_avg": "3.00",
-                "competencies_avg": [
-                    "3.00",
-                    "3.00",
-                    "3.00",
-                    "3.00"
-                ]
-            },
-            {
-                "cluster_avg": "3.00",
-                "competencies_avg": [
-                    "3.00",
-                    "3.50",
-                    "2.67"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 5956,
-        "participant_email": "areeb.ahmed@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "1.73",
-                "competencies_avg": [
-                    "2.00",
-                    "2.00",
-                    "1.40",
-                    "1.75"
-                ]
-            },
-            {
-                "cluster_avg": "2.38",
-                "competencies_avg": [
-                    "2.67",
-                    "2.50",
-                    "2.25",
-                    "2.25"
-                ]
-            },
-            {
-                "cluster_avg": "1.86",
-                "competencies_avg": [
-                    "2.50",
-                    "2.00",
-                    "1.33"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 4655,
-        "participant_email": "owais.badar@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.73",
-                "competencies_avg": [
-                    "3.00",
-                    "2.33",
-                    "2.80",
-                    "2.75"
-                ]
-            },
-            {
-                "cluster_avg": "3.08",
-                "competencies_avg": [
-                    "3.67",
-                    "3.00",
-                    "3.00",
-                    "2.75"
-                ]
-            },
-            {
-                "cluster_avg": "2.71",
-                "competencies_avg": [
-                    "3.00",
-                    "2.50",
-                    "2.67"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 186,
-        "participant_email": "irfan.asim@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.73",
-                "competencies_avg": [
-                    "3.33",
-                    "3.00",
-                    "2.40",
-                    "2.50"
-                ]
-            },
-            {
-                "cluster_avg": "3.08",
-                "competencies_avg": [
-                    "3.67",
-                    "3.00",
-                    "2.50",
-                    "3.25"
-                ]
-            },
-            {
-                "cluster_avg": "1.71",
-                "competencies_avg": [
-                    "1.50",
-                    "1.50",
-                    "2.00"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 1191,
-        "participant_email": "farrukh.sami@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "4.00",
-                "competencies_avg": [
-                    "4.00",
-                    "4.00",
-                    "4.00",
-                    "4.00"
-                ]
-            },
-            {
-                "cluster_avg": "4.00",
-                "competencies_avg": [
-                    "4.00",
-                    "4.00",
-                    "4.00",
-                    "4.00"
-                ]
-            },
-            {
-                "cluster_avg": "4.00",
-                "competencies_avg": [
-                    "4.00",
-                    "4.00",
-                    "4.00"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 220,
-        "participant_email": "rashid.jamil@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.53",
-                "competencies_avg": [
-                    "3.00",
-                    "2.00",
-                    "2.60",
-                    "2.50"
-                ]
-            },
-            {
-                "cluster_avg": "2.85",
-                "competencies_avg": [
-                    "2.67",
-                    "2.50",
-                    "3.00",
-                    "3.00"
-                ]
-            },
-            {
-                "cluster_avg": "2.43",
-                "competencies_avg": [
-                    "2.50",
-                    "2.00",
-                    "2.67"
-                ]
-            }
-        ]
-    },
-    {
-        "participant_id": 2021,
-        "participant_email": "Moghees.Siddiqi@toyota-indus.com",
-        "scores": [
-            {
-                "cluster_avg": "2.60",
-                "competencies_avg": [
-                    "2.67",
-                    "2.33",
-                    "2.80",
-                    "2.50"
-                ]
-            },
-            {
-                "cluster_avg": "2.92",
-                "competencies_avg": [
-                    "3.00",
-                    "3.00",
-                    "2.75",
-                    "3.00"
-                ]
-            },
-            {
-                "cluster_avg": "2.86",
-                "competencies_avg": [
-                    "3.00",
-                    "2.50",
-                    "3.00"
-                ]
-            }
-        ]
-    }
-];
+// let arr = [
+//     {
+//         "participant_id": 132,
+//         "participant_email": "ather.hashmi@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "3.53",
+//                 "competencies_avg": [
+//                     "3.67",
+//                     "3.67",
+//                     "3.60",
+//                     "3.25"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.15",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "3.00",
+//                     "3.00",
+//                     "3.50"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.71",
+//                 "competencies_avg": [
+//                     "4.00",
+//                     "4.00",
+//                     "3.33"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 147,
+//         "participant_email": "aijaz.siddiqui@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "3.33",
+//                 "competencies_avg": [
+//                     "3.67",
+//                     "3.00",
+//                     "3.20",
+//                     "3.50"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.46",
+//                 "competencies_avg": [
+//                     "3.33",
+//                     "4.00",
+//                     "3.50",
+//                     "3.25"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.43",
+//                 "competencies_avg": [
+//                     "3.50",
+//                     "3.50",
+//                     "3.33"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 660,
+//         "participant_email": "muhammad.bilal@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.87",
+//                 "competencies_avg": [
+//                     "2.33",
+//                     "3.00",
+//                     "3.20",
+//                     "2.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.08",
+//                 "competencies_avg": [
+//                     "4.00",
+//                     "2.50",
+//                     "3.00",
+//                     "2.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.43",
+//                 "competencies_avg": [
+//                     "2.50",
+//                     "2.00",
+//                     "2.67"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 4885,
+//         "participant_email": "Sohaib.Ahmed@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.73",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "2.33",
+//                     "2.80",
+//                     "2.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.00",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "3.00",
+//                     "3.00",
+//                     "3.00"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.00",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "3.50",
+//                     "2.67"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 5956,
+//         "participant_email": "areeb.ahmed@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "1.73",
+//                 "competencies_avg": [
+//                     "2.00",
+//                     "2.00",
+//                     "1.40",
+//                     "1.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.38",
+//                 "competencies_avg": [
+//                     "2.67",
+//                     "2.50",
+//                     "2.25",
+//                     "2.25"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "1.86",
+//                 "competencies_avg": [
+//                     "2.50",
+//                     "2.00",
+//                     "1.33"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 4655,
+//         "participant_email": "owais.badar@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.73",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "2.33",
+//                     "2.80",
+//                     "2.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.08",
+//                 "competencies_avg": [
+//                     "3.67",
+//                     "3.00",
+//                     "3.00",
+//                     "2.75"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.71",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "2.50",
+//                     "2.67"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 186,
+//         "participant_email": "irfan.asim@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.73",
+//                 "competencies_avg": [
+//                     "3.33",
+//                     "3.00",
+//                     "2.40",
+//                     "2.50"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "3.08",
+//                 "competencies_avg": [
+//                     "3.67",
+//                     "3.00",
+//                     "2.50",
+//                     "3.25"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "1.71",
+//                 "competencies_avg": [
+//                     "1.50",
+//                     "1.50",
+//                     "2.00"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 1191,
+//         "participant_email": "farrukh.sami@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "4.00",
+//                 "competencies_avg": [
+//                     "4.00",
+//                     "4.00",
+//                     "4.00",
+//                     "4.00"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "4.00",
+//                 "competencies_avg": [
+//                     "4.00",
+//                     "4.00",
+//                     "4.00",
+//                     "4.00"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "4.00",
+//                 "competencies_avg": [
+//                     "4.00",
+//                     "4.00",
+//                     "4.00"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 220,
+//         "participant_email": "rashid.jamil@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.53",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "2.00",
+//                     "2.60",
+//                     "2.50"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.85",
+//                 "competencies_avg": [
+//                     "2.67",
+//                     "2.50",
+//                     "3.00",
+//                     "3.00"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.43",
+//                 "competencies_avg": [
+//                     "2.50",
+//                     "2.00",
+//                     "2.67"
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "participant_id": 2021,
+//         "participant_email": "Moghees.Siddiqi@toyota-indus.com",
+//         "scores": [
+//             {
+//                 "cluster_avg": "2.60",
+//                 "competencies_avg": [
+//                     "2.67",
+//                     "2.33",
+//                     "2.80",
+//                     "2.50"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.92",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "3.00",
+//                     "2.75",
+//                     "3.00"
+//                 ]
+//             },
+//             {
+//                 "cluster_avg": "2.86",
+//                 "competencies_avg": [
+//                     "3.00",
+//                     "2.50",
+//                     "3.00"
+//                 ]
+//             }
+//         ]
+//     }
+// ];
 
-console.log(arr);
+// console.log(arr);
+
+
+
+
+
+// const showNames = (...rest) => {
+//     // console.log(user1);
+//     // console.log(user2);
+//     console.log('Rest: ', rest);
+// };
+
+// showNames('John', 'Andy', 'Nick', 'SMith', 'Bravo');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function abc(...params) {
+//     console.log('Parameters: ', params.length);
+// };
+
+// abc('a', 'b', 'c', 'd');
+
+
+
+// const apiCall = async () => {
+//     let apiUrl = "http://localhost:5050/fetch/all/todos";
+
+//     try {
+//         let response = await fetch(apiUrl);
+//         let dataInJSON = await response.json();
+//         console.log(dataInJSON);
+//     }
+
+//     catch (error) {
+//         console.log('Something went wronh while fetching data from an api: ', error);
+//     };
+// };
+
+// apiCall();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Note: Sending data to server...!
+
+// const apiCall = async () => {
+//     let apiUrl = "http://localhost:5050/todo-item/add";
+//     let item = 'Gaming Keyboard';
+
+//     try {
+//         let response = await axios({
+//             method: "POST",
+//             url: apiUrl,
+//             data: {
+//                 todoInput: item
+//             }
+//         });
+//         console.log(response);
+//     }
+
+//     catch (error) {
+//         console.log('Something went wrong while sending data to server: ', error);
+//     };
+// };
+
+// apiCall();
+
+
+
+
+
+
+// const friends = ['ahmed', 'mehran', 'shahzaib', 'kashan', 'khurram'];
+// console.log(friends.slice(1, 4));
+
+
+
+
+
+
+
+
+// const dataDvivisibleBy_2 = (data, index = 0, results = []) => {
+//     // console.log('Arr: ', data);
+
+//     if (index >= data.length) return results;
+//     if (data[index] % 2 == 0) results.push(data[index]);
+
+//     return dataDvivisibleBy_2(data, index + 1, results);
+// };
+
+// let arr = [2, 4, 7, 8, 11, 14];
+// let output = dataDvivisibleBy_2(arr);
+// console.log('OutPut: ', output);
+
+
+
+
+
+
+
+
+
+
+
+// Note: Write a program in javascript to remove duplicates from an array without using any built on method...!
+
+
+// const removeDuiplicates = (data) => {
+//     // console.log('Data: ', data);
+
+//     let uniqueItems = [];
+
+//     for (let i = 0; i < data.length; i++) {
+//         // console.log(data[i]);
+
+//         let isDuplicate = false;
+
+//         for (let j = 0; j < uniqueItems.length; j++) {
+//             // console.log(uniqueItems[j]);
+
+//             if (uniqueItems[j] == data[i]) {
+//                 isDuplicate = true;
+//                 break;
+//             };
+//         };
+
+//         if (!isDuplicate) uniqueItems.push(data[i]);
+//     };
+
+//     return uniqueItems;
+// };
+
+// const arr = [2, 55, 7, 8, 11, 2, 14, 55, 11, 74, 1, 14, 38];
+// const output = removeDuiplicates(arr);
+// console.log('Unique Items: ', output);
+
+
+
+
+// const arr = [
+//     {
+//         employeeId: 1,
+//         employeeName: "Ahmed"
+//     },
+
+//     {
+//         employeeId: 2,
+//         employeeName: "Bilal"
+//     },
+
+//     {
+//         employeeId: 3,
+//         employeeName: "Harris"
+//     },
+// ];
+
+// // console.log('Array: ', arr);
+
+// const arrToObj = { ...[arr] };
+// console.log('Object: ', arrToObj);
+
+
+
+
+
+
+
+
+
+
+
+
+// const employess = ['john', 'nick', 'smith'];
+// const input = prompt("Enter employee name");
+// const isEmpExist = employess.includes(input);
+
+// console.log('Status: ', isEmpExist);
+
+// console.log('ahmed'.includes('h'));
+
+
+
+
+
+// const apiCall = () => {
+//     const apiUrl = "http://localhost:8081";
+
+//     fetch(apiUrl)
+//         .then((res) => {
+//             // console.log('Res: ', res);
+//             return res.json();
+//         })
+//         .then(actualRes => {
+//             console.log('Res: ', actualRes);
+//         })
+//         .catch((err) => {
+//             console.log('Api error: ', err);
+//         })
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+// const apiCall = async () => {
+//     const apiUrl = "http://localhost:8081";
+
+//     try {
+//         const res = await fetch(apiUrl);
+//         const actualRes = await res.json();
+//         console.log('Res: ', actualRes);
+//     }
+
+//     catch (error) {
+//         console.log('Api error: ', error);
+//     };
+// };
+
+
+
+
+
+
+
+
+// const apiCall = async () => {
+//     const apiUrl = "http://localhost:8081/companies";
+
+//     try {
+//         const res = await axios({
+//             method: "GET",
+//             url: apiUrl
+//         });
+//         console.log('Res: ', res);
+//     }
+
+//     catch (error) {
+//         console.log('Api error: ', error);
+//     };
+// };
+
+// apiCall();
+
+
+// const apiCall = async () => {
+//     const apiUrl = "http://localhost:8081/add-todo";
+
+//     const userInput = prompt('Enter any name!');
+
+//     if (userInput) {
+//         try {
+//             const res = await axios({
+//                 method: "POST",
+//                 url: apiUrl,
+//                 data: {
+//                     todoInput: userInput
+//                 }
+//             });
+//             console.log('Res: ', res);
+//         }
+
+//         catch (error) {
+//             console.log('Api error: ', error);
+//         };
+//     }
+// };
+
+// apiCall();
+
+// const orderStatus = "Order has been placed, Your order number is: 80858T";
+// console.log('Order status: ', orderStatus);
+
+// const extractOrderNo = orderStatus.slice(orderStatus.indexOf(':') + 1);
+// console.log(extractOrderNo.trim());
+
+
+
+
+// let friends = ["ahmed", "bilal", "shahzil", "asghar", "ali", "hasnain", "zulfiqar", "hammad", "shayan"];
+
+// const initial_3 = [...friends].slice(0, 3);
+// console.log('Initial 3: ', initial_3);
+
+// const remaining = friends?.slice(3, 6);
+// console.log('Remaining: ', remaining);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const password = "my-pass-123";
+// console.log('Password: ', password);
+
+// // Encoding password...!
+// const encodePassword = btoa(password);
+// console.log(encodePassword);
+
+// // Decoding password...!
+// const decodePassword = atob(encodePassword);
+// console.log(decodePassword);
+
+
+
+
+
+// const h1El = document.getElementById("heading");
+// const btnEl = document.getElementById("btn");
+// const arr = ["a", "b", "c", "d", "e"];
+// let index = 0;
+
+// if (h1El.innerHTML == "") h1El.innerHTML = arr[index];
+
+// const finishQuiz = () => {
+//     console.log('Quiz Finished!');
+// };
+
+// const nextQuestion = () => {
+//     if (btnEl.innerHTML == "Finish Quiz") {
+//         finishQuiz();
+//         return;
+//     }
+
+//     btnEl.innerHTML = "Next Question";
+//     h1El.innerHTML = arr[++index];
+//     if (index >= arr.length) index = 0;
+//     else if (index == arr.length - 1) btnEl.innerHTML = "Finish Quiz";
+// };
+
+// a 0 1
+// b 1 2
+// c 2 3
+// d 3 4
+// e 4 5
+
+
+
+
+// const quizScema = {
+//     quiz_Id: String,
+//     quiz_Title: String,
+//     quiz_Time: String, // 20 minutes
+//     quiz_Questions: [
+//         {
+//             question: String,
+//             options: [String, String, String, String],
+//             answer: String
+//         }
+//     ],
+//     number_Of_Questions: String, // 10 Questions
+//     passing_Marks: String,
+//     total_Score: String, // 50 marks
+//     played_By: [
+//         {
+//             user_Id: String,
+//             your_Score: String,
+//             time_Spent: Date,
+//             status: String,
+//             percentage: String,
+//             isQuizCompleted: Boolean,
+//             playCount: String
+//         }
+//     ]
+// };
+
+
+
+
+
+// Program to find the second largest value from an array...!
+// let arr = [24, 8, 65, 14, 84, 76];
+// let arrInDescendingOrder = arr.slice().sort((a, b) => { return b - a });
+// console.log(arrInDescendingOrder[1]);
+
+
+// Program to remove the duplicates value from an array...!
+// let arr = ["ahmed", "kashan", "shahzaib", "arsalan", "mehran", "ahmed", "khurram", "anees", "arsalan", "ahmed"];
+// let uniqueItems = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(arr[i]);
+
+//     if (!uniqueItems.includes(arr[i])) {
+//         uniqueItems.push(arr[i]);
+//     };
+// };
+
+// console.log('Unique items: ', uniqueItems);
+
+// Program to find the duplicates value from an array...!
+// let arr = ["ahmed", "kashan", "shahzaib", "arsalan", "mehran", "ahmed", "khurram", "anees", "arsalan", "ahmed"];
+// let duplicates = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr.indexOf(arr[i]) != arr.lastIndexOf(arr[i])) {
+//         duplicates.push(arr[i]);
+//     };
+// };
+
+// console.log('Duplicates items: ', duplicates);
+
+// // Note: For unique items...!
+// const uniqueItems = new Set([...duplicates]);
+// console.log(uniqueItems);
+
+
+
+// Program to find the first non repeating character from the given string...!
+
+// const word = "philosophy"; // Note: A string data...!
+// const strToArr = word.split(""); // Note: Converting string into an array...!
+// let firstNonRepeatingChar;
+
+// for (let i = 0; i < strToArr.length; i++) {
+//     // console.log(strToArr[i]);
+
+//     if (strToArr.indexOf(strToArr[i]) == strToArr.lastIndexOf(strToArr[i])) {
+//         firstNonRepeatingChar = strToArr[i];
+//         break;
+//     };
+// };
+
+// console.log('First non repeating character from the given string: ', firstNonRepeatingChar);
+
+
+// Note: Write a program to give an example of promise.all...!
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('First Promise resolved in 1 second');
+//     }, 1000);
+// });
+
+// firstPromise
+//     .then(res => console.log('First promise resolved: ', res))
+//     .catch(err => console.log('Something went wrong in first promise: ', err));
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('Second Promise resolved in 2 seconds');
+//     }, 2000);
+// });
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('Third Promise resolved in 3 seconds');
+//     }, 3000);
+// });
+
+// const handlePromises = Promise.all([firstPromise, secondPromise, thirdPromise]);
+// handlePromises
+//     .then(res => console.log('All promises resolved: ', res))
+//     .catch(err => console.log("Something went wrong while resolving promises: ", err));
+
+
+// Note: Here is an example of some methof of an array in JS...!
+
+// const techIndustries = ["microsoft", "google", "facebook", "apple", "amazon"];
+// const isTargetTechFirmFound = techIndustries.some(element => {
+//     return element == "google"
+// });
+// console.log(isTargetTechFirmFound);
+
+
+
+
+// const myFunc = () => {
+//     for (let i = 1; i <= 100; i++) {
+//         // console.log(i);
+
+//         if (i % 3 == 0) console.log('fizz - fizzbuzz');
+//         else if (i % 5 == 0) console.log('buzz - fizzbuzz');
+//     };
+// };
+
+// myFunc();
+
+
+// let str = "*****";
+
+// for (let i = str.length; i >= 1; i--) {
+//     // console.log(str);
+//     document.write(`<h1> ${str} </h1>`);
+//     str = str.slice(0, str.length - 1);
+// };
+
+// let str = "*";
+// let arrToArr = str.split(" ");
+
+// for (let i = 1; i <= 5; i++) {
+//     // console.log(arrToArr.join(""));
+//     document.write(`<h1> ${arrToArr.join("")} </h1>`);
+//     let copyData = [...arrToArr];
+//     copyData.push('*');
+//     arrToArr = copyData;
+// };
+
+
+
+
+// Program to validate a user using recursion...!
+
+// const validateUserName = () => {
+//     const userInput = prompt("Enter your name");
+
+//     if (userInput.trim().length < 1) validateUserName();
+//     else console.log(`Welcome ${userInput}!`);
+// };
+
+// validateUserName();
+
+
+
+
+
+
+// Q: Write a program to compare two Arrays Using JavaScript...!
+
+// const compareArrays = (arr1, arr2) => {
+//     // console.log('Arr 1: ', arr1);
+//     // console.log('Arr 2: ', arr2);
+
+//     const compareCheck = JSON.stringify(arr1) == JSON.stringify(arr2);
+//     if (compareCheck) console.log('Both arrays have the same values!');
+//     else console.log('Both arrays have different values!');
+// };
+
+// const array_1 = [1, 2, 3, 4, 5];
+// const array_2 = [1, 2, 3, 4, 8];
+// compareArrays(array_1, array_2);
+
+
+// Note: What is Fibonacci series? A: The Fibonacci sequence is the integer sequence where the first two terms are 0 and 1.
+// After that, the next term is defined as the sum of the previous two terms. Hence, the nth term is the sum of (n-1)th term and (n-2)th term.
+
+// Write a program to generate fibonacci series up to n terms.
+
+const userInput = Number(prompt("Enter any number"));
+let n1 = 0;
+let n2 = 1;
+let nextTerm;
+
+for (let i = 0; i < userInput; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+};
