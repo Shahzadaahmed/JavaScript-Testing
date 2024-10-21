@@ -7098,14 +7098,27 @@ console.log(grouping);
 
 // Write a program to generate fibonacci series up to n terms.
 
-const userInput = Number(prompt("Enter any number"));
-let n1 = 0;
-let n2 = 1;
-let nextTerm;
+// const userInput = Number(prompt("Enter any number"));
+// let n1 = 0;
+// let n2 = 1;
+// let nextTerm;
 
-for (let i = 0; i < userInput; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextTerm;
-};
+// for (let i = 0; i < userInput; i++) {
+//     console.log(n1);
+//     nextTerm = n1 + n2;
+//     n1 = n2;
+//     n2 = nextTerm;
+// };
+
+// Q: Write a program in JavaScript to remove duplication of numbers in an array...!
+
+// const mixedArray = [42, "Hello", true, 42, { key: "value" }, 3.14, "World", 42, [1, 2, 3], 'Hello', false, 42];
+// const uniqueArr = [];
+
+// for (let i = 0; i < mixedArray.length; i++) {
+//     const arrayItem = mixedArray[i];
+//     if (uniqueArr.includes(arrayItem) && typeof arrayItem == "number") console.log("Ok!");
+//     else uniqueArr.push(arrayItem);
+// };
+
+// console.log("Unique Arr: ", uniqueArr);

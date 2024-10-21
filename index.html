@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Functionality Testing </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functionality Testing</title>
 
     <!-- <style>
         * {
@@ -36,79 +35,105 @@
     </style> -->
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        .container {
-            background-color: yellow;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-end;
-        }
+      /* .container {
+        background-color: yellow;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
 
-        .innerSection {
-            width: 10%;
-            /* flex-grow: 1; */
-            /* flex-basis: 300px; */
-            color: white;
-            background-color: blue;
-            font-size: 25px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid white;
-            padding: 10px;
-        }
+      .innerSection {
+        width: 10%;
+        flex-grow: 1;
+        flex-basis: 300px;
+        color: white;
+        background-color: blue;
+        font-size: 25px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        padding: 10px;
+      }
 
-        .div1 {
-            height: 10vh;
-        }
+      .div1 {
+        height: 10vh;
+      }
 
-        .div2 {
-            height: 30vh;
-        }
+      .div2 {
+        height: 30vh;
+      }
 
-        .div3 {
-            height: 20vh;
-        }
+      .div3 {
+        height: 20vh;
+      }
 
-        .div4 {
-            height: 15vh;
-        }
+      .div4 {
+        height: 15vh;
+      }
 
-        .div1:hover {
-            height: 40vh;
-            transition: 3s height;
-        }
+      .div1:hover {
+        height: 40vh;
+        transition: 3s height;
+      }
 
-        .div2:hover {
-            height: 15vh;
-            transition: 3s height;
-        }
+      .div2:hover {
+        height: 15vh;
+        transition: 3s height;
+      }
 
-        .div3:hover {
-            height: 35vh;
-            transition: 3s height;
-        }
+      .div3:hover {
+        height: 35vh;
+        transition: 3s height;
+      }
 
-        .div4:hover {
-            height: 25vh;
-            transition: 3s height;
-        }
+      .div4:hover {
+        height: 25vh;
+        transition: 3s height;
+      }
 
-        p {
-            padding: 10px;
+      p {
+        padding: 10px;
+      } */
+
+      #section-1 {
+        background-color: yellow;
+        padding: 10px;
+      }
+
+      #section-2 {
+        background-color: lightblue;
+        padding: 10px;
+      }
+
+      #section-3 {
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media screen and (max-width: 800px) {
+        #container {
+          flex-direction: column;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body id="view">
+  <body id="view">
     <!-- <h1 id="heading"></h1> -->
     <!-- <button onclick="addUser()"> Add User </button>
     <button onclick="getAllUser()"> Get All User </button> -->
@@ -146,8 +171,6 @@
     <!-- <button id="test-btn" onclick="removeListener()"> Stop </button> -->
 
     <!-- <button title="Email-Btn" onclick="emailTester(this)"> Email </button> -->
-
-
 
     <!-- <div id="comment-template" style="display:none;">
         <li class="comment">
@@ -189,7 +212,6 @@
         My Name is <b> Ahmed </b>!
     </p> -->
 
-
     <!-- <div contenteditable="true">
         Hello World!
     </div> -->
@@ -209,9 +231,6 @@
     </div> -->
 
     <!-- <h1 style="color: red;"> Hello </h1> -->
-
-
-
 
     <!-- <button onclick="generateTandomValue()"> Random Value </button> -->
 
@@ -244,7 +263,6 @@
 
     <button onclick="timeIn()"> Time In </button> -->
 
-
     <!-- <h1 id="slide-header"></h1> -->
 
     <!-- <button onclick="counter()"> Counter </button> -->
@@ -261,12 +279,42 @@
     <ul id="list">
     </ul> -->
 
+    <!-- <div id="container">
+      <div id="section-1">
+        Paragraph 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Dolor quia ipsa atque repellat aut hic possimus, dolorum eum velit, odio
+        voluptas delectus pariatur molestias laboriosam ipsam ducimus eveniet
+        labore corporis.
+      </div>
+
+      <div id="section-2">
+        Paragraph 2: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Dolor quia ipsa atque repellat aut hic possimus, dolorum eum velit, odio
+        voluptas delectus pariatur molestias laboriosam ipsam ducimus eveniet
+        labore corporis.
+      </div>
+
+      <div id="section-3">
+        Paragraph 3: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Dolor quia ipsa atque repellat aut hic possimus, dolorum eum velit, odio
+        voluptas delectus pariatur molestias laboriosam ipsam ducimus eveniet
+        labore corporis.
+      </div>
+    </div> -->
+
+    <!-- <iframe
+      src="https://www.youtube.com/embed/-dY2IBPzJhI?si=ahmw85AHrb0nr3--"
+      width="600"
+      height="450"
+    ></iframe> -->
+
     <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
-        integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
+      integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./app.js"></script>
-
-</body>
-
+  </body>
 </html>
