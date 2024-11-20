@@ -7122,3 +7122,10 @@ console.log(grouping);
 // };
 
 // console.log("Unique Arr: ", uniqueArr);
+
+// const path = "/Auth/IUserManagementFeature/GetUserDetailsWithActions";
+// const removeInitChar = path.slice(1)
+// const targetSection = removeInitChar.slice(removeInitChar.indexOf('/') + 1, removeInitChar.lastIndexOf('/'));
+// console.log(targetSection);
+
+// str.slice(1).slice(targetSection.indexOf('/'));

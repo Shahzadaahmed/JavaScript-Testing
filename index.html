@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functionality Testing</title>
 
-    <!-- <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Functionality Testing</title>
+
+  <!-- <style>
         * {
             margin: 0;
             padding: 0;
@@ -34,14 +35,14 @@
         }
     </style> -->
 
-    <style>
-      * {
+  <style>
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
+      } */
 
-      /* .container {
+    /* .container {
         background-color: yellow;
         height: 100vh;
         display: flex;
@@ -105,7 +106,7 @@
         padding: 10px;
       } */
 
-      #section-1 {
+    /* #section-1 {
         background-color: yellow;
         padding: 10px;
       }
@@ -129,50 +130,147 @@
         #container {
           flex-direction: column;
         }
-      }
-    </style>
-  </head>
+      } */
 
-  <body id="view">
-    <!-- <h1 id="heading"></h1> -->
-    <!-- <button onclick="addUser()"> Add User </button>
+    /* .last-p {
+        position: relative;
+      } */
+
+    /* h2 { */
+    /* position: absolute; */
+    /* background-color: lightblue; */
+    /* left: 10px; */
+    /* top: 20px; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+    /* } */
+
+    /* h2 { */
+    /* position: absolute; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* color: blue; */
+    /* z-index: -1; */
+    /* z-index: 1; */
+    /* } */
+
+    /* h2 {
+        background-color: navy;
+        position: sticky;
+        color: white;
+        top: 0;
+      } */
+
+    /* p {
+        color: orange;
+      } */
+
+    /* h1 {
+        color: blue;
+        text-shadow: 15px 5px 3px navy;
+      } */
+
+    /* div {
+        border: 1px solid blue;
+        background-color: lightblue;
+        padding: 0px 10px;
+        border-radius: 5px;
+        box-shadow: 1px 2px 5px inset navy;
+      } */
+
+    /* div {
+        height: 150px;
+        width: 150px;
+        background-image: url('./images/asghar.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      div:hover {
+        background-image: url('./images/ahmed.jpeg');
+      } */
+
+    div {
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: orange;
+      /* transition-property: transform; */
+      /* transition-duration: 0.3s;
+        transition-timing-function: ease-in-out; */
+
+      transition:
+        width 3s ease-in-out,
+        height 3s ease-in-out,
+        background-color 3s ease-in-out;
+    }
+
+    /* div:hover {
+        transform: scale(1.5);
+      } */
+
+    div:hover {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+    }
+
+    /* h6 {
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+
+    h6:hover {
+      transform: scale(1.5, 0.8);
+    } */
+  </style>
+</head>
+
+<body id="view">
+
+  <!-- <h1 id="heading"></h1> -->
+  <!-- <button onclick="addUser()"> Add User </button>
     <button onclick="getAllUser()"> Get All User </button> -->
 
-    <!-- <input type="email" id="email" placeholder="Name" /> <br />
+  <!-- <input type="email" id="email" placeholder="Name" /> <br />
     <input type="password" id="password" placeholder="*****" /> <br />
     <button onclick="addUser()"> Add User </button> -->
 
-    <!-- <h3 id="heading" style="font-size: 20px; color: white;"> Hello Ahmed </h3> -->
+  <!-- <h3 id="heading" style="font-size: 20px; color: white;"> Hello Ahmed </h3> -->
 
-    <!-- <h1 id="username" style="display: none;"> Hello Ahmed </h1>
+  <!-- <h1 id="username" style="display: none;"> Hello Ahmed </h1>
     <button onclick="hideName()"> Hide name </button> -->
 
-    <!-- <button onclick="testing()"> Done </button> -->
+  <!-- <button onclick="testing()"> Done </button> -->
 
-    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 
-    <!-- <div id="container"></div> -->
+  <!-- <div id="container"></div> -->
 
-    <!-- <h1 id="heading"></h1> -->
+  <!-- <h1 id="heading"></h1> -->
 
-    <!-- <img src="./images/ahmed.jpeg" alt="ahmed" title="ahmed" height="100" width="100" onmouseover="abc(this)" onmouseout="xyz(this)" /> -->
+  <!-- <img src="./images/ahmed.jpeg" alt="ahmed" title="ahmed" height="100" width="100" onmouseover="abc(this)" onmouseout="xyz(this)" /> -->
 
-    <!-- <h1 id="heading"></h1> -->
+  <!-- <h1 id="heading"></h1> -->
 
-    <!-- <button onclick="removed()"> Remove </button> -->
+  <!-- <button onclick="removed()"> Remove </button> -->
 
-    <!-- <button onclick="reloadScreen()"> Refresh </button> -->
+  <!-- <button onclick="reloadScreen()"> Refresh </button> -->
 
-    <!-- <button id="mt-btn" class="btn" onclick="changeClass()"> Testing </button> -->
+  <!-- <button id="mt-btn" class="btn" onclick="changeClass()"> Testing </button> -->
 
-    <!-- <div id="container"></div> -->
+  <!-- <div id="container"></div> -->
 
-    <!-- <h1 id="heading"></h1> -->
-    <!-- <button id="test-btn" onclick="removeListener()"> Stop </button> -->
+  <!-- <h1 id="heading"></h1> -->
+  <!-- <button id="test-btn" onclick="removeListener()"> Stop </button> -->
 
-    <!-- <button title="Email-Btn" onclick="emailTester(this)"> Email </button> -->
+  <!-- <button title="Email-Btn" onclick="emailTester(this)"> Email </button> -->
 
-    <!-- <div id="comment-template" style="display:none;">
+  <!-- <div id="comment-template" style="display:none;">
         <li class="comment">
             <div class="comment-author">
                 <input type="text" name="author" id="author" />
@@ -191,65 +289,65 @@
     <ul id="comments"></ul>
     <button id="add" onclick="addit()">Add</button> -->
 
-    <!-- <img src="https://via.placeholder.com/150/771796" alt="API Url" height="50px" width="50px" /> -->
-    <!-- <input type="text" id="input" onkeypress="pressKey()"> -->
+  <!-- <img src="https://via.placeholder.com/150/771796" alt="API Url" height="50px" width="50px" /> -->
+  <!-- <input type="text" id="input" onkeypress="pressKey()"> -->
 
-    <!-- <button onclick="nextVal()"> Next </button> -->
+  <!-- <button onclick="nextVal()"> Next </button> -->
 
-    <!-- <span id="span-tag" style="font-size: 20px;"> Hello Ahmed </span> -->
+  <!-- <span id="span-tag" style="font-size: 20px;"> Hello Ahmed </span> -->
 
-    <!-- <h1 id="clock"></h1> -->
+  <!-- <h1 id="clock"></h1> -->
 
-    <!-- <h1 id="heading"></h1>
+  <!-- <h1 id="heading"></h1>
     <button id="btn" onclick="nextQuestion()"> Start Quiz </button>
     <input type="file"> -->
 
-    <!-- <button id="btn"> Submit Form </button> -->
+  <!-- <button id="btn"> Submit Form </button> -->
 
-    <!-- <div contenteditable="true"> ahmed </div> -->
+  <!-- <div contenteditable="true"> ahmed </div> -->
 
-    <!-- <p>
+  <!-- <p>
         My Name is <b> Ahmed </b>!
     </p> -->
 
-    <!-- <div contenteditable="true">
+  <!-- <div contenteditable="true">
         Hello World!
     </div> -->
 
-    <!-- <div class="container">
+  <!-- <div class="container">
         <div class="innerSection">1</div>
         <div class="innerSection">2</div>
         <div class="innerSection">3</div>
         <div class="innerSection">4</div>
     </div> -->
 
-    <!-- <div class="container">
+  <!-- <div class="container">
         <div class="innerSection div1">1</div>
         <div class="innerSection div2">2</div>
         <div class="innerSection div3">3</div>
         <div class="innerSection div4">4</div>
     </div> -->
 
-    <!-- <h1 style="color: red;"> Hello </h1> -->
+  <!-- <h1 style="color: red;"> Hello </h1> -->
 
-    <!-- <button onclick="generateTandomValue()"> Random Value </button> -->
+  <!-- <button onclick="generateTandomValue()"> Random Value </button> -->
 
-    <!-- <h1 class="name" id="header"> Hi Ahmed 😘 </h1> -->
-    <!-- <button onclick="changeClassHandler()"> Change class </button> -->
+  <!-- <h1 class="name" id="header"> Hi Ahmed 😘 </h1> -->
+  <!-- <button onclick="changeClassHandler()"> Change class </button> -->
 
-    <!-- <button onclick="signUpWithGoogle()"> Sign Up With Google </button> -->
+  <!-- <button onclick="signUpWithGoogle()"> Sign Up With Google </button> -->
 
-    <!-- <input type="text" id="inputField" > -->
+  <!-- <input type="text" id="inputField" > -->
 
-    <!-- <h1 id="header"> Ahmed (Software Engineer (MERN Stack)) </h1>
+  <!-- <h1 id="header"> Ahmed (Software Engineer (MERN Stack)) </h1>
 
     <button onclick="playDice()"> Play Dice </button> -->
 
-    <!-- <video src="./video/video12.mp4" controls height="500px" id="video-tag"></video>
+  <!-- <video src="./video/video12.mp4" controls height="500px" id="video-tag"></video>
     <br />
     <button onclick="playVideo()"> Play Video </button> -->
 
-    <!-- <p id="para">
+  <!-- <p id="para">
         Employment-based visas, or work visas as they are commonly known, are one of the most popular visa categories.
         With the rise in employment opportunities for skilled individuals across the globe, more and more talented and
         qualified individuals are seeking employment opportunities globally.
@@ -258,20 +356,20 @@
     <button onclick="seeMore()" id="see-more-btn"> See more </button>
     <button onclick="seeLess()" id="see-less-btn"> See less </button> -->
 
-    <!-- <input type="date" id="input" />
+  <!-- <input type="date" id="input" />
 
 
     <button onclick="timeIn()"> Time In </button> -->
 
-    <!-- <h1 id="slide-header"></h1> -->
+  <!-- <h1 id="slide-header"></h1> -->
 
-    <!-- <button onclick="counter()"> Counter </button> -->
+  <!-- <button onclick="counter()"> Counter </button> -->
 
-    <!-- <h1 id="header"></h1> -->
+  <!-- <h1 id="header"></h1> -->
 
-    <!-- <button onclick="counter()"> Counter </button> -->
+  <!-- <button onclick="counter()"> Counter </button> -->
 
-    <!-- <div>
+  <!-- <div>
         <input type="text" placeholder="Write Something" id="input-field" autofocus />
         <button onclick="addData()"> Add Item </button>
     </div>
@@ -279,7 +377,7 @@
     <ul id="list">
     </ul> -->
 
-    <!-- <div id="container">
+  <!-- <div id="container">
       <div id="section-1">
         Paragraph 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Dolor quia ipsa atque repellat aut hic possimus, dolorum eum velit, odio
@@ -302,19 +400,78 @@
       </div>
     </div> -->
 
-    <!-- <iframe
+  <!-- <iframe
       src="https://www.youtube.com/embed/-dY2IBPzJhI?si=ahmw85AHrb0nr3--"
       width="600"
       height="450"
     ></iframe> -->
 
-    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
-      integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./app.js"></script>
-  </body>
+  <!-- <h1>Heading - 1</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+
+    <h2> Hello Header </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p>
+    <p class="last-p">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+      quisquam facilis eveniet, qui voluptatum id quas quae eligendi veritatis
+      atque. Nemo sequi excepturi dignissimos tenetur ratione. Corrupti in
+      voluptas dicta?
+    </p> -->
+
+  <!-- <h1> Shadow In Html </h1> -->
+
+  <!-- <div>
+      <h2> Shadow Box </h2>
+    </div> -->
+
+  <!-- <div>
+      Hello
+    </div> -->
+
+  <div>
+    <h6> Hello JS! </h6>
+  </div>
+
+  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"
+    integrity="sha512-RjvSEaeDqPCfUVQ9kna2/2OqHz/7F04IOl1/66LmQjB/lOeAzwq7LrbTzDbz5cJzlPNJ5qteNtHR56XaJSTNWw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./app.js">
+  </script>
+</body>
+
 </html>
