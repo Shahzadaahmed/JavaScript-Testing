@@ -7129,3 +7129,38 @@ console.log(grouping);
 // console.log(targetSection);
 
 // str.slice(1).slice(targetSection.indexOf('/'));
+
+
+// Post and Pre Increament / Decreament...!
+
+// let num = 6;
+
+// console.log(num);
+// console.log(num++);
+// console.log(num);
+
+// console.log(num);
+// console.log(++num);
+// console.log(num);
+
+// console.log(num);
+// console.log(num--);
+// console.log(num);
+
+// console.log(num);
+// console.log(--num);
+// console.log(num);
+
+
+// console.log(str);
+// var str = "Test";
+
+// var num = 4;
+// var eq = num + num++ + num++;
+// console.log(eq);
+// console.log(eq);
+
+
+// var num = 7;
+// var eq = num + ++num + num--;
+// console.log(eq);
