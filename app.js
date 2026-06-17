@@ -5527,15 +5527,6 @@ console.log('Job type: ', johnData.jobType);
 
 
 
-
-
-
-
-
-
-
-
-
 /*
 const arr = [
     {
@@ -6099,7 +6090,7 @@ console.log(grouping);
 // const months = ['January', 'February', 'March', 'April', 'May'];
 
 // console.log(months);
-// // console.log(months.reverse());
+// console.log(months.reverse());
 // console.log(months.toReversed())
 
 
@@ -6542,16 +6533,6 @@ console.log(grouping);
 
 
 
-
-
-
-
-
-
-
-
-
-
 // function abc(...params) {
 //     console.log('Parameters: ', params.length);
 // };
@@ -6838,13 +6819,6 @@ console.log(grouping);
 
 // const remaining = friends?.slice(3, 6);
 // console.log('Remaining: ', remaining);
-
-
-
-
-
-
-
 
 
 
@@ -7164,3 +7138,72 @@ console.log(grouping);
 // var num = 7;
 // var eq = num + ++num + num--;
 // console.log(eq);
+
+
+// Q1:
+// const arr = ['cock', 'hen', 'elephant', 'crow', 'hen', 'eagle', 'pigeon', 'hen', 'crocodile'];
+
+// let largest = "";
+// let secondLargest = "";
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(arr[i]);
+
+//     if (arr[i].length > largest.length) {
+//         secondLargest = largest;
+//         largest = arr[i];
+//     }
+
+//     else if (arr[i].length > secondLargest.length && arr[i].length < largest.length) {
+//         secondLargest = arr[i];
+//     }
+// };
+
+// console.log('Longest word in an array:', largest);
+// console.log('2nd Longest word in an array:', secondLargest);
+
+// Q2:
+// const arr = ['cock', 'hen', 'elephant', 'crow', 'hen', 'eagle', 'pigeon', 'hen', 'crocodile'];
+
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(arr[i]);
+
+//     if (arr[i] == 'hen') arr.splice(i, 1);
+// };
+
+// console.log('Updated array: ', arr);
+
+// Q3:
+// const arr = ['cock', 'hen', 'elephant', 'crow', 'Hen', 'eagle', 'pigeon', 'Hen', 'crocodile'];
+// let count = 0
+// for (let item of arr) if (item == 'Hen') count = count + 1;
+// console.log('Hens counts: ' , count);
+
+
+// let str = "*****";
+
+// for (let i = 1; i <= 5; i++) {
+//     console.log(str);
+//     str = str.slice(0, str.length - 1);
+// };
+
+// let str = "";
+
+// for (let i = 1; i <= 5; i++) {
+//     str = str + "*";
+//     console.log(str);
+// };
+
+let str = "*****";
+let nestedStr = "*";
+
+for (let i = 1; i <= 5; i++) {
+    console.log(str);
+
+    for (let j = 1; j <= 1; j++) {
+        console.log(nestedStr);
+        nestedStr = nestedStr + "*";
+    };
+
+    str = str.slice(0, str.length - 1);
+};
