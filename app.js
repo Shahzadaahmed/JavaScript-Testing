@@ -34,44 +34,43 @@
 // }
 // */
 
-// // let userInput = "Zdkjfghio";
-// // let valueChecker = () => {
-// //     if (userInput === "Z1") {
-// //         return 'Request';
-// //     }
+// let userInput = "Zdkjfghio";
+// let valueChecker = () => {
+//     if (userInput === "Z1") {
+//         return 'Request';
+//     }
 
-// //     else if (userInput === "Z2") {
-// //         return 'Installation';
-// //     }
+//     else if (userInput === "Z2") {
+//         return 'Installation';
+//     }
 
-// //     else if (userInput === "Z3") {
-// //         return 'Complaint';
-// //     }
+//     else if (userInput === "Z3") {
+//         return 'Complaint';
+//     }
 
-// //     else if (userInput === "Z4") {
-// //         return 'Inquiry';
-// //     }
+//     else if (userInput === "Z4") {
+//         return 'Inquiry';
+//     }
 
-// //     else {
-// //         return undefined;
-// //     }
-// // }
+//     else {
+//         return undefined;
+//     }
+// }
 
-// // let result = valueChecker();
-// // console.log(result);
+// let result = valueChecker();
+// console.log(result);
 
-// /*
-// // Note: 16 deigits credit card number...!
+
+// Note: 16 deigits credit card number...!
 // const creditCard = '4111111111114324';
-// // console.log(creditCard);
+// console.log(creditCard);
 
 // // Note: Get last four digits...!
 // const lastFourDigits = creditCard.slice(-4);
-// // console.log(lastFourDigits);
+// console.log(lastFourDigits);
 
 // const maskedNumber = lastFourDigits.padStart(creditCard.length, '*');
 // console.log(maskedNumber);
-// */
 
 
 // // Q: Program:
@@ -95,73 +94,73 @@
 // }
 // */
 
-// // Note: Testing purpose...!
-// // let name = "ahmed";
-// // let has = name.includes('m');
+// Note: Testing purpose...!
+// let name = "ahmed";
+// let has = name.includes('m');
 
-// // console.log(has);
+// console.log(has);
 
-// // Testing local storage...!
+// Testing local storage...!
 
-// // let friends = ['ahmed', 'kashan', 'shahzaib', 'mehran', 'khurram'];
-// // console.log(friends);
+// let friends = ['ahmed', 'kashan', 'shahzaib', 'mehran', 'khurram'];
+// console.log(friends);
 
-// // let dataInStringFormat = JSON.stringify(friends);
-// // console.log(dataInStringFormat);
+// let dataInStringFormat = JSON.stringify(friends);
+// console.log(dataInStringFormat);
 
-// // localStorage.setItem('Data', dataInStringFormat);
+// localStorage.setItem('Data', dataInStringFormat);
 
-// // let header = document.getElementById("heading");
-// // console.log('Testing!');
+// let header = document.getElementById("heading");
+// console.log('Testing!');
 
-// // setTimeout(() => {
-// //     header.style.display = "none";
-// // }, 5000);
+// setTimeout(() => {
+//     header.style.display = "none";
+// }, 5000);
 
-// // console.log('Testing!');
+// console.log('Testing!');
 
-// // let nums = [1, 2, 3, 4, 5];
-// // let count = 0;
+// let nums = [1, 2, 3, 4, 5];
+// let count = 0;
 
-// // for (let i = 0; i < nums.length; i++) {
-// //     count = count + nums[i];
-// // }
+// for (let i = 0; i < nums.length; i++) {
+//     count = count + nums[i];
+// }
 
-// // console.log(count);
+// console.log(count);
 
-// // Note: Testing!
+// Note: Testing!
 
-// // let arr = [
-// //     {
-// //         price: 50,
-// //         quantity: 3
-// //     },
+// let arr = [
+//     {
+//         price: 50,
+//         quantity: 3
+//     },
 
-// //     {
-// //         price: 20,
-// //         quantity: 4
-// //     },
+//     {
+//         price: 20,
+//         quantity: 4
+//     },
 
-// //     {
-// //         price: 10,
-// //         quantity: 6
-// //     },
-// // ];
-// // // console.log(arr);
-// // let count = 0;
+//     {
+//         price: 10,
+//         quantity: 6
+//     },
+// ];
+// console.log(arr);
+// let count = 0;
 
-// // for (let i = 0; i < arr.length; i++) {
-// //     // console.log(arr[i]);
+// for (let i = 0; i < arr.length; i++) {
+//     // console.log(arr[i]);
 
-// //     arr[i].total = arr[i].quantity * arr[i].price;
-// //     console.log(arr[i]);
+//     arr[i].total = arr[i].quantity * arr[i].price;
+//     console.log(arr[i]);
 
-// //     count = count + arr[i].total;
-// // }
+//     count = count + arr[i].total;
+// }
 
-// // console.log(count);
+// console.log(count);
 
-// // Note: Learning class...!
+// Note: Learning class...!
 
 // // class Company {
 // //     constructor(title, department) {
@@ -7194,16 +7193,32 @@ console.log(grouping);
 //     console.log(str);
 // };
 
-let str = "*****";
-let nestedStr = "*";
+// let str = "*****";
+// let nestedStr = "*";
 
-for (let i = 1; i <= 5; i++) {
-    console.log(str);
+// for (let i = 1; i <= 5; i++) {
+//     console.log(str);
 
-    for (let j = 1; j <= 1; j++) {
-        console.log(nestedStr);
-        nestedStr = nestedStr + "*";
-    };
+//     for (let j = 1; j <= 1; j++) {
+//         console.log(nestedStr);
+//         nestedStr = nestedStr + "*";
+//     };
 
-    str = str.slice(0, str.length - 1);
-};
+//     str = str.slice(0, str.length - 1);
+// };
+
+// Note: This will only work in Next JS (Server component or server actions).
+// const handleApiCall = async () => {
+//     const apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+//     const fetchData = await fetch(
+//         apiUrl,
+//         {
+//             next: { revalidate: 60 }
+//         }
+//     );
+//     const res = await fetchData.json();
+//     console.log('Res: ', res);
+// };
+
+// handleApiCall();
